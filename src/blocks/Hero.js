@@ -3,6 +3,7 @@ import React from 'react'
 import Buttons from '../components/UI/Buttons'
 import Container from '../components/UI/Container'
 import Text from '../components/UI/Text'
+import Image from '../resolvers/Image'
 
 export default function Hero({ data }) {
   const isCentered = data?.variant === 'centered'
@@ -39,6 +40,15 @@ export default function Hero({ data }) {
           />
         )}
       </Container>
+          <div className="lg:w-1/2">
+            {data?.photo?.image && (
+              <Image
+                src={data?.photo?.image}
+                alt={data?.photo?.alt}
+                className="w-full"
+              />
+            )}
+          </div>
     </section>
   )
 }

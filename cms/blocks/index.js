@@ -13,6 +13,7 @@ const Config = {
         Title,
         Content,
         Buttons,
+        ImageField(),
         VariantField('default', ['default', 'centered', 'full']),
       ],
     },
