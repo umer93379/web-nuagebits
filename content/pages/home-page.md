@@ -7,7 +7,7 @@ permalink: /
 thumbnail: ""
 blocks:
   - type: hero
-    title: Henlo.
+    title: Edge Base Template
     content: |-
       ## The most advanced starter for Gatsby & Netlify CMS.
 
