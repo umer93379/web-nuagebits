@@ -6,6 +6,9 @@ title: Home Page
 permalink: /
 thumbnail: ""
 blocks:
+  - type: menu
+    variant: default
+    title: Title
   - type: hero
     title: Edge Base Template
     content: |-
