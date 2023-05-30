@@ -22,7 +22,7 @@ blocks:
           content: Documentation
           url: https://github.com/clean-commit/gatsby-starter-henlo
     photo:
-      image: /img/cloud.gif
+      image: ""
       alt: Edge on Cloud
     bg_image:
       image: /img/hero-bg.jpg
