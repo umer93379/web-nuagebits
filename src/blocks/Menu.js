@@ -7,8 +7,6 @@ export default function Menu({ data }) {
   const isCentered = data?.variant === 'centered'
   const [openDropDown, setOpenDropDown ] = useState(false);
 
-  console.log(data)
-
   const toggleDropDown = () => {
     setOpenDropDown(!openDropDown);
   }
