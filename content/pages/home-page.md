@@ -24,6 +24,9 @@ blocks:
       - social_link:
           social_plateform: email
           url: someone@email.com
+      - social_link:
+          social_plateform: facebook
+          url: facebook.com
   - type: hero
     title: Edge Base Template
     content: |-
