@@ -22,11 +22,11 @@ blocks:
           content: Documentation
           url: https://github.com/clean-commit/gatsby-starter-henlo
     photo:
-      image: /img/cloud.gif
+      image: /img/c30954e3679e9024190d9e4d49e4d8ca.gif
       alt: Edge on Cloud
     bg_image:
       image: /img/hero-bg.jpg
-      bg_image: /img/hero-bg.jpg
+      bg_image: /img/frame-72.png
       alt: Map Pins
   - type: perks
     title: Features
