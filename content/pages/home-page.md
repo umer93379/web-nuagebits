@@ -8,7 +8,7 @@ thumbnail: ""
 blocks:
   - type: menu
     variant: default
-    title: Title
+    title: ""
     buttons:
       - button:
           variant: default
