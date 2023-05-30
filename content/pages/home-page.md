@@ -11,9 +11,13 @@ blocks:
     title: Title
     buttons:
       - button:
-          variant: button
+          variant: default
           content: Home
           url: /
+      - button:
+          variant: button
+          content: Get Started
+          url: /get-started
     photo:
       image: /img/wojciech-kaluzny-20-312x312.jpg
   - type: hero
