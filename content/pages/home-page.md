@@ -20,6 +20,10 @@ blocks:
           url: /get-started
     photo:
       image: /img/wojciech-kaluzny-20-312x312.jpg
+    social_links:
+      - social_link:
+          social_plateform: email
+          url: someone@email.com
   - type: hero
     title: Edge Base Template
     content: |-
