@@ -21,6 +21,8 @@ blocks:
           variant: default
           content: Documentation
           url: https://github.com/clean-commit/gatsby-starter-henlo
+    photo:
+      image: /img/cloud.gif
   - type: perks
     title: Features
     columns:
