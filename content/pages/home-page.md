@@ -6,7 +6,19 @@ title: Home Page
 permalink: /
 thumbnail: ""
 blocks:
-  - type: hero
+  - bg_image: /img/track-bg.jpg
+    buttons:
+      - button:
+          variant: default
+          content: Documentation
+          url: https://github.com/clean-commit/gatsby-starter-henlo
+    variant: full
+    photo:
+      image: /img/cloud.gif
+      alt: Cloud
+    bg_photo:
+      bg_image: /img/track-bg.jpg
+      alt: BG
     title: Edge Base Template
     content: |-
       ## The most advanced starter for Gatsby & Netlify CMS.
@@ -15,12 +27,9 @@ blocks:
       Built with performance in mind, styled with TailwindCSS.
 
       **Think lightweight WordPress.**
-    variant: full
-    buttons:
-      - button:
-          variant: default
-          content: Documentation
-          url: https://github.com/clean-commit/gatsby-starter-henlo
+    type: hero
+    image:
+      bg_image: ""
   - type: perks
     title: Features
     columns:
