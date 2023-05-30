@@ -2,7 +2,8 @@
   "nav": [
     {
       "name": "Documentation",
-      "permalink": "https://github.com/clean-commit/gatsby-starter-henlo"
+      "permalink": "https://github.com/clean-commit/gatsby-starter-henlo",
+      "type": "default"
     }
   ]
 }
