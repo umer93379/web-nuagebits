@@ -19,11 +19,14 @@ export const ImageField = (name = 'image', fieldName = 'photo') => ({
   ],
 });
 
-export const backgroundImageField = (name = 'bg_image', fieldName = 'bg_image') => ({
-  label: 'BG Image',
+export const backgroundImageField = (name = 'bg_image', fieldName = 'bg_photo') => ({
+  label: 'Background Image',
   name: fieldName,
-  widget: 'image',
-  required: false,
+  widget: 'object',
+  fields: [
+    { label: 'BG Image', name, widget: 'image', required: false },
+    { label: 'Alt', name: 'alt', widget: 'string', required: false },
+  ],
 });
 
 export const Button = {
