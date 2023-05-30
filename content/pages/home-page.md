@@ -11,7 +11,7 @@ blocks:
     title: Title
     buttons:
       - button:
-          variant: default
+          variant: button
           content: Home
           url: /
     photo:
