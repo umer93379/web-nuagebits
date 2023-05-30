@@ -24,7 +24,7 @@ blocks:
     photo:
       image: /img/cloud.gif
     bg_image:
-      image: /img/cloud.gif
+      image: /img/hero-bg.jpg
   - type: perks
     title: Features
     columns:
