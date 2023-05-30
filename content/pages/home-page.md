@@ -27,6 +27,9 @@ blocks:
       - social_link:
           social_plateform: facebook
           url: facebook.com
+      - social_link:
+          social_plateform: youtube
+          url: www.youtube.com
   - type: hero
     title: Edge Base Template
     content: |-
