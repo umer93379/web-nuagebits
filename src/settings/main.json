@@ -5,5 +5,10 @@
       "permalink": "https://github.com/clean-commit/gatsby-starter-henlo",
       "type": "default"
     }
-  ]
+  ],
+  "title": "Edge Base",
+  "photo": {
+    "image": "/img/wojciech-kaluzny-20-312x312.jpg",
+    "alt": "MY Logo"
+  }
 }
