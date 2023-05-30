@@ -29,7 +29,7 @@ blocks:
       bg_image: ""
       alt: Map Pins
     image:
-      bg_image: /img/track-bg.jpg
+      bg_image: ""
   - type: perks
     title: Features
     columns:
