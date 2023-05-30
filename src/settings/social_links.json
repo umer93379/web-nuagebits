@@ -1,0 +1,9 @@
+{
+  "social_links": [
+    {
+      "show_in_header": true,
+      "permalink": "https://www.facebook.com",
+      "platform": "facebook"
+    }
+  ]
+}
