@@ -15,7 +15,7 @@ blocks:
       Built with performance in mind, styled with TailwindCSS.
 
       **Think lightweight WordPress.**
-    variant: centered
+    variant: full
     buttons:
       - button:
           variant: default
@@ -23,6 +23,7 @@ blocks:
           url: https://github.com/clean-commit/gatsby-starter-henlo
     photo:
       image: /img/cloud.gif
+    bg_image: /img/hero-bg.jpg
   - type: perks
     title: Features
     columns:
