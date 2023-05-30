@@ -9,6 +9,13 @@ blocks:
   - type: menu
     variant: default
     title: Title
+    buttons:
+      - button:
+          variant: default
+          content: Home
+          url: /
+    photo:
+      image: /img/wojciech-kaluzny-20-312x312.jpg
   - type: hero
     title: Edge Base Template
     content: |-
