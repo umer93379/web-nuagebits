@@ -1,4 +1,4 @@
-import { Buttons, Title, Content, VariantField, ImageField } from '../fields';
+import { Buttons, Title, Content, VariantField, ImageField, backgroundImageField, SocialLinks } from '../fields';
 
 const Config = {
   label: 'Blocks',
@@ -14,6 +14,7 @@ const Config = {
         Content,
         Buttons,
         ImageField(),
+        backgroundImageField(),
         VariantField('default', ['default', 'centered', 'full']),
       ],
     },

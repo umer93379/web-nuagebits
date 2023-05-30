@@ -1,52 +1,114 @@
-import React from 'react'
+import clsx from 'clsx'
+import React, { useState } from 'react'
+import { Link as GatsbyLink } from 'gatsby'
 import nav from '../settings/main.json'
-import Link from '../resolvers/Link'
+import socialLinks from '../settings/social_links.json'
+import Image from '../resolvers/Image'
 
 import DarkmodeToggle from './DarkmodeToggle'
-import Container from './UI/Container'
 
 export default function Header() {
-  return (
-    <header className="flex h-16 border-b bg-white text-black dark:border-zinc-800 dark:bg-black dark:text-white">
-      <Container className="m-auto flex items-center justify-between gap-20">
-        <Link to="/" className="text-2xl font-bold ">
-          Henlo.
-        </Link>
-        <div className="flex items-center">
-          <nav className="flex gap-4">
-            {nav.nav.map((item, i) => (
-              <Link to={item.permalink} key={i}>
-                {item.name}
-              </Link>
-            ))}
-          </nav>
+  const [openDropDown, setOpenDropDown ] = useState(false);
 
-          <div className="ml-6 flex items-center border-l border-slate-200 pl-6 dark:border-zinc-800">
-            <DarkmodeToggle />
-            <a
-              href="https://github.com/clean-commit/gatsby-starter-henlo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-4 block text-slate-400 transition-colors hover:text-slate-500 dark:hover:text-slate-300"
-            >
-              <div className="sr-only">Henlo on GitHub</div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </Container>
-    </header>
+  const toggleDropDown = () => {
+    setOpenDropDown(!openDropDown);
+  }
+  return (
+      <header>
+        {socialLinks?.show_above_header === true && (
+          <nav className="bg-headerSocialBg text-headerSocialTextDefaultColor border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 shadow">
+            <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+              <div className='flex flex-row'>
+                {socialLinks?.social_links && (socialLinks?.social_links.map((link, i) => {
+                  if(link.show_in_header === true){
+                    switch (link.platform) {
+                      case "email":
+                        return (
+                          <a className='space-x-2 flex' href={`mailto:`+link.permalink} key={i}>
+                            <svg className='mr-2 w-4 feather feather-at-sign' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/></svg>
+                            {link.permalink}</a>
+                        );
+                    }
+                  }
+                }))}
+              </div>
+              <div className='flex flex-row'>
+                {socialLinks?.social_links && (socialLinks?.social_links.map((link, i) => {
+                  if(link.show_in_header === true){
+                    switch (link.platform) {
+                      case "facebook":
+                        return (
+                          <a className='space-x-2 flex' href={link.permalink} key={i}>
+                            <svg className='mr-2 w-4 feather feather-facebook' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                          </a>
+                        );
+                      case "twitter":
+                        return (
+                          <a className='space-x-2 flex' href={link.permalink} key={i}>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-twitter mr-2 w-4 "><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+                          </a>
+                        );
+                    }
+                  }
+                }))}
+              </div>
+            </div>
+          </nav>
+        )}
+        <nav className="bg-header-bg bg-headerBg text-headerTextDefaultColor border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 shadow">
+            <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="/" className="flex items-center">
+                    {nav?.photo?.image && (
+                      <Image
+                        src={nav?.photo?.image}
+                        alt={nav?.photo?.alt}
+                        className="mr-3 h-6 sm:h-9"
+                      />
+                    )}
+                    {nav?.title && (
+                      <span
+                        className={clsx('self-center text-xl font-semibold whitespace-nowrap dark:text-white', {
+                          'mx-auto': nav?.isCentered,
+                        })}
+                      >
+                        {nav?.title}
+                      </span>
+                    )}
+                </a>
+                <div className="flex items-center lg:order-2 lg:hidden">
+                    <button type="button" onClick={toggleDropDown} className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span className="sr-only">Open main menu</span>
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
+                        <svg className="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div className={clsx({
+                        'hidden': !openDropDown,
+                        },'justify-between items-center w-full lg:flex lg:w-auto lg:order-1')}>
+                    <div className="flex flex-col mt-4 font-medium lg:flex-row lg:align-right lg:space-x-8 lg:mt-0">
+                      {nav.nav && (
+                        nav.nav.map((button , i) => {
+                          return <GatsbyLink className={
+                            clsx({
+                              'block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-headerTextDefaultColor lg:hover:text-headerTextHoverColor dark:text-white': (button.type === 'default'),
+                              "text-white bg-headerTextDefaultBG hover:bg-headerTextHoverBG focus:ring-4 focus:ring-headerTextHoverBG font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-headerTextDefaultBG dark:hover:bg-headerTextHoverBG focus:outline-none dark:focus:ring-headerTextHoverBG": button.type=== 'button'
+                            })
+                          }
+                            key={i}
+                            to={button.permalink}
+                          >
+                            {button.name}
+                          </GatsbyLink>
+                        })
+                        
+                      )}
+                    </div>
+                    <div className='dark:text-white'>
+                      <DarkmodeToggle />
+                    </div>
+                </div>
+            </div>
+        </nav>
+      </header>
   )
 }

@@ -25,7 +25,7 @@ export default function PageBuilder({ blocks, preview = false }) {
               return <Content key={i} data={block} preview={preview} />;
             default:
               return (
-                <div className='container mx-auto'>
+                <div className='container mx-auto' key={i}>
                   <div className='text-center'>
                     Missing Section {block.type}
                   </div>

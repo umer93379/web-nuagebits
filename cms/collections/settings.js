@@ -1,4 +1,6 @@
 import navigationField from '../fields/navigation-field';
+import socialField from '../fields/social-field';
+import { Buttons, Title, Content, VariantField, ImageField, backgroundImageField, SocialLinks } from '../fields';
 
 const collection = {
   name: 'settings',
@@ -10,9 +12,26 @@ const collection = {
       name: 'nav',
       file: 'src/settings/main.json',
       editor: {
-        preview: false,
+        preview: true,
       },
-      fields: [navigationField()],
+      fields: [
+        Title,
+        ImageField(), 
+        navigationField()],
+    },
+    {
+      label: 'Social Links',
+      name: 'social_links',
+      file: 'src/settings/social_links.json',
+      editor: {
+        preview: true,
+      },
+      fields: [{
+        label: 'Enable Header',
+        name: 'show_above_header',
+        widget: 'boolean',
+        required: false,
+      },socialField()],
     },
     {
       label: 'Footer Navigation',

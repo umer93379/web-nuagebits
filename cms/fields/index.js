@@ -8,6 +8,7 @@ export const VariantField = (initial, options = []) => ({
   options: options,
 });
 
+
 export const ImageField = (name = 'image', fieldName = 'photo') => ({
   label: 'Image',
   name: fieldName,
@@ -16,6 +17,13 @@ export const ImageField = (name = 'image', fieldName = 'photo') => ({
     { label: 'Image', name, widget: 'image', required: false },
     { label: 'Alt', name: 'alt', widget: 'string', required: false },
   ],
+});
+
+export const backgroundImageField = (name = 'bg_image', fieldName = 'bg_image') => ({
+  label: 'BG Image',
+  name: fieldName,
+  widget: 'image',
+  required: false,
 });
 
 export const Button = {

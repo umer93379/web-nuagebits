@@ -6,30 +6,6 @@ title: Home Page
 permalink: /
 thumbnail: ""
 blocks:
-  - type: menu
-    variant: default
-    title: ""
-    buttons:
-      - button:
-          variant: default
-          content: Home
-          url: /
-      - button:
-          variant: button
-          content: Get Started
-          url: /get-started
-    photo:
-      image: /img/wojciech-kaluzny-20-312x312.jpg
-    social_links:
-      - social_link:
-          social_plateform: email
-          url: someone@email.com
-      - social_link:
-          social_plateform: facebook
-          url: facebook.com
-      - social_link:
-          social_plateform: youtube
-          url: www.youtube.com
   - type: hero
     title: Edge Base Template
     content: |-

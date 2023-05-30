@@ -40,15 +40,15 @@ export default function Hero({ data }) {
           />
         )}
       </Container>
-          <div className="lg:w-1/2">
-            {data?.photo?.image && (
-              <Image
-                src={data?.photo?.image}
-                alt={data?.photo?.alt}
-                className="w-full"
-              />
-            )}
-          </div>
+      {data?.photo?.image && (
+        <div className="lg:w-1/2">
+            <Image
+              src={data?.photo?.image}
+              alt={data?.photo?.alt}
+              className="w-full"
+            />
+        </div>
+      )}
     </section>
   )
 }

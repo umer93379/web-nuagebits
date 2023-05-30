@@ -8,6 +8,8 @@
   ],
   "dependencies": {
     "clsx": "^1.2.1",
+    "flowbite": "^1.6.5",
+    "flowbite-react": "^0.4.6",
     "gatsby": "^5.3.3",
     "gatsby-plugin-brotli": "^2.1.0",
     "gatsby-plugin-dark-mode": "^1.1.2",

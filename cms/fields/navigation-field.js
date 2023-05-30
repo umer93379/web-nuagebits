@@ -16,6 +16,13 @@ export function Field(label = 'Navigation', name = 'nav') {
         widget: 'string',
       },
       {
+        label: 'Type',
+        name: 'type',
+        widget: 'select',
+        default: 'default',
+        options: ['default', 'button']
+      },
+      {
         label: 'Children',
         name: 'children',
         widget: 'list',
