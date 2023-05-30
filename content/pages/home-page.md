@@ -23,7 +23,8 @@ blocks:
           url: https://github.com/clean-commit/gatsby-starter-henlo
     photo:
       image: /img/cloud.gif
-    bg_image: /img/hero-bg.jpg
+    bg_image:
+      image: /img/cloud.gif
   - type: perks
     title: Features
     columns:

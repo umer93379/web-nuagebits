@@ -8,6 +8,7 @@ import Image from '../resolvers/Image'
 export default function Hero({ data }) {
   const isCentered = data?.variant === 'centered'
   const isFull = data?.variant === 'full'
+  console.log(data);
   return (
     <section
       className={clsx(
@@ -20,6 +21,15 @@ export default function Hero({ data }) {
         },
       )}
     >
+      {data?.bg_image?.image && (
+        <div className="lg:w-1/2">
+            <Image
+              src={data?.bg_image?.image}
+              alt={data?.bg_image?.alt}
+              className="w-full"
+            />
+        </div>
+      )}
       <Container>
         {data?.title && (
           <h1

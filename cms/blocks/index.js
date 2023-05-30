@@ -14,7 +14,7 @@ const Config = {
         Content,
         Buttons,
         ImageField(),
-        backgroundImageField(),
+        ImageField('bg_image', 'bg_image'),
         VariantField('default', ['default', 'centered', 'full']),
       ],
     },
