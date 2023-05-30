@@ -23,8 +23,11 @@ blocks:
           url: https://github.com/clean-commit/gatsby-starter-henlo
     photo:
       image: /img/cloud.gif
+      alt: Edge on Cloud
     bg_image:
       image: /img/hero-bg.jpg
+      bg_image: /img/hero-bg.jpg
+      alt: Map Pins
   - type: perks
     title: Features
     columns:
