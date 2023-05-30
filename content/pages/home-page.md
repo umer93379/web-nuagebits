@@ -21,13 +21,6 @@ blocks:
           variant: default
           content: Documentation
           url: https://github.com/clean-commit/gatsby-starter-henlo
-    photo:
-      image: ""
-      alt: Edge on Cloud
-    bg_image:
-      image: /img/hero-bg.jpg
-      bg_image: ""
-      alt: Map Pins
     image:
       bg_image: ""
   - type: perks
