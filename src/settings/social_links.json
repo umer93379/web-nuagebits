@@ -3,7 +3,9 @@
     {
       "show_in_header": true,
       "permalink": "https://www.facebook.com",
-      "platform": "facebook"
+      "platform": "facebook",
+      "show_in_footer": false
     }
-  ]
+  ],
+  "show_above_header": true
 }
