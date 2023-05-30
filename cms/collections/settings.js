@@ -1,6 +1,6 @@
 import navigationField from '../fields/navigation-field';
 import socialField from '../fields/social-field';
-import { Buttons, Title, Content, VariantField, ImageField, backgroundImageField, SocialLinks } from '../fields';
+import { Title, ImageField } from '../fields';
 
 const collection = {
   name: 'settings',
