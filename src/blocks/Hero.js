@@ -13,8 +13,8 @@ export default function Hero({ data }) {
   return (
     <Parallax
         blur={{ min: -15, max: 15 }}
-        bgImage={data?.bg_image?.image}
-        bgImageAlt={data?.bg_image?.alt}
+        bgImage={data?.bg_photo?.image}
+        bgImageAlt={data?.bg_photo?.alt}
         strength={-200}
     >
     <section
