@@ -14,10 +14,10 @@ blocks:
           url: https://github.com/clean-commit/gatsby-starter-henlo
     variant: full
     photo:
-      image: ""
+      image: /img/c30954e3679e9024190d9e4d49e4d8ca.gif
       alt: Cloud
     bg_photo:
-      bg_image: ""
+      bg_image: /img/track-bg.jpg
       alt: BG
     title: Edge Base Template
     content: |-
