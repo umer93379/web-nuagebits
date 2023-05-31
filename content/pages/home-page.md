@@ -32,20 +32,8 @@ blocks:
             bg_image: /img/white_wood.jpg
             bg_alt: Second Hero BG
             enable_parallax: true
-  - variant: full
-    title: Edge Base Template
-    content: |-
-      ## The most advanced starter for Gatsby & Netlify CMS.
-
-      Extensible, block based starter for Netlify CMS.\
-      Built with performance in mind, styled with TailwindCSS.
-
-      **Think lightweight WordPress.**
-    type: hero
-    photo:
-      image: /img/wojciech-kaluzny-20-312x312.jpg
-    bg_photo:
-      bg_image: /img/white_wood.jpg
+          photo:
+            image: /img/wojciech-kaluzny-20-312x312.jpg
   - type: perks
     title: Features
     columns:
