@@ -11,6 +11,7 @@ export default function Hero({ data }) {
   const isFull = data?.variant === 'full'
   const bgImage = typeof data?.bg_photo?.bg_image === 'string' ? data?.bg_photo?.bg_image : data?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src;
   return (
+    <div className='transition-all duration-1000'>
     <Parallax
         bgImage={bgImage}
         bgImageAlt={data?.bg_photo?.alt}
@@ -18,7 +19,7 @@ export default function Hero({ data }) {
     >
     <section
       className={clsx(
-        'py-12 bg-white bg-opacity-20 dark:bg-black dark:text-white lg:py-24 relative',
+        'py-12 bg-white bg-opacity-20 dark:bg-black dark:text-white lg:py-24 relative min-h-72',
         {
           'flex min-h-screen items-center': isFull,
         },
@@ -27,36 +28,39 @@ export default function Hero({ data }) {
         },
       )}
     >
-      <Container>
-        {data?.title && (
-          <h1
-            className={clsx('mb-4 text-4xl font-bold md:text-6xl', {
-              'mx-auto': isCentered,
-            })}
-          >
-            {data?.title}
-          </h1>
-        )}
-        <Text className={clsx('text-lg', { 'mx-auto': isCentered })}>
-          {data?.content}
-        </Text>
-        {data?.buttons && (
-          <Buttons
-            buttons={data?.buttons}
-            className={clsx('mt-6', { 'justify-center': isCentered })}
-          />
-        )}
-      </Container>
-      {data?.photo?.image && (
-        <div className="lg:w-1/2">
-            <Image
-              src={data?.photo?.image}
-              alt={data?.photo?.alt}
-              className="w-full"
+      <div className='container mx-auto flex'>
+        <Container className={`lg:w-2/3`}>
+          {data?.title && (
+            <h1
+              className={clsx('mb-4 text-4xl font-bold md:text-6xl', {
+                'mx-auto': isCentered,
+              })}
+            >
+              {data?.title}
+            </h1>
+          )}
+          <Text className={clsx('text-lg', { 'mx-auto': isCentered })}>
+            {data?.content}
+          </Text>
+          {data?.buttons && (
+            <Buttons
+              buttons={data?.buttons}
+              className={clsx('mt-6', { 'justify-center': isCentered })}
             />
-        </div>
-      )}
+          )}
+        </Container>
+        {data?.photo?.image && (
+          <div className="lg:w-1/3 text-right">
+              <Image
+                src={data?.photo?.image}
+                alt={data?.photo?.alt}
+                className="w-72 rounded-md"
+              />
+          </div>
+        )}
+      </div>
     </section>
     </Parallax>
+    </div>
   )
 }
