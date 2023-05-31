@@ -24,7 +24,8 @@ blocks:
     title: Features
     columns:
       - title: Manual Initialization
-        content: Ditch yaml for CMS configuration, use JS instead
+        content: Ditch yaml for CMS configuration, use JS instead. Ditch yaml for CMS
+          configuration, use JS instead
         photo:
           image: /img/4000_2_01.jpg
       - title: Support For Local Development
