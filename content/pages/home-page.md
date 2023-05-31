@@ -17,7 +17,7 @@ blocks:
       image: /img/4000_2_01.jpg
       alt: Cloud
     bg_photo:
-      bg_image: ""
+      bg_image: /img/hfhgfghfgh.jpg
       alt: BG
     title: Edge Base Template
     content: |-
