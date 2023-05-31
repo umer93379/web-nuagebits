@@ -12,7 +12,7 @@ blocks:
           variant: default
           content: Documentation
           url: https://github.com/clean-commit/gatsby-starter-henlo
-    variant: full
+    variant: centered
     photo:
       image: ""
       alt: Cloud
