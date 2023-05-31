@@ -4,6 +4,7 @@ import { Parallax } from 'react-parallax';
 import Container from '../components/UI/Container';
 import Title from '../components/UI/Title';
 import Text from '../components/UI/Text';
+import Image from '../resolvers/Image'
 
 export default function Perks({ data }) {
   console.log(data);
@@ -15,6 +16,7 @@ export default function Perks({ data }) {
         disabled={data?.bg_photo?.enable_parallax === true}
     >
       <section className='py-10 dark:bg-[#0d0d10] lg:py-20 '>
+        
         <Container>
           {data?.title && (
             <Title
@@ -33,7 +35,16 @@ export default function Perks({ data }) {
             className={`mx-auto grid max-w-6xl grid-cols-2 gap-x-4 gap-y-6 md:gap-10 lg:grid-cols-3 `}>
             {data?.columns &&
               data?.columns.map((col, i) => (
-                <div className='flex' key={i}>
+                <div className='flex space-x-4' key={i}>
+                  {col?.photo?.image && (
+                    <div className="">
+                        <Image
+                          src={col?.photo?.image}
+                          alt={col?.photo?.alt}
+                          className="w-24 mt-4 rounded-full"
+                        />
+                    </div>
+                  )}
                   <div
                     className={`mx-auto w-72 text-center sm:text-left lg:w-80  ${
                       i % 3 === 0
@@ -48,7 +59,7 @@ export default function Perks({ data }) {
                       </Title>
                     )}
                     {col?.content && (
-                      <Text className={`mt-2 max-w-2xl`}>{col?.content}</Text>
+                      <Text className={`mt-1 max-w-2xl short_description`}>{col?.content}</Text>
                     )}
                   </div>
                 </div>
