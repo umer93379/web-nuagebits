@@ -16,6 +16,10 @@ blocks:
 
       **Think lightweight WordPress.**
     type: hero
+    photo:
+      image: /img/wojciech-kaluzny-20-312x312.jpg
+    bg_photo:
+      bg_image: /img/white_wood.jpg
   - type: perks
     title: Features
     columns:
