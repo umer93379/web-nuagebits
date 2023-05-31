@@ -64,7 +64,7 @@ export const query = graphql`
         bg_image {
           childImageSharp {
             gatsbyImageData(
-              width: 800
+              width: 2040
               quality: 72
               placeholder: DOMINANT_COLOR
               formats: [AUTO, WEBP, AVIF]

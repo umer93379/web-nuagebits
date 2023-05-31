@@ -6,19 +6,7 @@ title: Home Page
 permalink: /
 thumbnail: ""
 blocks:
-  - bg_image: /img/track-bg.jpg
-    buttons:
-      - button:
-          variant: default
-          content: Documentation
-          url: https://github.com/clean-commit/gatsby-starter-henlo
-    variant: centered
-    photo:
-      image: ""
-      alt: Cloud
-    bg_photo:
-      bg_image: /img/white_wood.jpg
-      alt: BG
+  - variant: centered
     title: Edge Base Template
     content: |-
       ## The most advanced starter for Gatsby & Netlify CMS.
@@ -28,8 +16,6 @@ blocks:
 
       **Think lightweight WordPress.**
     type: hero
-    image:
-      bg_image: ""
   - type: perks
     title: Features
     columns:
