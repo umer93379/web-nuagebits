@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 .short_description{
-    width: 200px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;

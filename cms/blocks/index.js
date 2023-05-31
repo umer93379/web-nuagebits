@@ -1,5 +1,7 @@
 import { Buttons, Title, Content, VariantField, ImageField, backgroundImageField } from '../fields';
 
+import { PermalinkField } from '../fields/permalink-field';
+
 const Config = {
   label: 'Blocks',
   name: 'blocks',
@@ -53,7 +55,13 @@ const Config = {
           widget: 'list',
           summary: '{{fields.title}}',
           fields: [
-            Title, 
+            Title,
+            {
+              label: 'Show Popup',
+              name: 'show_popup',
+              widget: 'boolean',
+            },
+            PermalinkField(),
             Content,
             ImageField()
           ],
