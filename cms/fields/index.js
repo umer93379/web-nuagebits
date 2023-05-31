@@ -25,7 +25,7 @@ export const backgroundImageField = (name = 'bg_image', fieldName = 'bg_photo') 
   widget: 'object',
   fields: [
     { label: 'BG Image', name, widget: 'image', required: false },
-    { label: 'Alt', name: 'alt', widget: 'string', required: false },
+    { label: 'Alt', name: 'bg_alt', widget: 'string', required: false },
   ],
 });
 
