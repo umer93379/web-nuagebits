@@ -6,6 +6,32 @@ title: Home Page
 permalink: /
 thumbnail: ""
 blocks:
+  - type: hero_slider
+    heros:
+      - hero:
+          variant: full
+          title: Edge-Base
+          content: Your next **EDGE** website starter.
+          buttons:
+            - button:
+                variant: button
+                content: Start your journey
+                url: /start-your-jurney
+          photo:
+            image: /img/wojciech-kaluzny-20-312x312.jpg
+            alt: Starter Image
+          bg_photo:
+            bg_image: /img/white_wood.jpg
+            bg_alt: Hero BG
+            enable_parallax: true
+      - hero:
+          variant: full
+          title: Not Just Website;
+          content: "# its Fastest Website"
+          bg_photo:
+            bg_image: /img/white_wood.jpg
+            bg_alt: Second Hero BG
+            enable_parallax: true
   - variant: full
     title: Edge Base Template
     content: |-
@@ -28,19 +54,8 @@ blocks:
           configuration, use JS instead
         photo:
           image: /img/4000_2_01.jpg
-      - title: Support For Local Development
-        content: Develop & test Netlify CMS configuration locally.
-      - title: Integrated Forms
-        content: Create forms with Netlify CMS, powered by
-          [react-hook-form](https://react-hook-form.com/).
-      - title: Integrated Previews
-        content: Blocks created by developers are instantly available for previews from
-          Netlify CMS layout
-      - title: Permalink-based page generation
-        content: "Automatically generated pages based on permalinks. "
-      - title: Modify Navigation with ease
-        content: Navigation can be modified with ease, without a need for changing the
-          code base
+        show_popup: true
+        permalink: /xyz/
     content: ""
   - type: content_image
     variant: reversed
