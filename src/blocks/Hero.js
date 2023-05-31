@@ -9,7 +9,6 @@ import Image from '../resolvers/Image'
 export default function Hero({ data }) {
   const isCentered = data?.variant === 'centered'
   const isFull = data?.variant === 'full'
-  console.log(data,data?.bg_photo?.bg_image);
   const bgImage = typeof data?.bg_photo?.bg_image === 'string' ? data?.bg_photo?.bg_image : data?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src;
   return (
     <Parallax

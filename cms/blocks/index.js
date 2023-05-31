@@ -22,7 +22,7 @@ const Config = {
       label: 'Content',
       name: 'content',
       widget: 'object',
-      fields: [Content],
+      fields: [Content, backgroundImageField()],
     },
     {
       label: 'Content with Image',
@@ -34,6 +34,7 @@ const Config = {
         Title,
         Content,
         Buttons,
+        backgroundImageField(),
         VariantField('default', ['default', 'reversed']),
       ],
     },
@@ -45,12 +46,17 @@ const Config = {
       fields: [
         Title,
         Content,
+        backgroundImageField(),
         {
           label: 'Columns',
           name: 'columns',
           widget: 'list',
           summary: '{{fields.title}}',
-          fields: [Title, Content],
+          fields: [
+            Title, 
+            Content,
+            ImageField()
+          ],
         },
       ],
     },
@@ -58,13 +64,14 @@ const Config = {
       label: 'Recent Articles',
       name: 'recentArticles',
       widget: 'object',
-      fields: [Title],
+      fields: [Title, backgroundImageField()],
     },
     {
       label: 'Form',
       name: 'form',
       widget: 'object',
       fields: [
+        backgroundImageField(),
         {
           label: 'Form',
           name: 'form',
