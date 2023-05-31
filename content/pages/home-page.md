@@ -17,7 +17,7 @@ blocks:
       image: ""
       alt: Cloud
     bg_photo:
-      bg_image: /img/white_wood.jpg
+      bg_image: ""
       alt: BG
     title: Edge Base Template
     content: |-
