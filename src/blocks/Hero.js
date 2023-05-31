@@ -9,17 +9,17 @@ import Image from '../resolvers/Image'
 export default function Hero({ data }) {
   const isCentered = data?.variant === 'centered'
   const isFull = data?.variant === 'full'
-  console.log(data);
+  console.log(data?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src);
   return (
     <Parallax
         blur={{ min: -15, max: 15 }}
-        bgImage={data?.bg_photo?.image}
+        bgImage={data?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src}
         bgImageAlt={data?.bg_photo?.alt}
         strength={-200}
     >
     <section
       className={clsx(
-        'py-12 dark:bg-black dark:text-white lg:py-24 relative',
+        'py-12 bg-white bg-opacity-20 dark:bg-black dark:text-white lg:py-24 relative',
         {
           'flex min-h-screen items-center': isFull,
         },
