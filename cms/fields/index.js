@@ -1,4 +1,17 @@
 export const ID = { label: 'ID', name: 'id', widget: 'uuid' };
+export const Title = {
+  label: 'Title',
+  name: 'title',
+  widget: 'string',
+  required: false,
+};
+
+export const Content = {
+  label: 'Content',
+  name: 'content',
+  widget: 'markdown',
+  required: false,
+};
 
 export const VariantField = (initial, options = []) => ({
   label: 'Variant',
@@ -58,17 +71,22 @@ export const Buttons = {
   widget: 'list',
   fields: [Button],
 };
-
-export const Title = {
-  label: 'Title',
-  name: 'title',
-  widget: 'string',
-  required: false,
+export const Hero = {
+  label: 'Hero',
+  name: 'hero',
+  widget: 'object',
+  fields: [
+    Title,
+    Content,
+    Buttons,
+    ImageField(),
+    backgroundImageField(),
+    VariantField('default', ['default', 'centered', 'full']),
+  ],
 };
-
-export const Content = {
-  label: 'Content',
-  name: 'content',
-  widget: 'markdown',
-  required: false,
+export const Heros = {
+  label: 'Heros',
+  name: 'heros',
+  widget: 'list',
+  fields: [Hero],
 };

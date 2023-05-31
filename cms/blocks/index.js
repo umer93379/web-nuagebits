@@ -1,4 +1,4 @@
-import { Buttons, Title, Content, VariantField, ImageField, backgroundImageField } from '../fields';
+import { Buttons, Title, Content, VariantField, ImageField, Hero, Heros, backgroundImageField } from '../fields';
 
 import { PermalinkField } from '../fields/permalink-field';
 
@@ -7,18 +7,12 @@ const Config = {
   name: 'blocks',
   widget: 'list',
   types: [
+    Hero,
     {
-      label: 'Hero',
-      name: 'hero',
-      widget: 'object',
-      fields: [
-        Title,
-        Content,
-        Buttons,
-        ImageField(),
-        backgroundImageField(),
-        VariantField('default', ['default', 'centered', 'full']),
-      ],
+      label: 'Hero Slider',
+      name: 'hero_slider',
+      widget: 'list',
+      fields: [Heros],
     },
     {
       label: 'Content',

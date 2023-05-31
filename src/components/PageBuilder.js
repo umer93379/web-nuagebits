@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Hero from '@/blocks/Hero';
+import Heros from '@/blocks/Heros';
 import RecentArticles from '../blocks/RecentArticles';
 import ContentImage from '../blocks/ContentImage';
 import Perks from '../blocks/Perks';
@@ -13,6 +14,8 @@ export default function PageBuilder({ blocks, preview = false }) {
       {blocks &&
         blocks.map((block, i) => {
           switch (block.type) {
+            case 'hero_slider':
+              return <Heros key={i} data={block} />;
             case 'hero':
               return <Hero key={i} data={block} />;
             case 'recentArticles':
