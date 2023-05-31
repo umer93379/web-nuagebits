@@ -6,7 +6,7 @@ title: Home Page
 permalink: /
 thumbnail: ""
 blocks:
-  - variant: centered
+  - variant: full
     title: Edge Base Template
     content: |-
       ## The most advanced starter for Gatsby & Netlify CMS.
