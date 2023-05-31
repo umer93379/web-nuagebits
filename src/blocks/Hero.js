@@ -14,6 +14,7 @@ export default function Hero({ data }) {
     <Parallax
         bgImage={bgImage}
         bgImageAlt={data?.bg_photo?.alt}
+        disabled={data?.bg_photo?.enable_parallax === true}
     >
     <section
       className={clsx(

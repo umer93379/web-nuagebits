@@ -26,6 +26,7 @@ export const backgroundImageField = (name = 'bg_image', fieldName = 'bg_photo') 
   fields: [
     { label: 'BG Image', name, widget: 'image', required: false },
     { label: 'Alt', name: 'bg_alt', widget: 'string', required: false },
+    { label: 'Enable Parallax', name: 'enable_parallax', widget: 'boolean', required: false },
   ],
 });
 
