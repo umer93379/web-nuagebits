@@ -25,6 +25,8 @@ blocks:
     columns:
       - title: Manual Initialization
         content: Ditch yaml for CMS configuration, use JS instead
+        photo:
+          image: /img/4000_2_01.jpg
       - title: Support For Local Development
         content: Develop & test Netlify CMS configuration locally.
       - title: Integrated Forms
