@@ -46,6 +46,36 @@ blocks:
     bg_photo:
       bg_image: /img/tezos-wpn1xnccgpw-unsplash.jpg
       enable_parallax: true
+  - type: content_image
+    variant: default
+    title: Pre configured UI Components for your use.
+    content: |-
+      * C﻿ompany Settings
+      * M﻿ain navigation settings
+      * F﻿ooter navigation settings
+      * S﻿ocial Media & contacts.
+    buttons:
+      - button:
+          variant: button
+          content: Get Started
+          url: /get-started
+    photo:
+      image: /img/layers.png
+      alt: Layers
+    bg_photo:
+      bg_image: /img/white_wood.jpg
+      enable_parallax: true
+  - type: perks
+    title: Our services includes
+    content: T﻿hese are dummy services you can edit them as per your need.
+    bg_photo:
+      bg_image: /img/background.jpg
+      enable_parallax: true
+    columns:
+      - title: Madhuri Dixit
+        content: T﻿his is some dummy content
+        show_popup: true
+        permalink: /madhuri/
 seo:
   ogimage: /img/4000_2_01.jpg
 ---
