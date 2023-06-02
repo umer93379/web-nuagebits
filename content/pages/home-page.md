@@ -41,6 +41,11 @@ blocks:
           url: /my-repo
     bg_photo:
       bg_image: /img/white_wood.jpg
+  - type: content
+    content: "# Hassle free starter."
+    bg_photo:
+      bg_image: /img/tezos-wpn1xnccgpw-unsplash.jpg
+      enable_parallax: true
 seo:
   ogimage: /img/4000_2_01.jpg
 ---
