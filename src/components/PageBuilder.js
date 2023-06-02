@@ -95,7 +95,7 @@ export const query = graphql`
               childImageSharp {
                 gatsbyImageData(
                   width: 2480
-                  quality: 72
+                  quality: 100
                   placeholder: DOMINANT_COLOR
                   formats: [AUTO, WEBP, AVIF]
                 )
@@ -114,6 +114,22 @@ export const query = graphql`
               }
             }
           }
+        }
+      }
+      columns {
+        title
+        content
+        photo{
+          image {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 800
+                  quality: 72
+                  placeholder: DOMINANT_COLOR
+                  formats: [AUTO, WEBP, AVIF]
+                )
+              }
+            }
         }
       }
     }

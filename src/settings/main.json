@@ -1,9 +1,19 @@
 {
   "nav": [
     {
-      "name": "Documentation",
-      "permalink": "https://github.com/clean-commit/gatsby-starter-henlo",
+      "name": "Home",
+      "permalink": "/",
       "type": "default"
+    },
+    {
+      "name": "Github",
+      "permalink": "https://github.com/processton-io/edge-base",
+      "type": "default"
+    },
+    {
+      "name": "Get Started",
+      "permalink": "/get-started",
+      "type": "button"
     }
   ],
   "title": "Edge Base",

@@ -25,12 +25,12 @@ export default function ContentImage({ data }) {
               { 'md:flex-row': !isReversed },
             )}
           >
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 text-center">
               {data?.photo?.image && (
                 <Image
                   src={data?.photo?.image}
                   alt={data?.photo?.alt}
-                  className="w-full"
+                  className="w-72"
                 />
               )}
             </div>

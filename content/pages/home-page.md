@@ -10,23 +10,37 @@ blocks:
     heros:
       - hero:
           variant: full
-          title: Edge-Base
-          content: Next generation template for your website.
-          photo:
-            image: /img/goal.png
+          title: Edge Template
+          content: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           buttons:
             - button:
-                variant: default
+                variant: button
                 content: Get Started
                 url: /get-started
           hero_photo:
             hero_image: /img/goal.png
+            alt: "Hero Slider Photo"
           hero_bg_photo:
-            hero_bg_image: ""
+            hero_bg_image: "/img/white_wood.jpg"
+            enable_parallax: false
+      - hero:
+          variant: full
+          title: For Your Next Generation Website
+          content: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          buttons:
+            - button:
+                variant: button
+                content: Get Started
+                url: /get-started
+          hero_photo:
+            hero_image: /img/goal.png
+            alt: "Hero Slider Photo"
+          hero_bg_photo:
+            hero_bg_image: "/img/white_wood.jpg"
             enable_parallax: false
   - type: hero
     variant: default
-    title: B﻿uild 3.0
+    title: Its Fast and Easy
     content: |-
       # website in 2 steps
 
@@ -41,21 +55,16 @@ blocks:
           variant: button
           content: Start Building Now
           url: /my-repo
-    bg_photo:
-      bg_image: /img/white_wood.jpg
   - type: content
     content: "# Hassle free starter."
-    bg_photo:
-      bg_image: /img/tezos-wpn1xnccgpw-unsplash.jpg
-      enable_parallax: true
   - type: content_image
     variant: default
     title: Pre configured UI Components for your use.
     content: |-
-      * C﻿ompany Settings
-      * M﻿ain navigation settings
-      * F﻿ooter navigation settings
-      * S﻿ocial Media & contacts.
+      * Company Settings
+      * Main navigation settings
+      * Footer navigation settings
+      * Social Media & contacts.
     buttons:
       - button:
           variant: button
@@ -68,18 +77,21 @@ blocks:
       bg_image: /img/white_wood.jpg
       enable_parallax: true
   - type: perks
-    title: Our services includes
-    content: T﻿hese are dummy services you can edit them as per your need.
-    bg_photo:
-      bg_image: /img/background.jpg
-      enable_parallax: true
+    title: Technology Stack
+    content: ""
     columns:
-      - title: Madhuri Dixit
-        content: T﻿his is some dummy content
-        show_popup: true
-        permalink: /madhuri/
+      - title: React
+        content: open-source JavaScript framework and library
+        show_popup: false
+        permalink: /reactjs/
         photo:
-          image: /img/4000_2_01.jpg
+          image: /img/white_wood.jpg
+      - title: Gatsby
+        content: open source framework with performance, scalability and security built-in.
+        show_popup: false
+        permalink: /reactjs/
+        photo:
+          image: /img/white_wood.jpg
 seo:
   ogimage: /img/4000_2_01.jpg
 ---

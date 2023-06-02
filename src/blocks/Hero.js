@@ -7,7 +7,7 @@ import Text from '../components/UI/Text'
 import Image from '../resolvers/Image'
 
 export default function Hero({ data }) {
-  console.log(data)
+  
   const isCentered = data?.variant === 'centered'
   const isFull = data?.variant === 'full'
   
@@ -34,7 +34,7 @@ export default function Hero({ data }) {
           },
         )}
       >
-        <div className='container mx-auto flex'>
+        <div className='container mx-auto max-w-screen-xl flex'>
           <Container className={`lg:w-2/3`}>
             {data?.title && (
               <h1
