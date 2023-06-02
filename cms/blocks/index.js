@@ -12,7 +12,7 @@ const Config = {
       label: 'Hero Slider',
       name: 'hero_slider',
       widget: 'list',
-      fields: [Heros],
+      fields: [backgroundImageField(), Heros],
     },
     {
       label: 'Content',
