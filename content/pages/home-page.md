@@ -22,8 +22,8 @@ blocks:
           hero_photo:
             hero_image: /img/goal.png
           hero_bg_photo:
-            hero_bg_image: /img/hero-bg.jpg
-            enable_parallax: true
+            hero_bg_image: ""
+            enable_parallax: false
   - type: hero
     variant: default
     title: B﻿uild 3.0
