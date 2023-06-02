@@ -79,8 +79,8 @@ export const Hero = {
     Title,
     Content,
     Buttons,
-    ImageField(),
-    backgroundImageField(),
+    ImageField('hero_image', 'hero_photo'),
+    backgroundImageField('hero_bg_image', 'hero_bg_photo'),
     VariantField('default', ['default', 'centered', 'full']),
   ],
 };

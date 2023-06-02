@@ -6,17 +6,21 @@ import Carousel from 're-carousel'
 export default function Heros({ data }) {
   
   return (
-    <div className='h-screen'>
-      <Carousel loop auto>
-        {data?.heros && (
-          data?.heros?.map((block, i) => {
-            block.hero.variant = 'full'
-              return (
-                <Hero key={i} data={block.hero} />
-              )
-          })
-        )}
-      </Carousel>
+    <div className={clsx({'h-screen': data?.heros.length > 1 })}>
+      {data?.heros && (
+          data?.heros.length > 1 ? (
+            <Carousel loop auto>
+              {data?.heros?.map((block, i) => {
+                block.hero.variant = "full"
+                return (
+                  <Hero key={i} data={block.hero} />
+                )
+              })}
+            </Carousel>
+          ) : (
+            <Hero key={`0`} data={data?.heros[0].hero} />
+          )
+      )}
     </div>
   )
 

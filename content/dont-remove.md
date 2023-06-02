@@ -2,45 +2,80 @@
 id: dont-remove
 type: page
 layout: page-builder
-title: "Dont Remove"
-permalink: /dont-remove/
+title: Home Page
+permalink: /
 thumbnail: ""
 blocks:
+  - type: hero_slider
+    heros:
+      - hero:
+          variant: default
+          title: Edge-Base
+          content: Next generation template for your website.
+          hero_photo:
+            image: /img/goal.png
+          buttons:
+            - button:
+                variant: default
+                content: Get Started
+                url: /get-started
+          hero_bg_photo:
+            bg_image: /img/track-bg.jpg
+            enable_parallax: true
   - type: hero
     variant: default
-    title: Edge-Base Template
-    content: Edge based starter for your next website
-    bg_photo:
-      bg_image: /img/background.jpg
-      bg_alt: Get Edge now
-      enable_parallax: true
+    title: Build 3.0
+    content: |-
+      # website in 2 steps
+
+      1. ### Extend the repo 
+      2. ### deploy at netlify
+
+      ### Not just fast; its the **fastest website**.
     photo:
-      image: /img/goal.png
-      alt: Goal
+      image: /img/4000_2_01.jpg
     buttons:
       - button:
           variant: button
-          content: Get Started Now
-          url: /get-started-now
-  - type: content
-    content: Edge based starter for your next website
-    photo:
-      image: /img/layers.png
-      alt: Layers
+          content: Start Building Now
+          url: /my-repo
     bg_photo:
       bg_image: /img/white_wood.jpg
-      bg_alt: White wall
+  - type: content
+    content: "# Hassle free starter."
+    bg_photo:
+      bg_image: /img/tezos-wpn1xnccgpw-unsplash.jpg
       enable_parallax: true
   - type: content_image
-    variant: reversed
-    title: Preconfigured
-    content: Preconfigured Elements
+    variant: default
+    title: Pre configured UI Components for your use.
+    content: |-
+      * Company Settings
+      * Main navigation settings
+      * Footer navigation settings
+      * Social Media & contacts.
+    buttons:
+      - button:
+          variant: button
+          content: Get Started
+          url: /get-started
     photo:
       image: /img/layers.png
       alt: Layers
     bg_photo:
       bg_image: /img/white_wood.jpg
-      bg_alt: White Wall
+      enable_parallax: true
+  - type: perks
+    title: Our services includes
+    content: These are dummy services you can edit them as per your need.
+    bg_photo:
+      bg_image: /img/background.jpg
+      enable_parallax: true
+    columns:
+      - title: Madhuri Dixit
+        content: This is some dummy content
+        show_popup: true
+        permalink: /madhuri/
 seo:
   ogimage: /img/4000_2_01.jpg
 ---

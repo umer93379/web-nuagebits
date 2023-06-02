@@ -61,25 +61,9 @@ export const query = graphql`
       }
       photo {
         image {
-          full: childImageSharp {
-            gatsbyImageData(
-              width: 1880
-              quality: 72
-              placeholder: DOMINANT_COLOR
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-          fallback: childImageSharp {
+          childImageSharp {
             gatsbyImageData(
               width: 800
-              quality: 72
-              placeholder: DOMINANT_COLOR
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-          thumbnail: childImageSharp {
-            gatsbyImageData(
-              width: 400
               quality: 72
               placeholder: DOMINANT_COLOR
               formats: [AUTO, WEBP, AVIF]
@@ -88,12 +72,50 @@ export const query = graphql`
         }
       }
       buttons {
-          button {
-            content
-            url
-            variant
+        button {
+          content
+          url
+          variant
+        }
+      }
+      heros {
+        hero {
+          title
+          content
+          variant
+          buttons {
+            button {
+              content
+              url
+              variant
+            }
+          }
+          hero_bg_photo {
+            bg_image {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 2480
+                  quality: 72
+                  placeholder: DOMINANT_COLOR
+                  formats: [AUTO, WEBP, AVIF]
+                )
+              }
+            }
+          }
+          hero_photo {
+            image {
+              childImageSharp {
+                gatsbyImageData(
+                  width: 800
+                  quality: 72
+                  placeholder: DOMINANT_COLOR
+                  formats: [AUTO, WEBP, AVIF]
+                )
+              }
+            }
           }
         }
+      }
     }
   }
 `;

@@ -7,12 +7,24 @@ const Config = {
   name: 'blocks',
   widget: 'list',
   types: [
-    Hero,
+    {
+      label: 'Hero',
+      name: 'hero',
+      widget: 'object',
+      fields: [
+        Title,
+        Content,
+        Buttons,
+        ImageField(),
+        backgroundImageField(),
+        VariantField('default', ['default', 'centered', 'full']),
+      ],
+    },
     {
       label: 'Hero Slider',
       name: 'hero_slider',
       widget: 'list',
-      fields: [Heros, backgroundImageField()],
+      fields: [Heros],
     },
     {
       label: 'Content',
