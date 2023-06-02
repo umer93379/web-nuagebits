@@ -3,7 +3,7 @@ id: JUJDCFVbWC
 type: page
 layout: page-builder
 title: "Sponsored "
-permalink: /
+permalink: /sponsored/
 thumbnail: ""
 blocks:
   - type: hero
