@@ -12,7 +12,7 @@ const Config = {
       label: 'Hero Slider',
       name: 'hero_slider',
       widget: 'list',
-      fields: [backgroundImageField(), Heros],
+      fields: [Heros, backgroundImageField()],
     },
     {
       label: 'Content',
@@ -26,10 +26,10 @@ const Config = {
       widget: 'object',
       summary: '{{fields.title}}',
       fields: [
-        ImageField(),
         Title,
         Content,
         Buttons,
+        ImageField(),
         backgroundImageField(),
         VariantField('default', ['default', 'reversed']),
       ],

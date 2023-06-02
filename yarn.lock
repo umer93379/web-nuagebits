@@ -14287,6 +14287,13 @@ rc@1.2.8, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+re-carousel@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/re-carousel/-/re-carousel-2.4.0.tgz#636ec0c8cf00b012a845d37b6f7ab1b52569806e"
+  integrity sha512-xogK+SLWHXdzEfexSC2UQWk3m6uxL3edqrAMseslEIQ/hjtPHkMLdFToI5oMptUR1t9v6Jqo/vu5mQGUs/q5cg==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-aria-menubutton@^7.0.0:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/react-aria-menubutton/-/react-aria-menubutton-7.0.3.tgz#9f3c96e8f0b9469dc1d5dab7cf244b73069f2882"
