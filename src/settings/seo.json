@@ -1,11 +1,11 @@
 {
   "separator": "|",
-  "baseTitle": "Henlo.",
-  "keyword": "gatsby-starter, blazing fast static site",
+  "baseTitle": "Edge-Base Edge template",
+  "keyword": "gatsby-starter, blazing fast static site ,edge site",
   "lang": "en",
-  "title": "The most advanced starter for Gatsby & Netlify CMS.",
-  "themeColor": "#000",
-  "image": "/img/henlo-cover.png",
+  "title": "Edge based starter for you next website.",
+  "themeColor": "",
+  "image": "/img/4000_2_01.jpg",
   "twitterHandle": "@cleancommit",
   "description": "Think lightweight WordPress. Extensible, block based starter for Netlify CMS. Built with performance in mind, styled with TailwindCSS. "
 }
