@@ -45,62 +45,7 @@ export const query = graphql`
     blocks {
       type
       title
-      content
-      columns {
-        title
-        content
-      }
-      photo {
-        image {
-          childImageSharp {
-            gatsbyImageData(
-              width: 800
-              quality: 72
-              placeholder: DOMINANT_COLOR
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-        alt
-      }
-      heros {
-        hero {
-          title
-          photo {
-            image {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 800
-                  quality: 72
-                  placeholder: DOMINANT_COLOR
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-            }
-            alt
-          }
-          bg_photo {
-            bg_image {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 2480
-                  quality: 72
-                  placeholder: DOMINANT_COLOR
-                  formats: [AUTO, WEBP, AVIF]
-                )
-              }
-            }
-          }
-        }
-      }
-      variant
-      buttons {
-        button {
-          content
-          url
-          variant
-        }
-      }
+      
     }
   }
 `;
