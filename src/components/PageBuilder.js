@@ -45,7 +45,55 @@ export const query = graphql`
     blocks {
       type
       title
-      
+      content
+      variant
+      bg_photo {
+        bg_image {
+          childImageSharp {
+            gatsbyImageData(
+              width: 2480
+              quality: 72
+              placeholder: DOMINANT_COLOR
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
+      }
+      photo {
+        image {
+          full: childImageSharp {
+            gatsbyImageData(
+              width: 1880
+              quality: 72
+              placeholder: DOMINANT_COLOR
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+          fallback: childImageSharp {
+            gatsbyImageData(
+              width: 800
+              quality: 72
+              placeholder: DOMINANT_COLOR
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+          thumbnail: childImageSharp {
+            gatsbyImageData(
+              width: 400
+              quality: 72
+              placeholder: DOMINANT_COLOR
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
+      }
+      buttons {
+          button {
+            content
+            url
+            variant
+          }
+        }
     }
   }
 `;
