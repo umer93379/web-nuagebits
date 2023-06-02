@@ -67,18 +67,21 @@ blocks:
       bg_image: /img/white_wood.jpg
       enable_parallax: true
   - type: perks
-    title: Our services includes
-    content: These are dummy services you can edit them as per your need.
-    bg_photo:
-      bg_image: /img/background.jpg
-      enable_parallax: true
+    title: Technology Stack
+    content: ""
     columns:
-      - title: Madhuri Dixit
-        content: This is some dummy content
-        show_popup: true
-        permalink: /madhuri/
+      - title: React
+        content: open-source JavaScript framework and library
+        show_popup: false
+        permalink: /reactjs/
         photo:
-          image: /img/4000_2_01.jpg
+          image: /img/white_wood.jpg
+      - title: Gatsby
+        content: open source framework with performance, scalability and security built-in.
+        show_popup: false
+        permalink: /reactjs/
+        photo:
+          image: /img/white_wood.jpg
 seo:
   ogimage: /img/4000_2_01.jpg
 ---

@@ -2,8 +2,8 @@
 id: JUJDCFVbWC
 type: page
 layout: page-builder
-title: Home Page
-permalink: /
+title: Sponsered by
+permalink: /sponsered-by
 thumbnail: ""
 blocks:
   - type: hero_slider
