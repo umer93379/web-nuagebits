@@ -2,8 +2,8 @@
 id: dont-remove
 type: page
 layout: page-builder
-title: Home Page
-permalink: /
+title: Scheema Page
+permalink: /dont-remove
 thumbnail: ""
 blocks:
   - type: hero_slider
@@ -12,26 +12,28 @@ blocks:
           variant: default
           title: Edge-Base
           content: Next generation template for your website.
-          hero_photo:
+          photo:
             image: /img/goal.png
           buttons:
             - button:
                 variant: default
                 content: Get Started
                 url: /get-started
+          hero_photo:
+            hero_image: /img/goal.png
           hero_bg_photo:
-            bg_image: /img/track-bg.jpg
+            hero_bg_image: /img/hero-bg.jpg
             enable_parallax: true
   - type: hero
     variant: default
-    title: Build 3.0
+    title: B﻿uild 3.0
     content: |-
       # website in 2 steps
 
       1. ### Extend the repo 
       2. ### deploy at netlify
 
-      ### Not just fast; its the **fastest website**.
+      ### N﻿ot just fast; its the **fastest website**.
     photo:
       image: /img/4000_2_01.jpg
     buttons:
@@ -50,10 +52,10 @@ blocks:
     variant: default
     title: Pre configured UI Components for your use.
     content: |-
-      * Company Settings
-      * Main navigation settings
-      * Footer navigation settings
-      * Social Media & contacts.
+      * C﻿ompany Settings
+      * M﻿ain navigation settings
+      * F﻿ooter navigation settings
+      * S﻿ocial Media & contacts.
     buttons:
       - button:
           variant: button
@@ -67,13 +69,13 @@ blocks:
       enable_parallax: true
   - type: perks
     title: Our services includes
-    content: These are dummy services you can edit them as per your need.
+    content: T﻿hese are dummy services you can edit them as per your need.
     bg_photo:
       bg_image: /img/background.jpg
       enable_parallax: true
     columns:
       - title: Madhuri Dixit
-        content: This is some dummy content
+        content: T﻿his is some dummy content
         show_popup: true
         permalink: /madhuri/
 seo:

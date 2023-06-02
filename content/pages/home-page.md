@@ -9,7 +9,7 @@ blocks:
   - type: hero_slider
     heros:
       - hero:
-          variant: default
+          variant: full
           title: Edge-Base
           content: Next generation template for your website.
           photo:
@@ -19,13 +19,11 @@ blocks:
                 variant: default
                 content: Get Started
                 url: /get-started
-          bg_photo:
-            bg_image: /img/track-bg.jpg
-            enable_parallax: true
           hero_photo:
             hero_image: /img/goal.png
           hero_bg_photo:
             hero_bg_image: /img/hero-bg.jpg
+            enable_parallax: true
   - type: hero
     variant: default
     title: B﻿uild 3.0

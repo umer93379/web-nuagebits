@@ -15,7 +15,7 @@ export default function Perks({ data }) {
         bgImageAlt={data?.bg_photo?.alt}
         disabled={data?.bg_photo?.enable_parallax === true}
     >
-      <section className='py-10 dark:bg-[#0d0d10] lg:py-20 '>
+      <section className='py-10 bg-white bg-opacity-20 dark:bg-[#0d0d10] lg:py-20 '>
         
         <Container>
           {data?.title && (

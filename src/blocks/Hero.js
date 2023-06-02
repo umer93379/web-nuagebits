@@ -13,7 +13,7 @@ export default function Hero({ data }) {
   
   const bgImage =  data?.bg_photo ? 
     (typeof data?.bg_photo?.bg_image === 'string' ? data?.bg_photo?.bg_image : data?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src)
-   : (typeof data?.hero_bg_photo?.bg_image === 'string' ? data?.hero_bg_photo?.bg_image : data?.hero_bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src);
+   : (typeof data?.hero_bg_photo?.hero_bg_image === 'string' ? data?.hero_bg_photo?.hero_bg_image : data?.hero_bg_photo?.hero_bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src);
 
   return (
     <div className='transition-all duration-1000'>
@@ -27,7 +27,7 @@ export default function Hero({ data }) {
         className={clsx(
           'py-12 bg-white bg-opacity-20 dark:bg-black dark:text-white lg:py-24 relative min-h-72',
           {
-            'flex min-h-screen items-center': isFull,
+            'flex min-h-screen items-center ': isFull,
           },
           {
             'flex justify-center py-20 text-center lg:py-44': isCentered,
@@ -63,10 +63,10 @@ export default function Hero({ data }) {
                   className="w-72 rounded-md"
                 />
             </div>
-          ) : data?.hero_photo && data?.hero_photo?.image && (
+          ) : data?.hero_photo && data?.hero_photo?.hero_image && (
             <div className="lg:w-1/3 text-right">
                 <Image
-                  src={data?.hero_photo?.image}
+                  src={data?.hero_photo?.hero_image}
                   alt={data?.hero_photo?.alt}
                   className="w-72 rounded-md"
                 />

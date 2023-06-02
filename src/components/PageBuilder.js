@@ -91,7 +91,7 @@ export const query = graphql`
             }
           }
           hero_bg_photo {
-            bg_image {
+            hero_bg_image {
               childImageSharp {
                 gatsbyImageData(
                   width: 2480
@@ -103,7 +103,7 @@ export const query = graphql`
             }
           }
           hero_photo {
-            image {
+            hero_image {
               childImageSharp {
                 gatsbyImageData(
                   width: 800
