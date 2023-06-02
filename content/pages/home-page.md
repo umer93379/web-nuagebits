@@ -71,8 +71,6 @@ blocks:
           variant: button
           content: Start Building Now
           url: /my-repo
-  - type: content
-    content: "# Hassle free starter."
   - type: content_image
     variant: default
     title: Pre configured UI Components for your use.
@@ -87,7 +85,7 @@ blocks:
           content: Get Started
           url: /get-started
     photo:
-      image: /img/layers.png
+      image: /img/heroes.png
       alt: Layers
     bg_photo:
       bg_image: /img/white_wood.jpg
