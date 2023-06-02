@@ -78,6 +78,8 @@ blocks:
         content: T﻿his is some dummy content
         show_popup: true
         permalink: /madhuri/
+        photo:
+          image: /img/4000_2_01.jpg
 seo:
   ogimage: /img/4000_2_01.jpg
 ---
