@@ -11,7 +11,15 @@ blocks:
       - hero:
           variant: full
           title: Edge Template
-          content: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          content: Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
           buttons:
             - button:
                 variant: button
@@ -19,14 +27,22 @@ blocks:
                 url: /get-started
           hero_photo:
             hero_image: /img/goal.png
-            alt: "Hero Slider Photo"
+            alt: Hero Slider Photo
           hero_bg_photo:
-            hero_bg_image: "/img/white_wood.jpg"
+            hero_bg_image: /img/white_wood.jpg
             enable_parallax: false
       - hero:
           variant: full
           title: For Your Next Generation Website
-          content: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          content: Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
           buttons:
             - button:
                 variant: button
@@ -34,9 +50,9 @@ blocks:
                 url: /get-started
           hero_photo:
             hero_image: /img/goal.png
-            alt: "Hero Slider Photo"
+            alt: Hero Slider Photo
           hero_bg_photo:
-            hero_bg_image: "/img/white_wood.jpg"
+            hero_bg_image: /img/white_wood.jpg
             enable_parallax: false
   - type: hero
     variant: default
@@ -85,13 +101,14 @@ blocks:
         show_popup: false
         permalink: /reactjs/
         photo:
-          image: /img/white_wood.jpg
+          image: /img/pngegg.png
       - title: Gatsby
-        content: open source framework with performance, scalability and security built-in.
+        content: open source framework with performance, scalability and security
+          built-in.
         show_popup: false
         permalink: /reactjs/
         photo:
-          image: /img/white_wood.jpg
+          image: /img/gatsby.png
 seo:
   ogimage: /img/4000_2_01.jpg
 ---
