@@ -79,6 +79,15 @@ module.exports = {
         modulePath: `${__dirname}/cms/cms.js`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: process.env.GATSBY_APP_URL || 'http://localhost:8000',
+        sitemap: (process.env.GATSBY_APP_URL || 'http://localhost:8000') + '/sitemap.xml',
+        policy: [{userAgent: '*', disallow: ['/dont-remove']}]
+      }
+    },
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
