@@ -19,9 +19,9 @@ export default function VisualImageWithHeading({ data }) {
           disabled={ (data?.bg_photo && data?.bg_photo?.enable_parallax === true) || (data?.hero_bg_photo && data?.hero_bg_photo?.enable_parallax === true)}
         >
             <section className={clsx({'h-screen': data?.height === 'full' ,"bg-white bg-opacity-50 dark:bg-gray-900  items-center my-auto flex": true })}>
-                <section class=" mx-auto">
-                    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-                        <div class="mr-auto place-self-center lg:col-span-7">
+                <section className=" mx-auto">
+                    <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                        <div className="mr-auto place-self-center lg:col-span-7">
                             {data?.title && (<h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">{data?.title}</h1>)}
                             {data?.content && (<p className=" mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">{data?.content}</p>)}
                             {data?.buttons && (
@@ -33,7 +33,7 @@ export default function VisualImageWithHeading({ data }) {
                                 </div>
                             )}
                         </div>
-                        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex justify-right align-right text-right">
+                        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex justify-right align-right text-right">
                             { data?.photo && (<Image
                                 src={data?.photo?.image}
                                 alt={data?.photo?.alt}
