@@ -34,7 +34,7 @@ export default function Hero({ data }) {
           >
           <section
             className={clsx(
-              'py-12 bg-white bg-opacity-20 dark:bg-black dark:text-white lg:py-24 relative min-h-72',
+              'py-12 bg-white bg-opacity-50 dark:bg-black dark:text-white lg:py-24 relative min-h-72',
               {
                 'flex min-h-screen items-center ': isFull,
               },
@@ -65,7 +65,7 @@ export default function Hero({ data }) {
                 )}
               </Container>
               {data?.photo && data?.photo?.image ? (
-                <div className="lg:w-1/3 text-right">
+                <div className="lg:w-1/3 text-center">
                     <Image
                       src={data?.photo?.image}
                       alt={data?.photo?.alt}
@@ -73,7 +73,7 @@ export default function Hero({ data }) {
                     />
                 </div>
               ) : data?.hero_photo && data?.hero_photo?.hero_image && (
-                <div className="lg:w-1/3 text-right">
+                <div className="lg:w-1/3 text-center">
                     <Image
                       src={data?.hero_photo?.hero_image}
                       alt={data?.hero_photo?.alt}

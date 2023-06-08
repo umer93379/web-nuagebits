@@ -2,7 +2,7 @@
 id: 44d0d78e-1f11-4f92-85ac-d144d60bb573
 type: post
 layout: post
-title: Philosophy behind Henlo.
+title: Philosophy behind Edge Base.
 permalink: /blog/hello-world/
 thumbnail: /img/tezos-wpn1xnccgpw-unsplash.jpg
 date: 2022-05-11T19:16:41.067Z

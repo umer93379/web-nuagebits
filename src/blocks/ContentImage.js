@@ -16,7 +16,7 @@ export default function ContentImage({ data }) {
         bgImageAlt={data?.bg_photo?.alt}
         disabled={data?.bg_photo?.enable_parallax === true}
     >
-      <section className="py-20 lg:py-32 bg-white bg-opacity-20">
+      <section className="py-20 lg:py-32 bg-white bg-opacity-50">
         <Container className="max-w-7xl">
           <div
             className={clsx(

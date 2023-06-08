@@ -7,7 +7,7 @@ title: About
 permalink: /about/
 blocks:
   - type: hero
-    title: About Henlo.
+    title: About Edge Base.
     content: >-
       ## Wilkommen meine hero!
 

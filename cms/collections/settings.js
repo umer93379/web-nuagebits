@@ -1,6 +1,6 @@
 import navigationField from '../fields/navigation-field';
 import socialField from '../fields/social-field';
-import { Title, ImageField } from '../fields';
+import { Title, Content, ImageField } from '../fields';
 
 const collection = {
   name: 'settings',
@@ -42,6 +42,7 @@ const collection = {
       },
       fields: [
         Title,
+        Content,
         ImageField(), 
         navigationField()],
     },

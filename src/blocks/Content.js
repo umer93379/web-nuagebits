@@ -11,7 +11,7 @@ export default function Content({ data }) {
         bgImageAlt={data?.bg_photo?.alt}
         disabled={data?.bg_photo?.enable_parallax === true}
     >
-      <section className='py-10 lg:py-16 bg-white bg-opacity-20'>
+      <section className='py-10 lg:py-16 bg-white bg-opacity-50'>
         <Container>
           {data?.content && (
             <Text className='mx-auto w-full max-w-6xl'>{data?.content}</Text>
