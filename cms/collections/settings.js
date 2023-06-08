@@ -61,7 +61,7 @@ const collection = {
             { label: 'Bg Color', name: 'header_bg', default: '#FFFFFF', widget : 'color', required: true },
             { label: 'Text Default Color', name: 'header_text_default_color', default: '#000000', widget : 'color', required: true },
           ],
-        }
+        },
         { label: 'Header Bg', name: 'header_bg', default: '#FFFFFF', widget : 'color', required: true },
         { label: 'Header Text Default Color', name: 'header_text_default_color', default: '#000000', widget : 'color', required: true },
       ],
