@@ -1,4 +1,4 @@
-import { Buttons, Title, Content, VariantField, ImageField, Hero, Heros, backgroundImageField } from '../fields';
+import { Buttons, Title, Content, VariantField, ImageField, Hero, Heros, backgroundImageField, HeightField } from '../fields';
 
 import { PermalinkField } from '../fields/permalink-field';
 
@@ -11,32 +11,56 @@ const Config = {
       label: 'Hero',
       name: 'hero',
       widget: 'object',
+      summary: 'Hero {{fields.title}}',
       fields: [
         Title,
-        Content,
         Buttons,
         ImageField(),
         backgroundImageField(),
-        VariantField('default', ['default', 'centered', 'full']),
+        VariantField('default', ['default', 'visual_image_with_heading', 'full']),
+        HeightField('full', ['auto', 'full', 'little_less', 'half']),
+        Content,
+        {
+          label: 'Columns',
+          name: 'columns',
+          widget: 'list',
+          summary: '{{fields.title}}',
+          fields: [
+            Title,
+            ImageField()
+          ],
+        },
       ],
     },
     {
-      label: 'Hero Slider',
+      label: 'Slider',
       name: 'hero_slider',
       widget: 'list',
-      fields: [Heros],
+      summary: 'Slider {{fields.title}}',
+      fields: [
+        Title,
+        Heros,
+        VariantField('default', ['default']),
+        HeightField('default', ['auto', 'full', 'little_less', 'half'])
+      ],
     },
     {
       label: 'Content',
       name: 'content',
       widget: 'object',
-      fields: [Content, backgroundImageField()],
+      summary: 'Content {{fields.title}}',
+      fields: [
+        Title,
+        Content, 
+        VariantField('left-hand', ['left-hand','right-hand','centered']),
+        backgroundImageField()
+      ],
     },
     {
-      label: 'Content with Image',
+      label: 'CTA',
       name: 'content_image',
       widget: 'object',
-      summary: '{{fields.title}}',
+      summary: 'CTA {{fields.title}}',
       fields: [
         Title,
         Content,

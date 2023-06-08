@@ -12,7 +12,7 @@ const collection = {
       name: 'nav',
       file: 'src/settings/main.json',
       editor: {
-        preview: true,
+        preview: false,
       },
       fields: [
         Title,
@@ -40,7 +40,10 @@ const collection = {
       editor: {
         preview: false,
       },
-      fields: [navigationField()],
+      fields: [
+        Title,
+        ImageField(), 
+        navigationField()],
     },
     {
       label: 'Site Metadata & SEO Settings',

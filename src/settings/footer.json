@@ -1,0 +1,26 @@
+{
+  "nav": [
+    {
+      "name": "Home",
+      "permalink": "/",
+      "type": "default"
+    },
+    {
+      "name": "Github",
+      "permalink": "https://github.com/processton-io/edge-base",
+      "type": "default"
+    },
+    {
+      "name": "Get Started",
+      "permalink": "/get-started",
+      "type": "default"
+    }
+  ],
+  "title": "Edge Base",
+  "content": "Edge Base",
+  "photo": {
+    "image": "/img/4000_2_01.jpg",
+    "alt": "MY Logo"
+  },
+  "copyright": "2021-2022"
+}

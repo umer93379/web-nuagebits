@@ -47,6 +47,7 @@ export const query = graphql`
       title
       content
       variant
+      height
       bg_photo {
         bg_image {
           childImageSharp {
@@ -112,6 +113,22 @@ export const query = graphql`
                   formats: [AUTO, WEBP, AVIF]
                 )
               }
+            }
+          }
+          columns {
+            title
+            content
+            photo{
+              image {
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 150
+                      quality: 72
+                      placeholder: DOMINANT_COLOR
+                      formats: [AUTO, WEBP, AVIF]
+                    )
+                  }
+                }
             }
           }
         }

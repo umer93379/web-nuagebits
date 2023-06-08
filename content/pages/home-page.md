@@ -7,6 +7,7 @@ permalink: /
 thumbnail: ""
 blocks:
   - type: hero_slider
+    height: full
     heros:
       - hero:
           variant: full
@@ -31,8 +32,22 @@ blocks:
           hero_bg_photo:
             hero_bg_image: /img/white_wood.jpg
             enable_parallax: false
+          columns:
+            - title: React
+              content: open-source JavaScript framework and library
+              show_popup: false
+              permalink: /reactjs/
+              photo:
+                image: /img/pngegg.png
+            - title: Gatsby
+              content: open source framework with performance, scalability and security built-in.
+              show_popup: false
+              permalink: /reactjs/
+              photo:
+                image: /img/gatsby.png
       - hero:
-          variant: full
+          variant: visual_image_with_heading
+          height: full
           title: For Your Next Generation Website
           content: Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -54,7 +69,21 @@ blocks:
           hero_bg_photo:
             hero_bg_image: /img/white_wood.jpg
             enable_parallax: false
+          columns:
+            - title: React
+              content: open-source JavaScript framework and library
+              show_popup: false
+              permalink: /reactjs/
+              photo:
+                image: /img/pngegg.png
+            - title: Gatsby
+              content: open source framework with performance, scalability and security built-in.
+              show_popup: false
+              permalink: /reactjs/
+              photo:
+                image: /img/gatsby.png
   - type: hero
+    height: full
     variant: default
     title: Its Fast and Easy
     content: |-
@@ -66,11 +95,26 @@ blocks:
       ### N﻿ot just fast; its the **fastest website**.
     photo:
       image: /img/4000_2_01.jpg
+    bg_photo:
+      bg_image: /img/white_wood.jpg
     buttons:
       - button:
           variant: button
           content: Start Building Now
           url: /my-repo
+    columns:
+      - title: React
+        content: open-source JavaScript framework and library
+        show_popup: false
+        permalink: /reactjs/
+        photo:
+          image: /img/4000_2_01.jpg
+      - title: Gatsby
+        content: open source framework with performance, scalability and security built-in.
+        show_popup: false
+        permalink: /reactjs/
+        photo:
+          image: /img/gatsby.png
   - type: content_image
     variant: default
     title: Pre configured UI Components for your use.

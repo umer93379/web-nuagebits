@@ -21,6 +21,14 @@ export const VariantField = (initial, options = []) => ({
   options: options,
 });
 
+export const HeightField = (initial, options = []) => ({
+  label: 'Height',
+  name: 'height',
+  widget: 'select',
+  default: initial,
+  options: options,
+});
+
 
 export const ImageField = (name = 'image', fieldName = 'photo') => ({
   label: 'Image',
@@ -75,13 +83,15 @@ export const Hero = {
   label: 'Hero',
   name: 'hero',
   widget: 'object',
+  summary: 'Slide {{fields.title}}',
   fields: [
     Title,
-    Content,
     Buttons,
     ImageField('hero_image', 'hero_photo'),
     backgroundImageField('hero_bg_image', 'hero_bg_photo'),
-    VariantField('default', ['default', 'centered', 'full']),
+    VariantField('default', ['default', 'visual_image_with_heading', 'full']),
+    HeightField('default', ['auto', 'full', 'little_less', 'half']),
+    Content,
   ],
 };
 export const Heros = {
