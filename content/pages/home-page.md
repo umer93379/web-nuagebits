@@ -7,25 +7,21 @@ permalink: /
 thumbnail: ""
 blocks:
   - type: hero_slider
-    height: full
+    height: auto
     heros:
       - hero:
           variant: full
-          title: Edge Template
-          content: Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+          title: Why Salesforce?
+          content: Salesforce is a leading cloud-based customer relationship management
+            (CRM) platform that empowers businesses to optimize their sales,
+            marketing, and customer service operations. With its robust suite of
+            tools and capabilities, Salesforce enables organizations to
+            streamline processes, improve efficiency, and drive growth.
           buttons:
             - button:
                 variant: button
-                content: Get Started
-                url: /get-started
+                content: Get Started With Salesforce
+                url: /get-started-with-salesforce
           hero_photo:
             hero_image: /img/goal.png
             alt: Hero Slider Photo
@@ -40,51 +36,77 @@ blocks:
               photo:
                 image: /img/pngegg.png
             - title: Gatsby
-              content: open source framework with performance, scalability and security built-in.
+              content: open source framework with performance, scalability and security
+                built-in.
+              show_popup: false
+              permalink: /reactjs/
+              photo:
+                image: /img/gatsby.png
+          height: auto
+      - hero:
+          variant: full
+          height: auto
+          title: Why Salesforce?
+          content: The platform known for its robust features, scalability, and top-notch
+            security. With its multitenant architecture, Salesforce enables
+            businesses to leverage the power of a shared infrastructure while
+            maintaining data privacy and security.
+          buttons:
+            - button:
+                variant: button
+                content: Get Started With Salesfroce
+                url: /get-started-with-salesforce
+          hero_photo:
+            hero_image: /img/goal.png
+            alt: Hero Slider Photo
+          hero_bg_photo:
+            hero_bg_image: /img/white_wood.jpg
+            enable_parallax: false
+            bg_alt: ""
+          columns:
+            - title: React
+              content: open-source JavaScript framework and library
+              show_popup: false
+              permalink: /reactjs/
+              photo:
+                image: /img/pngegg.png
+            - title: Gatsby
+              content: open source framework with performance, scalability and security
+                built-in.
               show_popup: false
               permalink: /reactjs/
               photo:
                 image: /img/gatsby.png
       - hero:
           variant: visual_image_with_heading
-          height: full
-          title: For Your Next Generation Website
-          content: Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+          height: auto
+          title: Want to begin with Salesforce?
           buttons:
             - button:
                 variant: button
-                content: Get Started
-                url: /get-started
+                content: Contact Us
+          hero_bg_photo:
+            enable_parallax: false
+            hero_bg_image: /img/white_wood.jpg
           hero_photo:
             hero_image: /img/goal.png
-            alt: Hero Slider Photo
-          hero_bg_photo:
-            hero_bg_image: /img/white_wood.jpg
-            enable_parallax: false
-          columns:
-            - title: React
-              content: open-source JavaScript framework and library
-              show_popup: false
-              permalink: /reactjs/
-              photo:
-                image: /img/pngegg.png
-            - title: Gatsby
-              content: open source framework with performance, scalability and security built-in.
-              show_popup: false
-              permalink: /reactjs/
-              photo:
-                image: /img/gatsby.png
-  - type: hero
-    height: full
+          content: Let's explore how Salesforce can be tailored to meet your specific
+            needs and drive your business forward. Together, we can unlock the
+            full potential of this robust CRM platform and achieve your desired
+            outcomes.
+    title: ""
     variant: default
+  - buttons:
+      - button:
+          variant: button
+          content: Start Building Now
+          url: /my-repo
+    variant: default
+    height: full
+    photo:
+      image: /img/4000_2_01.jpg
+    bg_photo:
+      bg_image: /img/white_wood.jpg
     title: Its Fast and Easy
     content: |-
       # website in 2 steps
@@ -93,15 +115,7 @@ blocks:
       2. ### deploy at netlify
 
       ### N﻿ot just fast; its the **fastest website**.
-    photo:
-      image: /img/4000_2_01.jpg
-    bg_photo:
-      bg_image: /img/white_wood.jpg
-    buttons:
-      - button:
-          variant: button
-          content: Start Building Now
-          url: /my-repo
+    type: hero
     columns:
       - title: React
         content: open-source JavaScript framework and library
@@ -110,7 +124,8 @@ blocks:
         photo:
           image: /img/4000_2_01.jpg
       - title: Gatsby
-        content: open source framework with performance, scalability and security built-in.
+        content: open source framework with performance, scalability and security
+          built-in.
         show_popup: false
         permalink: /reactjs/
         photo:
