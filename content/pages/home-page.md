@@ -21,7 +21,7 @@ blocks:
             - button:
                 variant: button
                 content: Get Started With Salesforce
-                url: /get-started-with-salesforce
+                url: /get-started
           hero_photo:
             hero_image: /img/goal.png
             alt: Hero Slider Photo
@@ -55,7 +55,7 @@ blocks:
             - button:
                 variant: button
                 content: Get Started With Salesfroce
-                url: /get-started-with-salesforce
+                url: /get-started
           hero_photo:
             hero_image: /img/goal.png
             alt: Hero Slider Photo
@@ -78,13 +78,14 @@ blocks:
               photo:
                 image: /img/gatsby.png
       - hero:
-          variant: visual_image_with_heading
+          variant: full
           height: auto
           title: Want to begin with Salesforce?
           buttons:
             - button:
                 variant: button
                 content: Contact Us
+                url: /get-started
           hero_bg_photo:
             enable_parallax: false
             hero_bg_image: /img/white_wood.jpg
