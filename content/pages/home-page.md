@@ -108,7 +108,7 @@ blocks:
       image: /img/4000_2_01.jpg
     bg_photo:
       bg_image: /img/white_wood.jpg
-    title: Break Into The House Of Salesforce Consultancy
+    title: Break Into The House Of Salesforce Consultancy To
     content: |-
       1. ### Redeem your business
       2. ### Protract your data integrity
@@ -131,12 +131,17 @@ blocks:
           image: /img/gatsby.png
   - type: content_image
     variant: default
-    title: Pre configured UI Components for your use.
+    title: Our consultancy in technical terms provides
     content: |-
-      * Company Settings
-      * Main navigation settings
-      * Footer navigation settings
-      * Social Media & contacts.
+      * Certified developer
+      * Sales & Service Clouds processes
+      * Data modeling
+      * Platform custom development
+      * Lightning components
+      * Process automation
+      * Integrations
+      * Deployments and version controlling
+      * Salesforce Community portal
     buttons:
       - button:
           variant: button
