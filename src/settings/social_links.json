@@ -32,18 +32,18 @@
     },
     {
       "show_in_header": true,
-      "permalink": "lorem@ipsom.com",
+      "permalink": "umer93379@gmail.com",
       "platform": "email",
-      "show_in_footer": false
+      "show_in_footer": true
     },
     {
       "show_in_header": true,
-      "permalink": "+00 000 0000000",
+      "permalink": "+92 308 6773308",
       "platform": "phone",
-      "show_in_footer": false
+      "show_in_footer": true
     },
     {
-      "show_in_header": true,
+      "show_in_header": false,
       "permalink": "09:00 AM to 10:00 PM (Monday to Friday)",
       "platform": "calendar",
       "show_in_footer": false
