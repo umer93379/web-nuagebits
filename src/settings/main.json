@@ -1,22 +1,17 @@
 {
   "nav": [
     {
-      "name": "Home",
-      "permalink": "/",
-      "type": "default"
-    },
-    {
       "name": "Github",
       "permalink": "https://github.com/processton-io/edge-base",
       "type": "default"
     },
     {
-      "name": "Get Started",
+      "name": "Contact Us",
       "permalink": "/get-started",
       "type": "button"
     }
   ],
-  "title": "Edge Base",
+  "title": "Nuagebits, a Salesforce consultancy",
   "photo": {
     "image": "/img/4000_2_01.jpg",
     "alt": "MY Logo"
