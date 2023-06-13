@@ -131,9 +131,9 @@ blocks:
           image: /img/gatsby.png
   - type: content_image
     variant: default
-    title: Our tech stack provides consultancy
+    title: Our tech stack includes consultancy for
     content: |-
-      * #### Sales & Service Clouds processes
+      * #### Sales & Service Clouds
       * #### Data modeling
       * #### Platform custom development
       * #### Lightning components
@@ -141,14 +141,9 @@ blocks:
       * #### Integrations
       * #### Deployments and version controlling
       * #### Salesforce Community portal
-      * #### Certified developer
-    buttons:
-      - button:
-          variant: button
-          content: Get Started
-          url: /get-started
+    buttons: []
     photo:
-      image: /img/heroes.png
+      image: /img/background.jpg
       alt: Layers
     bg_photo:
       bg_image: /img/white_wood.jpg
