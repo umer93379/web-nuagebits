@@ -78,25 +78,25 @@ blocks:
               photo:
                 image: /img/gatsby.png
       - hero:
-          variant: visual_image_with_heading
-          height: full
+          variant: full
+          height: auto
           title: Want to begin with Salesforce?
-          buttons:
-            - button:
-                variant: button
-                content: Contact Us
-                url: /get-started
-          hero_bg_photo:
-            enable_parallax: true
-            hero_bg_image: /img/white_wood.jpg
-            bg_alt: Somwthing
-          hero_photo:
-            hero_image: /img/goal.png
-            alt: Something
           content: Let's explore how Salesforce can be tailored to meet your specific
             needs and drive your business forward. Together, we can unlock the
             full potential of this robust CRM platform and achieve your desired
             outcomes.
+          buttons:
+            - button:
+                variant: button
+                content: Get Started With Salesfroce
+                url: /get-started
+          hero_photo:
+            hero_image: /img/goal.png
+            alt: Hero Slider Photo
+          hero_bg_photo:
+            hero_bg_image: /img/white_wood.jpg
+            enable_parallax: false
+            bg_alt: ""
     title: Home
     variant: default
   - buttons:
