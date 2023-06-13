@@ -131,17 +131,17 @@ blocks:
           image: /img/gatsby.png
   - type: content_image
     variant: default
-    title: Our consultancy in technical terms provides
+    title: Our tech stack provides consultancy
     content: |-
-      * Certified developer
-      * Sales & Service Clouds processes
-      * Data modeling
-      * Platform custom development
-      * Lightning components
-      * Process automation
-      * Integrations
-      * Deployments and version controlling
-      * Salesforce Community portal
+      * #### Sales & Service Clouds processes
+      * #### Data modeling
+      * #### Platform custom development
+      * #### Lightning components
+      * #### Process automation
+      * #### Integrations
+      * #### Deployments and version controlling
+      * #### Salesforce Community portal
+      * #### Certified developer
     buttons:
       - button:
           variant: button
