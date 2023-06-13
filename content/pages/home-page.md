@@ -11,7 +11,7 @@ blocks:
     heros:
       - hero:
           variant: full
-          title: Why Salesforce?
+          title: What Is Salesforce?
           content: Salesforce is a leading cloud-based customer relationship management
             (CRM) platform that empowers businesses to optimize their sales,
             marketing, and customer service operations. With its robust suite of
@@ -54,7 +54,7 @@ blocks:
           buttons:
             - button:
                 variant: button
-                content: Get Started With Salesfroce
+                content: Get Started With Salesforce
                 url: /get-started
           hero_photo:
             hero_image: /img/goal.png
@@ -77,6 +77,24 @@ blocks:
               permalink: /reactjs/
               photo:
                 image: /img/gatsby.png
+      - hero:
+          variant: full
+          height: auto
+          title: Let's Move Together
+          buttons:
+            - button:
+                variant: button
+                content: Find Your Salesforce Consultant
+                url: /get-started
+          hero_photo:
+            hero_image: /img/goal.png
+            alt: Hero Slider Photo
+          hero_bg_photo:
+            hero_bg_image: /img/white_wood.jpg
+          content: Let's explore how Salesforce can be tailored to meet your specific
+            needs and drive your business forward. Together, we can unlock the
+            full potential of this robust CRM platform and achieve your desired
+            outcomes.
     title: Home
     variant: default
   - buttons:
