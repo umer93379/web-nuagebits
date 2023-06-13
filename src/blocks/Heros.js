@@ -11,7 +11,7 @@ export default function Heros({ data }) {
           data?.heros.length > 1 ? (
             <Carousel loop auto>
               {data?.heros?.map((block, i) => {
-                block.hero.height = data?.height
+                block.hero.height = 'full'
                 return (
                   <Hero key={i} data={block.hero} />
                 )
