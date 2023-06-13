@@ -108,14 +108,12 @@ blocks:
       image: /img/4000_2_01.jpg
     bg_photo:
       bg_image: /img/white_wood.jpg
-    title: Its Fast and Easy
+    title: Break Into The House Of Salesforce Consultancy
     content: |-
-      # website in 2 steps
-
-      1. ### Extend the repo 
-      2. ### deploy at netlify
-
-      ### N﻿ot just fast; its the **fastest website**.
+      1. ### Redeem your business
+      2. ### Protract your data integrity
+      3. ### Integrate business applications
+      4. ### Automate your business processes in CRM
     type: hero
     columns:
       - title: React
