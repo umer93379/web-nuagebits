@@ -77,40 +77,6 @@ blocks:
               permalink: /reactjs/
               photo:
                 image: /img/gatsby.png
-      - hero:
-          variant: full
-          height: auto
-          title: Want to begin with Salesforce?
-          content: Let's explore how Salesforce can be tailored to meet your specific
-            needs and drive your business forward. Together, we can unlock the
-            full potential of this robust CRM platform and achieve your desired
-            outcomes.
-          buttons:
-            - button:
-                variant: button
-                content: Get Started With Salesfroce
-                url: /get-started
-          hero_photo:
-            hero_image: /img/goal.png
-            alt: Hero Slider Photo
-          hero_bg_photo:
-            hero_bg_image: /img/white_wood.jpg
-            enable_parallax: false
-            bg_alt: ""
-          columns:
-            - title: React
-              content: open-source JavaScript framework and library
-              show_popup: false
-              permalink: /reactjs/
-              photo:
-                image: /img/pngegg.png
-            - title: Gatsby
-              content: open source framework with performance, scalability and security
-                built-in.
-              show_popup: false
-              permalink: /reactjs/
-              photo:
-                image: /img/gatsby.png
     title: Home
     variant: default
   - buttons:
