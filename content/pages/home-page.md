@@ -97,6 +97,20 @@ blocks:
             hero_bg_image: /img/white_wood.jpg
             enable_parallax: false
             bg_alt: ""
+          columns:
+            - title: React
+              content: open-source JavaScript framework and library
+              show_popup: false
+              permalink: /reactjs/
+              photo:
+                image: /img/pngegg.png
+            - title: Gatsby
+              content: open source framework with performance, scalability and security
+                built-in.
+              show_popup: false
+              permalink: /reactjs/
+              photo:
+                image: /img/gatsby.png
     title: Home
     variant: default
   - buttons:
