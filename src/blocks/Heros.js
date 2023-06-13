@@ -6,7 +6,7 @@ import Carousel from 're-carousel'
 export default function Heros({ data }) {
   
   return (
-    <div className={clsx({'h-screen': data?.height === 'full' })}>
+    <div className='h-screen'>
       {data?.heros && (
           data?.heros.length > 1 ? (
             <Carousel loop auto>
