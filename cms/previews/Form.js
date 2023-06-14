@@ -1,5 +1,5 @@
 import React from 'react';
-import PageBuilder from '../../src/components/PageBuilder';
+import Form from '../../src/blocks/Form';
 
 export default class FormPreview extends React.Component {
   render() {
@@ -9,11 +9,11 @@ export default class FormPreview extends React.Component {
     if (hasBlocks) {
       blocksUpdated = blocks.map((block) => block.data);
     }
-
+    console.log(blocks)
     return (
       <div>
         {hasBlocks ? (
-          <PageBuilder blocks={blocksUpdated} preview={true} />
+          <Form blocks={blocksUpdated} preview={true} />
         ) : (
           <div className='py-24 text-center flex items-center justify-center'>
             <h1>Add first block to start creating your website</h1>
