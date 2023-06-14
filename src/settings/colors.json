@@ -1,13 +1,15 @@
 {
   "header": {
     "bg": "#FFFFFF",
+    "text_title_color": "#4134B5",
+    "text_sub_title_color": "#c6c5ff",
     "text_default_color": "#000000",
-    "text_hover_color": "#3b82f6",
-    "text_default_bg": "#000000",
-    "text_hover_bg": "#3b82f6",
+    "text_hover_color": "#4134B5",
+    "text_default_bg": "#FFFFFF",
+    "text_hover_bg": "#FFFFFF",
     "social_bg": "#000000",
     "social_text_default_color": "#FFFFFF",
-    "social_text_hover_color": "#3b82f6",
+    "social_text_hover_color": "#c6c5ff",
     "social_text_default_bg": "#000000",
     "social_text_hover_bg": "#000000"
   }

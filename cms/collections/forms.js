@@ -4,7 +4,10 @@ import { Button } from '../fields';
 const collection = {
   name: 'forms',
   label: 'Forms',
-  description: 'Forms',
+  editor: {
+    preview: true,
+  },
+  description: 'Collect leads or contact requests directly into netlify. make sure netlify forms are enabled.',
   folder: 'content/forms',
   create: true,
   fields: [

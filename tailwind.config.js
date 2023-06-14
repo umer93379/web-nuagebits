@@ -8,6 +8,8 @@ module.exports = {
       colors: {
         primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a"},
         headerBg: colors.header.bg,
+        headerTitleColor: colors.header.text_title_color,
+        headerSubTitleColor: colors.header.text_sub_title_color,
         headerTextDefaultColor: colors.header.text_default_color,
         headerTextHoverColor: colors.header.text_hover_color,
         headerTextDefaultBG: colors.header.text_default_bg,
@@ -18,7 +20,16 @@ module.exports = {
         headerSocialTextHoverColor: colors.header.social_text_hover_color,
         headerSocialTextDefaultBG: colors.header.social_text_default_bg,
         headerSocialTextHoverBG: colors.header.social_text_hover_bg,
+      },
+      backgroundSize: {
+        'auto': 'auto',
+        'cover': 'cover',
+        'contain': 'contain',
+        '50%': '50%',
+        '50vh': '50vh',
+        '16': '4rem',
       }
+
     },
     fontFamily: {
       'body': [

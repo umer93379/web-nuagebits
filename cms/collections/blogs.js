@@ -4,15 +4,15 @@ import { ID } from '../fields';
 
 const collection = {
   name: 'blog',
-  label: 'Posts',
+  label: 'Blogs',
   editor: {
-    preview: false,
+    preview: true,
   },
   description: 'Blog posts collection',
   folder: 'content/blog',
   slug: '{{slug}}',
   summary:
-    "{{title}} - {{date | date('YYYY-MM-DD')}} – {{body | truncate(40, '***')}}",
+    "{{title}} \r\n {{date | date('YYYY-MM-DD')}} \r\n {{body | truncate(70, '...')}}",
   create: true,
   fields: [
     ID,
