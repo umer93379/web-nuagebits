@@ -30,6 +30,7 @@
     "gatsby-transformer-remark": "^6.3.2",
     "gatsby-transformer-sharp": "^5.3.1",
     "jest": "^29.5.0",
+    "moment": "^2.29.4",
     "netlify-cms-app": "^2.14.29",
     "netlify-cms-widget-id": "^1.0.1",
     "netlify-cms-widget-permalink": "^1.0.2",

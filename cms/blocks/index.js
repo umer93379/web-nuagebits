@@ -1,4 +1,4 @@
-import { Buttons, Title, Content, VariantField, ImageField, Hero, Heros, backgroundImageField, HeightField } from '../fields';
+import { Buttons, Title, Content, VariantField, ImageField, Heros, backgroundImageField, HeightField } from '../fields';
 
 import { PermalinkField } from '../fields/permalink-field';
 

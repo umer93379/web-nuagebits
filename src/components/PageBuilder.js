@@ -7,12 +7,14 @@ import RecentArticles from '../blocks/RecentArticles';
 import ContentImage from '../blocks/ContentImage';
 import Perks from '../blocks/Perks';
 import Content from '../blocks/Content';
+import Form from '../blocks/Form';
 
 export default function PageBuilder({ blocks, preview = false }) {
   return (
     <>
       {blocks &&
         blocks.map((block, i) => {
+          console.log(block.type)
           switch (block.type) {
             case 'hero_slider':
               return <Heros key={i} data={block} />;
@@ -26,6 +28,8 @@ export default function PageBuilder({ blocks, preview = false }) {
               return <Perks key={i} data={block} preview={preview} />;
             case 'content':
               return <Content key={i} data={block} preview={preview} />;
+            case 'form':
+              return <Form key={i} data={block} preview={preview} />;
             default:
               return (
                 <div className='container mx-auto' key={i}>
