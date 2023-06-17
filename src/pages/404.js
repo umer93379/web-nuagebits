@@ -3,7 +3,7 @@ import Layout from '@/components/Layout';
 import Container from '../components/UI/Container';
 import Link from '../resolvers/Link';
 
-const NotFoundPageX = () => (
+const NotFoundPage = () => (
   <Layout nav>
     <section>
       <Container className='h-screen flex justify-center items-center text-center'>
@@ -25,4 +25,4 @@ const NotFoundPageX = () => (
   </Layout>
 );
 
-export default NotFoundPageX;
+export default NotFoundPage;
