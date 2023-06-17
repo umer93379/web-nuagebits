@@ -89,6 +89,7 @@ export const query = graphql`
           title
           content
           variant
+          height
           buttons {
             button {
               content

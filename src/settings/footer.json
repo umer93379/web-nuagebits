@@ -6,13 +6,13 @@
       "type": "default"
     },
     {
-      "name": "Github",
+      "name": "Get Started",
       "permalink": "https://github.com/processton-io/edge-base",
       "type": "default"
     },
     {
-      "name": "Get Started",
-      "permalink": "/get-started",
+      "name": "Sponsored By",
+      "permalink": "/sponsored-by",
       "type": "default"
     }
   ],

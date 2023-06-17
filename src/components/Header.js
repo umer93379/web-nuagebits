@@ -17,7 +17,7 @@ export default function Header() {
       <header>
         {socialLinks?.show_above_header === true && (
           <nav className="bg-headerSocialBg text-headerSocialTextDefaultColor border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 shadow">
-            <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+            <div className="flex flex-wrap space-y-2 xl:space-y-0 justify-between items-center mx-auto max-w-screen-xl">
               <div className='flex flex-col md:flex-row space-y-3 space-x-0 md:space-y-0 md:space-x-3 '>
                 {socialLinks?.social_links && (socialLinks?.social_links.map((link, i) => {
                   if(link.show_in_header === true){
@@ -48,13 +48,13 @@ export default function Header() {
                   }
                 }))}
               </div>
-              <div className='grid grid-cols-5 lg:flex lg:flex-row'>
+              <div className='flex flex-row lg:flex-row-reverse'>
                 {socialLinks?.social_links && (socialLinks?.social_links.map((link, i) => {
                   if(link.show_in_header === true){
                     switch (link.platform) {
                       case "facebook":
                         return (
-                          <a className='spce-y-2 lg:space-x-2 flex-0 h-6 text-headerSocialTextDefaultColor hover:text-headerSocialTextHoverColor bg-headerSocialTextDefaultBG hover:bg-headerSocialTextHoverBG' href={link.permalink} key={`social-menue-social-icons`+i}>
+                          <a className='spce-y-2 lg:space-x-2 flex-0 h-6 sm:h-6 text-headerSocialTextDefaultColor hover:text-headerSocialTextHoverColor bg-headerSocialTextDefaultBG hover:bg-headerSocialTextHoverBG' href={link.permalink} key={`social-menue-social-icons`+i}>
                             <svg className='mr-2 w-6 h-6 lg:w-4 feather feather-facebook' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                           </a>
                         );

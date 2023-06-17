@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Parallax } from 'react-parallax';
 import  { useForms }  from '@/hooks/use-forms';
+import { navigate } from 'gatsby';
 
 export default function Form({ block }) {
   
+  const [errorMessage, setErrorMessage ] = useState("")
+  const [successMessage, setSuccessMessage ] = useState("")
+
   const forms = useForms(block.form);
   const form = forms.length > 0 ? forms[0] : {
 
@@ -25,6 +29,28 @@ export default function Form({ block }) {
 
     return lowercaseStr;
   }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+    
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        setSuccessMessage(form.settings.success_msg ? form.settings.success_msg : "Your request is submitted")
+      })
+      .catch((error) => {
+        setErrorMessage(error?.message)
+      });
+    
+  };
+
+
   const bgImage =  block?.bg_photo ? 
     block?.bg_photo?.bg_image : block?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
   return (
@@ -37,7 +63,7 @@ export default function Form({ block }) {
       >
         <div className='container mx-auto lg:max-w-2xl py-16 px-6'>
           <h1 className='dark:text-white font-semibold text-3xl md:text-4xl mb-6'>{block.title}</h1>
-          <form name="contact" method="POST" data-netlify="true">
+          <form name={convertToSafeInputFieldName(block.title)} method="POST" data-netlify="true" onSubmit={handleSubmit}>
             <>
               {blocks && blocks.map(((blockElement, i) => {
                 return blockElement.fields.map((field, x) => {
@@ -100,11 +126,21 @@ export default function Form({ block }) {
               
             }))}
             </>
-            <div className='text-right'>
-              <button type="submit" className='inline-block bg-primaryButtonDefaultBG hover:bg-primaryButtonHoverBG text-primaryButtonDefaultColor hover:text-primaryButtonHoverColor focus:ring-4 ring-primaryButtonHoverRing  hover:ring-primaryButtonDefaultRing focus:ring-primaryButtonDefaultRing font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:bg-white dark:text-black dark:hover:bg-gray-500 focus:outline-none dark:focus:ring-white'>
-                Submit
-              </button>
-            </div>
+            { successMessage != "" ? (
+              <div class="p-4 mb-6 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                <span class="font-medium">{successMessage}</span>
+              </div>
+            ):(<></>) }
+            { errorMessage != "" ? (
+              <div class="p-4 mb-6 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                <span class="font-medium">{errorMessage}</span>
+              </div>
+            ):(<></>) }
+              <div className='text-right'>
+                <button type="submit" className='inline-block bg-primaryButtonDefaultBG hover:bg-primaryButtonHoverBG text-primaryButtonDefaultColor hover:text-primaryButtonHoverColor focus:ring-4 ring-primaryButtonHoverRing  hover:ring-primaryButtonDefaultRing focus:ring-primaryButtonDefaultRing font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:bg-white dark:text-black dark:hover:bg-gray-500 focus:outline-none dark:focus:ring-white'>
+                  Submit
+                </button>
+              </div>
           </form>
         </div>
       </Parallax>
