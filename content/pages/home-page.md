@@ -20,11 +20,11 @@ blocks:
                 content: Get Started
                 url: /get-started
           hero_photo:
-            hero_image: /img/goal.png
+            hero_image: /img/72ed3a4ee99cdd29917b5affcafa2e63.jpg
             alt: Hero Slider Photo
           hero_bg_photo:
-            hero_bg_image: /img/white_wood.jpg
-            enable_parallax: false
+            hero_bg_image: /img/green-tropical-leaves-border-png-3000x2400.png
+            enable_parallax: true
           columns:
             - title: React
               content: open-source JavaScript framework and library
@@ -40,6 +40,7 @@ blocks:
               photo:
                 image: /img/gatsby.png
     variant: default
+    title: For Your Next Generation Website
 seo:
   ogimage: /img/4000_2_01.jpg
 ---
