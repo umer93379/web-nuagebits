@@ -109,7 +109,10 @@ const Config = {
       name: 'form',
       widget: 'object',
       fields: [
+        Title,
+        Content,
         backgroundImageField(),
+        ImageField(),
         {
           label: 'Form',
           name: 'form',

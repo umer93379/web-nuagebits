@@ -1,94 +1,113 @@
-import clsx from 'clsx'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Parallax } from 'react-parallax';
+import  { useForms }  from '@/hooks/use-forms';
 
-import Hero from '@/blocks/Hero';
-import Carousel from 're-carousel' 
-export default function Form({ data, blocks }) {
+export default function Form({ block }) {
+  
+  const forms = useForms(block.form);
+  const form = forms.length > 0 ? forms[0] : {
+
+  };
+  const blocks = form.rows;
 
   const convertToSafeInputFieldName = (str) => {
-  // Replace any non-alphanumeric characters with underscores
-  const safeStr = str.replace(/[^a-zA-Z0-9]/g, '_');
+    // Replace any non-alphanumeric characters with underscores
+    const safeStr = str.replace(/[^a-zA-Z0-9]/g, '_');
 
-  // Remove leading digits if the string starts with a number
-  const safeStrWithoutLeadingDigits = safeStr.replace(/^\d+/, '');
+    // Remove leading digits if the string starts with a number
+    const safeStrWithoutLeadingDigits = safeStr.replace(/^\d+/, '');
 
-  // Add a prefix if the string starts with an underscore or a digit
-  const finalStr = /^[0-9_]/.test(safeStrWithoutLeadingDigits) ? `_${safeStrWithoutLeadingDigits}` : safeStrWithoutLeadingDigits;
+    // Add a prefix if the string starts with an underscore or a digit
+    const finalStr = /^[0-9_]/.test(safeStrWithoutLeadingDigits) ? `_${safeStrWithoutLeadingDigits}` : safeStrWithoutLeadingDigits;
 
-  // Convert the string to lowercase
-  const lowercaseStr = finalStr.toLowerCase();
+    // Convert the string to lowercase
+    const lowercaseStr = finalStr.toLowerCase();
 
-  return lowercaseStr;
-}
-
-  console.log(data)
-  const bgImage =  data?.bg_photo ? 
-    data?.bg_photo?.bg_image : data?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+    return lowercaseStr;
+  }
+  const bgImage =  block?.bg_photo ? 
+    block?.bg_photo?.bg_image : block?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
   return (
-    <div>
-      <form name="contact" method="POST" data-netlify="true">
-        <>
-          {blocks.map(((block, i) => {
-            block.fields.map((field, x) => {
-              if(field.input_type == 'hidden'){
-                return <input type={field.input_type} id={i+`-`+x} class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder={field.label} required={field.required} name={convertToSafeInputFieldName(field.name)} />
-              }
-            })
-          }))}
-        </>
-        <>
-        {blocks.map(((block, i) => {
-          return (
-            <div className='flex gap-6 w-full mb-6 flex-row'>
-              {
-                block.fields.map((field, x) => {
+    <div className='transition-all duration-1000'>
 
-                  if(field.input_type == 'hidden'){
+      <Parallax
+          bgImage={bgImage}
+          bgImageAlt={ block?.bg_photo ? block?.bg_photo?.alt : block?.hero_bg_photo ? block?.hero_bg_photo?.alt : ''}
+          disabled={ (block?.bg_photo && block?.bg_photo?.enable_parallax === true) || (block?.hero_bg_photo && block?.hero_bg_photo?.enable_parallax === true)}
+      >
+        <div className='container mx-auto lg:max-w-2xl py-16 px-6'>
+          <h1 className='dark:text-white font-semibold text-3xl md:text-4xl mb-6'>{block.title}</h1>
+          <form name="contact" method="POST" data-netlify="true">
+            <>
+              {blocks && blocks.map(((blockElement, i) => {
+                return blockElement.fields.map((field, x) => {
+                  if(field.input_type === 'hidden'){
+                    return <input type={field.input_type} id={i+`-`+x} key={`form-hidden`+i+`-`+x} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder={field.label} required={field.required} name={convertToSafeInputFieldName(field.name)} />
+                  }else{
                     return <></>
                   }
+                })
+              }))}
+            </>
+            <>
+            {blocks && blocks.map(((blockElement, i) => {
+              return (
+                <div className='flex gap-6 w-full mb-6 flex-row' key={`form-block`+i}>
+                  {
+                    blockElement.fields.map((field, x) => {
 
-                  switch (field.type) {
-                    case 'input':
-                      return (
-                        <div class="flex-1" key={i+`-`+x}>
-                            <label for={i+`-`+x} class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{field.label}</label>
-                            <input type={field.input_type} id={i+`-`+x} class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder={field.label} required={field.required} name={convertToSafeInputFieldName(field.name)} />
-                        </div>
-                      )
-                    case 'textarea':
-                      return (
-                        <div class="flex-1" key={i+`-`+x}>
-                            <label for={i+`-`+x} class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{field.label}</label>
-                            <textarea type={field.input_type} id={i+`-`+x} class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder={field.label} required={field.required} name={convertToSafeInputFieldName(field.name)} ></textarea>
-                        </div>
-                      )
-                    case 'checkbox':
-                      return (
-                        <div class="flex items-start mb-6 flex-1" key={i+`-`+x}>
-                          <div class="flex items-center h-5">
-                            <input id={i+`-`+x} type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required={field.required} name={convertToSafeInputFieldName(field.name)} />
-                          </div>
-                          <label id={i+`-`+x} class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">{field.label}</label>
-                        </div>
-                      )
-                    default:
-                      return (
-                        <div class="flex-1" key={i+`-`+x}>
-                            <label for={i+`-`+x} class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{field.label}{field.type}{field.input_type}</label>
-                            <input type={field.input_type} id={i+`-`+x} class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder={field.label} required={field.required} name={convertToSafeInputFieldName(field.name)} />
-                        </div>
-                      );
+                      if(field.input_type !== 'hidden'){
+
+                        switch (field.type) {
+                          case 'input':
+                            return (
+                              <div className="flex-1" key={`form-field`+i+`-`+x}>
+                                  <label htmlFor={i+`-`+x} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{field.label}</label>
+                                  <input type={field.input_type} id={i+`-`+x} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder={field.label} required={field.required} name={convertToSafeInputFieldName(field.name)} />
+                              </div>
+                            )
+                          case 'textarea':
+                            return (
+                              <div className="flex-1" key={`form-field`+i+`-`+x}>
+                                  <label htmlFor={i+`-`+x} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{field.label}</label>
+                                  <textarea type={field.input_type} id={i+`-`+x} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder={field.label} required={field.required} name={convertToSafeInputFieldName(field.name)} ></textarea>
+                              </div>
+                            )
+                          case 'checkbox':
+                            return (
+                              <div className="flex items-start mb-6 flex-1" key={`form-field`+i+`-`+x}>
+                                <div className="flex items-center h-5">
+                                  <input id={i+`-`+x} type="checkbox" value="" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" required={field.required} name={convertToSafeInputFieldName(field.name)} />
+                                </div>
+                                <label id={i+`-`+x} className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">{field.label}</label>
+                              </div>
+                            )
+                          default:
+                            return (
+                              <div className="flex-1" key={`form-field`+i+`-`+x}>
+                                  <label htmlFor={i+`-`+x} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{field.label}{field.type}{field.input_type}</label>
+                                  <input type={field.input_type} id={i+`-`+x} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder={field.label} required={field.required} name={convertToSafeInputFieldName(field.name)} />
+                              </div>
+                            );
+                        }
+                      }else{
+                        return <></>
+                      }
+                  })
                   }
-                
-              })
-              }
+                </div>
+              )
+              
+            }))}
+            </>
+            <div className='text-right'>
+              <button type="submit" className='inline-block bg-primaryButtonDefaultBG hover:bg-primaryButtonHoverBG text-primaryButtonDefaultColor hover:text-primaryButtonHoverColor focus:ring-4 ring-primaryButtonHoverRing  hover:ring-primaryButtonDefaultRing focus:ring-primaryButtonDefaultRing font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:bg-white dark:text-black dark:hover:bg-gray-500 focus:outline-none dark:focus:ring-white'>
+                Submit
+              </button>
             </div>
-          )
-          
-        }))}
-        </>
-      </form>
+          </form>
+        </div>
+      </Parallax>
     </div>
   )
 

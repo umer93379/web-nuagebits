@@ -95,6 +95,16 @@ blocks:
         permalink: /reactjs/
         photo:
           image: /img/white_wood.jpg
+  - type: form
+    title: Get Expert Support Now
+    content: "for open source framework with performance, scalability and security"
+    bg_photo:
+      bg_image: /img/track-bg.jpg
+      enable_parallax: true
+    form: T9c8SkeW4
+    photo:
+      image: /img/heroes.png
+      alt: Layers
 seo:
   ogimage: /img/4000_2_01.jpg
 ---

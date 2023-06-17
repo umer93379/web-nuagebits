@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 import Hero from '@/blocks/Hero';
 import Carousel from 're-carousel' 

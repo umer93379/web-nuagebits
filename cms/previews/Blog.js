@@ -1,9 +1,5 @@
 import React from 'react';
-
-import Layout from '@/components/Layout'
-import Title from '../../src/components/UI/Title';
 import Blog from '../../src/components/Blog';
-import { get } from 'react-hook-form';
 
 export default class BlogPreview extends React.Component {
   render() {

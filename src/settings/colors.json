@@ -12,5 +12,23 @@
     "social_text_hover_color": "#c6c5ff",
     "social_text_default_bg": "#000000",
     "social_text_hover_bg": "#000000"
+  },
+  "button": {
+    "primary": {
+      "bg": "#000000",
+      "hover_bg": "#CCCCCC",
+      "default_color": "#FFFFFF",
+      "hover_color": "#000000",
+      "ring": "#000000",
+      "hover_ring": "#000000"
+    },
+    "secondary": {
+      "bg": "#FFFFFF",
+      "hover_bg": "#CCCCCC",
+      "default_color": "#000000",
+      "hover_color": "#000000",
+      "ring": "#CCCCCC",
+      "hover_ring": "#000000"
+    }
   }
 }

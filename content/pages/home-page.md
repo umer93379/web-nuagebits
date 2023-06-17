@@ -23,7 +23,7 @@ blocks:
             PageMaker including versions of Lorem Ipsum.
           buttons:
             - button:
-                variant: button
+                variant: secondary
                 content: Get Started
                 url: /get-started
           hero_photo:
@@ -157,10 +157,15 @@ blocks:
         photo:
           image: /img/gatsby.png
   - type: form
+    title: Get Expert Support Now
+    content: "for open source framework with performance, scalability and security"
     bg_photo:
       bg_image: /img/track-bg.jpg
       enable_parallax: true
     form: T9c8SkeW4
+    photo:
+      image: /img/heroes.png
+      alt: Layers
 seo:
   ogimage: /img/4000_2_01.jpg
 ---

@@ -1,7 +1,6 @@
 ---
 id: T9c8SkeW4
 type: form
-layout: hidden
 title: Contact Form
 settings:
   resolver: Form

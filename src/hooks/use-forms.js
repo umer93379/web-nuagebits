@@ -1,5 +1,5 @@
 import { useStaticQuery, graphql } from 'gatsby';
-export const useForms = () => {
+export const useForms = (formid = false) => {
   const {
     allMarkdownRemark: { edges: forms },
   } = useStaticQuery(
@@ -23,16 +23,9 @@ export const useForms = () => {
                     type
                     input_type
                     name
-                    value
                     autocomplete
                     label
                     required
-                    content
-                    button {
-                      content
-                      url
-                      variant
-                    }
                   }
                 }
               }
@@ -42,6 +35,7 @@ export const useForms = () => {
       }
     `,
   );
-
-  return forms;
+  return forms.map((item) => {
+    return item.node.frontmatter
+  });
 };

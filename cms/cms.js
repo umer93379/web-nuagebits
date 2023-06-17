@@ -9,7 +9,6 @@ import authors from './collections/authors';
 import settings from './collections/settings';
 import PagePreview from './previews/Page';
 import BlogPreview from './previews/Blog';
-import FormPreview from './previews/Form';
 
 window.CMS_MANUAL_INIT = true;
 
@@ -35,7 +34,6 @@ const config = {
 CMS.registerPreviewStyle('../commons.css');
 CMS.registerPreviewTemplate('pages', PagePreview);
 CMS.registerPreviewTemplate('blog', BlogPreview);
-CMS.registerPreviewTemplate('forms', FormPreview);
 
 CMS.registerWidget(UuidWidget);
 CMS.registerWidget(PermalinkWidget);

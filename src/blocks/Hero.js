@@ -12,7 +12,7 @@ export default function Hero({ data }) {
   
   const isCentered = data?.variant === 'centered'
   const isFull = data?.height === 'full'
-  console.log(data)
+  
   const bgImage =  data?.bg_photo ? 
     (typeof data?.bg_photo?.bg_image === 'string' ? data?.bg_photo?.bg_image : data?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src)
    : (typeof data?.hero_bg_photo?.hero_bg_image === 'string' ? data?.hero_bg_photo?.hero_bg_image : data?.hero_bg_photo?.hero_bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src);

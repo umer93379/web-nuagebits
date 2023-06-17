@@ -8,7 +8,7 @@ import Text from '../components/UI/Text';
 import Image from '../resolvers/Image'
 
 export default function Perks({ data }) {
-  console.log(data);
+  
   const bgImage = typeof data?.bg_photo?.bg_image === 'string' ? data?.bg_photo?.bg_image : data?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src;
   return (
     <Parallax

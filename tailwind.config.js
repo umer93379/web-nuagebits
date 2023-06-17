@@ -20,6 +20,24 @@ module.exports = {
         headerSocialTextHoverColor: colors.header.social_text_hover_color,
         headerSocialTextDefaultBG: colors.header.social_text_default_bg,
         headerSocialTextHoverBG: colors.header.social_text_hover_bg,
+
+
+        primaryButtonDefaultBG: colors.button.primary.bg,
+        primaryButtonHoverBG: colors.button.primary.hover_bg,
+        primaryButtonDefaultColor: colors.button.primary.default_color,
+        primaryButtonHoverColor: colors.button.primary.hover_color,
+        primaryButtonDefaultRing: colors.button.primary.ring,
+        primaryButtonHoverRing: colors.button.primary.hover_ring,
+
+
+        secondaryButtonDefaultBG: colors.button.secondary.bg,
+        secondaryButtonHoverBG: colors.button.secondary.hover_bg,
+        secondaryButtonDefaultColor: colors.button.secondary.default_color,
+        secondaryButtonHoverColor: colors.button.secondary.hover_color,
+        secondaryButtonDefaultRing: colors.button.secondary.ring,
+        secondaryButtonHoverRing: colors.button.secondary.hover_ring,
+
+
       },
       backgroundSize: {
         'auto': 'auto',

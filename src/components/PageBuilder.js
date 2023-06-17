@@ -14,7 +14,7 @@ export default function PageBuilder({ blocks, preview = false }) {
     <>
       {blocks &&
         blocks.map((block, i) => {
-          console.log(block.type)
+          
           switch (block.type) {
             case 'hero_slider':
               return <Heros key={i} data={block} />;
@@ -29,7 +29,7 @@ export default function PageBuilder({ blocks, preview = false }) {
             case 'content':
               return <Content key={i} data={block} preview={preview} />;
             case 'form':
-              return <Form key={i} data={block} preview={preview} />;
+              return <Form key={i} block={block} preview={preview} />;
             default:
               return (
                 <div className='container mx-auto' key={i}>
@@ -83,6 +83,7 @@ export const query = graphql`
           variant
         }
       }
+      
       heros {
         hero {
           title
@@ -153,6 +154,7 @@ export const query = graphql`
             }
         }
       }
+      form
     }
   }
 `;
