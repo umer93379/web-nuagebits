@@ -20,7 +20,7 @@ blocks:
                 content: Get Started
                 url: /get-started
           hero_photo:
-            hero_image: /img/72ed3a4ee99cdd29917b5affcafa2e63.jpg
+            hero_image: /img/edge-base-logo.png
             alt: Hero Slider Photo
           hero_bg_photo:
             hero_bg_image: /img/green-tropical-leaves-border-png-3000x2400.png
