@@ -38,6 +38,9 @@ module.exports = {
         secondaryButtonHoverRing: colors.button.secondary.hover_ring,
 
 
+        perkTitle: colors.perks.title,
+        perkSubTitle: colors.perks.subtitle,
+
       },
       backgroundSize: {
         'auto': 'auto',

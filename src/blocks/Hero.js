@@ -9,7 +9,6 @@ import DefaultHero from './Hero/Default';
 import VisualImageWithHeading from './Hero/VisualImageWithHeading';
 
 export default function Hero({ data }) {
-  console.log(data)
   const isCentered = data?.variant === 'centered'
   const isFull = data?.height === 'full'
   

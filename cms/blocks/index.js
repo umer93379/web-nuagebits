@@ -77,6 +77,7 @@ const Config = {
       widget: 'object',
       fields: [
         Title,
+        VariantField('default', ['default', 'cards', 'gallery']),
         Content,
         backgroundImageField(),
         {
@@ -90,8 +91,14 @@ const Config = {
               label: 'Show Popup',
               name: 'show_popup',
               widget: 'boolean',
+              required: false,
             },
-            PermalinkField(),
+            {
+              label: 'Permalink',
+              name: 'permalink',
+              widget: 'string',
+              required: false,
+            },
             Content,
             ImageField()
           ],

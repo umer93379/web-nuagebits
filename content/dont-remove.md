@@ -126,6 +126,31 @@ blocks:
         permalink: /reactjs/
         photo:
           image: /img/gatsby.png
+  - type: perks
+    variant: default
+    title: Gallery
+    content: "Gallery View"
+    columns:
+      - photo:
+          image: /img/4000_2_01.jpg
+          alt: img_1
+        title: "Perk Item"
+        content: "Perk item 1"
+      - photo:
+          image: /img/background.jpg
+          alt: img_2
+        title: "Perk Item"
+        content: "Perk item 2"
+      - photo:
+          image: /img/hfhgfghfgh.jpg
+          alt: img_3
+        title: "Perk Item"
+        content: "Perk item 3"
+      - photo:
+          image: /img/hero-bg.jpg
+          alt: img_4
+        title: "Perk Item"
+        content: "Perk item 4"
   - type: form
     title: Get Expert Support Now
     content: "for open source framework with performance, scalability and security"
