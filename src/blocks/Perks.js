@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link as GatsbyLink } from 'gatsby'
 
 import { Parallax } from 'react-parallax';
 import Container from '../components/UI/Container';
 import Title from '../components/UI/Title';
 import Text from '../components/UI/Text';
-import Image from '../resolvers/Image'
 import DefaultPerk from './Perks/Default'
 import PerkCards from './Perks/PerkCards'
 import Galley from './Perks/Galley'

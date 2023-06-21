@@ -1,29 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Link as GatsbyLink } from 'gatsby'
-
-import { Parallax } from 'react-parallax';
-import Container from '../../components/UI/Container';
-import Title from '../../components/UI/Title';
-import Text from '../../components/UI/Text';
+import React from 'react';
 import Image from '../../resolvers/Image'
 
 export default function Galley({ data }) {
-  const [showPopup , setShowPopup] = useState(false);
-
-  const [popupData , setPopupData] = useState({
-    image: '',
-    image_alt: '',
-    title: '',
-    content: '',
-    permalink:'',
-  })
-
-  // useEffect(()=> {
-
-  //   setShowPopup(!showPopup)
-
-  // },[popupData]);
-
+  
   
   const images = [[], [], [], []];
 
@@ -36,11 +15,6 @@ export default function Galley({ data }) {
   
   return (
           <>
-            {showPopup && (
-              <div className='fixed bg-red-100 z-50'>
-
-              </div>
-            )}
             <div
               className={`grid grid-cols-2 md:grid-cols-4 gap-4`}>
               {
@@ -53,13 +27,7 @@ export default function Galley({ data }) {
                             src={col?.photo?.image}
                             alt={col?.photo?.alt}
                             className="h-auto max-w-full rounded-lg"
-                            key={i+`0`} onClick={() => setPopupData({
-                              image: col?.photo?.image,
-                              image_alt: col?.photo?.alt,
-                              title: col?.title,
-                              content: col?.content,
-                              permalink: col?.permalink
-                            })}
+                            key={i+`0`}
                         />
                       )))}
                   </div>
@@ -70,13 +38,7 @@ export default function Galley({ data }) {
                             src={col?.photo?.image}
                             alt={col?.photo?.alt}
                             className="h-auto max-w-full rounded-lg"
-                            key={i+`1`} onClick={() => setPopupData({
-                              image: col?.photo?.image,
-                              image_alt: col?.photo?.alt,
-                              title: col?.title,
-                              content: col?.content,
-                              permalink: col?.permalink
-                            })}
+                            key={i+`1`} 
                         />
                       )))}
                   </div>
@@ -87,13 +49,7 @@ export default function Galley({ data }) {
                             src={col?.photo?.image}
                             alt={col?.photo?.alt}
                             className="h-auto max-w-full rounded-lg"
-                            key={i+`2`} onClick={() => setPopupData({
-                              image: col?.photo?.image,
-                              image_alt: col?.photo?.alt,
-                              title: col?.title,
-                              content: col?.content,
-                              permalink: col?.permalink
-                            })}
+                            key={i+`2`} 
                         />
                       )))}
                   </div>
@@ -104,13 +60,7 @@ export default function Galley({ data }) {
                             src={col?.photo?.image}
                             alt={col?.photo?.alt}
                             className="h-auto max-w-full rounded-lg"
-                            key={i+`4`} onClick={() => setPopupData({
-                              image: col?.photo?.image,
-                              image_alt: col?.photo?.alt,
-                              title: col?.title,
-                              content: col?.content,
-                              permalink: col?.permalink
-                            })}
+                            key={i+`4`} 
                         />
                       )))}
                   </div>
