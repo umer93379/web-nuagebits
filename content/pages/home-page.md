@@ -41,6 +41,17 @@ blocks:
                 image: /img/gatsby.png
     variant: default
     title: For Your Next Generation Website
+  - type: perks
+    variant: default
+    columns:
+      - photo:
+          image: /img/4000_2_01.jpg
+      - photo:
+          image: /img/background.jpg
+      - photo:
+          image: /img/hfhgfghfgh.jpg
+      - photo:
+          image: /img/hero-bg.jpg
 seo:
   ogimage: /img/4000_2_01.jpg
 ---
