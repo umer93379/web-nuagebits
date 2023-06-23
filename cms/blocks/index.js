@@ -1,6 +1,5 @@
-import { Buttons, Title, Content, VariantField, ImageField, Hero, Heros, backgroundImageField, HeightField } from '../fields';
+import { Buttons, Title, Content, VariantField, ImageField, Heros, backgroundImageField, HeightField } from '../fields';
 
-import { PermalinkField } from '../fields/permalink-field';
 
 const Config = {
   label: 'Blocks',
@@ -77,6 +76,7 @@ const Config = {
       widget: 'object',
       fields: [
         Title,
+        VariantField('default', ['default', 'cards', 'gallery']),
         Content,
         backgroundImageField(),
         {
@@ -90,8 +90,14 @@ const Config = {
               label: 'Show Popup',
               name: 'show_popup',
               widget: 'boolean',
+              required: false,
             },
-            PermalinkField(),
+            {
+              label: 'Permalink',
+              name: 'permalink',
+              widget: 'string',
+              required: false,
+            },
             Content,
             ImageField()
           ],
@@ -109,7 +115,10 @@ const Config = {
       name: 'form',
       widget: 'object',
       fields: [
+        Title,
+        Content,
         backgroundImageField(),
+        ImageField(),
         {
           label: 'Form',
           name: 'form',

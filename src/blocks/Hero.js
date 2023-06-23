@@ -9,10 +9,9 @@ import DefaultHero from './Hero/Default';
 import VisualImageWithHeading from './Hero/VisualImageWithHeading';
 
 export default function Hero({ data }) {
-  
   const isCentered = data?.variant === 'centered'
   const isFull = data?.height === 'full'
-  console.log(data)
+  
   const bgImage =  data?.bg_photo ? 
     (typeof data?.bg_photo?.bg_image === 'string' ? data?.bg_photo?.bg_image : data?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src)
    : (typeof data?.hero_bg_photo?.hero_bg_image === 'string' ? data?.hero_bg_photo?.hero_bg_image : data?.hero_bg_photo?.hero_bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src);
@@ -43,7 +42,7 @@ export default function Hero({ data }) {
               },
             )}
           >
-            <div className='container mx-auto max-w-screen-xl flex'>
+            <div className='container mx-auto max-w-screen-xl flex flex-col-reverse md:flex-row gap-8 md:gap-4'>
               <Container className={`lg:w-2/3`}>
                 {data?.title && (
                   <h1
@@ -69,7 +68,7 @@ export default function Hero({ data }) {
                     <Image
                       src={data?.photo?.image}
                       alt={data?.photo?.alt}
-                      className="w-72 rounded-md"
+                      className="w-36 md:w-72 rounded-lg"
                     />
                 </div>
               ) : data?.hero_photo && data?.hero_photo?.hero_image && (
@@ -77,7 +76,7 @@ export default function Hero({ data }) {
                     <Image
                       src={data?.hero_photo?.hero_image}
                       alt={data?.hero_photo?.alt}
-                      className="w-72 rounded-md"
+                      className="w-36 md:w-72 rounded-lg"
                     />
                 </div>
               )}

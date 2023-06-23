@@ -1,10 +1,9 @@
 import { ID } from '../fields';
-import { Button } from '../fields';
 
 const collection = {
   name: 'forms',
   label: 'Forms',
-  description: 'Forms',
+  description: 'Collect leads or contact requests directly into netlify. make sure netlify forms are enabled.',
   folder: 'content/forms',
   create: true,
   fields: [
@@ -14,12 +13,6 @@ const collection = {
       name: 'type',
       widget: 'hidden',
       default: 'form',
-    },
-    {
-      label: 'Layout',
-      name: 'layout',
-      widget: 'hidden',
-      default: 'hidden',
     },
     {
       label: 'Name',
@@ -83,6 +76,12 @@ const collection = {
                   required: false,
                 },
                 {
+                  label: 'Name',
+                  name: 'name',
+                  widget: 'string',
+                  required: true,
+                },
+                {
                   label: 'Input Type',
                   name: 'input_type',
                   widget: 'select',
@@ -137,6 +136,12 @@ const collection = {
                   required: false,
                 },
                 {
+                  label: 'Name',
+                  name: 'name',
+                  widget: 'string',
+                  required: true,
+                },
+                {
                   label: 'Placeholder',
                   name: 'placeholder',
                   widget: 'string',
@@ -179,12 +184,6 @@ const collection = {
               ],
             },
             {
-              label: 'Button',
-              name: 'button',
-              widget: 'object',
-              fields: [Button],
-            },
-            {
               label: 'Text',
               name: 'text',
               widget: 'object',
@@ -196,20 +195,7 @@ const collection = {
                   required: false,
                 },
               ],
-            },
-            {
-              label: 'Submit',
-              name: 'submit',
-              widget: 'object',
-              fields: [
-                {
-                  label: 'Label',
-                  name: 'label',
-                  widget: 'string',
-                  required: false,
-                },
-              ],
-            },
+            }
           ],
         },
       ],

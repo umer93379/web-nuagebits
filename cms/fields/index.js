@@ -69,7 +69,7 @@ export const Button = {
       widget: 'string',
       required: false,
     },
-    VariantField('default', ['default', 'arrow', 'button', 'outlined']),
+    VariantField('default', ['default', 'arrow', 'button', 'secondary', 'outlined']),
   ],
 };
 

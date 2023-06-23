@@ -2,12 +2,11 @@
 import React from 'react'
 import { Parallax } from 'react-parallax';
 import Buttons from '../../components/UI/Buttons';
-import Text from '../../components/UI/Text'
 import Image from '../../resolvers/Image'
 import clsx from 'clsx';
 
 export default function VisualImageWithHeading({ data }) {
-  console.log(data)
+  
   const bgImage =  data?.bg_photo ? 
     (typeof data?.bg_photo?.bg_image === 'string' ? data?.bg_photo?.bg_image : data?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src)
    : (typeof data?.hero_bg_photo?.hero_bg_image === 'string' ? data?.hero_bg_photo?.hero_bg_image : data?.hero_bg_photo?.hero_bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src);

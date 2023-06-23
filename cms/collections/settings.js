@@ -61,14 +61,47 @@ const collection = {
           fields: [
             { label: 'Bg Color', name: 'bg', default: '#FFFFFF', widget : 'color', required: true },
             { label: 'Text Default Color', name: 'text_default_color', default: '#000000', widget : 'color', required: true },
-            { label: 'Text Default Color', name: 'text_hover_color', default: '#3b82f6', widget : 'color', required: true },
+            { label: 'Text Hover Color', name: 'text_hover_color', default: '#3b82f6', widget : 'color', required: true },
             { label: 'Text Default BG', name: 'text_default_bg', default: '#000000', widget : 'color', required: true },
-            { label: 'Text Default BG', name: 'text_hover_bg', default: '#3b82f6', widget : 'color', required: true },
+            { label: 'Text Hover BG', name: 'text_hover_bg', default: '#3b82f6', widget : 'color', required: true },
             { label: 'Social Bar BG', name: 'social_bg', default: '#000000', widget : 'color', required: true },
             { label: 'Social Bar Text Default Color', name: 'social_text_default_color', default: '#FFFFFF', widget : 'color', required: true },
-            { label: 'Social Bar Text Default Color', name: 'social_text_hover_color', default: '#CCCCCC', widget : 'color', required: true },
+            { label: 'Social Bar Text Hover Color', name: 'social_text_hover_color', default: '#CCCCCC', widget : 'color', required: true },
             { label: 'Social Bar Text Default BG', name: 'social_text_default_bg', default: '#000000', widget : 'color', required: true },
-            { label: 'Social Bar Text Default BG', name: 'social_text_hover_bg', default: '#3b82f6', widget : 'color', required: true },
+            { label: 'Social Bar Text Hover BG', name: 'social_text_hover_bg', default: '#3b82f6', widget : 'color', required: true },
+          ],
+        },
+        {
+          label: 'Button',
+          name: 'button',
+          widget: 'object',
+          fields: [
+            {
+              label: 'Primary',
+              name: 'primary',
+              widget: 'object',
+              fields: [
+                { label: 'Bg Color', name: 'bg', default: '#000000', widget : 'color', required: true },
+                { label: 'Hover Bg Color', name: 'hover_bg', default: '#CCCCCC', widget : 'color', required: true },
+                { label: 'Default Color', name: 'default_color', default: '#FFFFFF', widget : 'color', required: true },
+                { label: 'Hover Color', name: 'hover_color', default: '#EEEEEE', widget : 'color', required: true },
+                { label: 'Ring BG', name: 'ring', default: '#000000', widget : 'color', required: true },
+                { label: 'Hover Ring BG', name: 'hover_ring', default: '#000000', widget : 'color', required: true }
+              ],
+            },
+            {
+              label: 'Secondary',
+              name: 'secondary',
+              widget: 'object',
+              fields: [
+                { label: 'Bg Color', name: 'bg', default: '#FFFFFF', widget : 'color', required: true },
+                { label: 'Hover Bg Color', name: 'hover_bg', default: '#CCCCCC', widget : 'color', required: true },
+                { label: 'Default Color', name: 'default_color', default: '#000000', widget : 'color', required: true },
+                { label: 'Hover Color', name: 'hover_color', default: '#000000', widget : 'color', required: true },
+                { label: 'Ring BG', name: 'ring', default: '#CCCCCC', widget : 'color', required: true },
+                { label: 'Hover Ring BG', name: 'hover_ring', default: '#000000', widget : 'color', required: true }
+              ],
+            }
           ],
         },
       ],

@@ -8,10 +8,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(
-        limit: 3000
-        filter: { frontmatter: { layout: { nin: ["hidden", null] } } }
-      ) {
+      allMarkdownRemark(limit: 3000, filter: {frontmatter: {layout: { nin: ["hidden", null] }}}) {
         edges {
           node {
             id

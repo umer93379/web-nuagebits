@@ -3,10 +3,11 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import Layout from '@/components/Layout'
-import PageBuilder from '@/components/PageBuilder'
+import PageBuilder from '../components/PageBuilder'
 import DefaultHead from '../components/Head/DefaultHead'
 
 const Page = ({ data }) => {
+  
   return (
     <Layout nav={true}>
       <PageBuilder blocks={data.page.frontmatter.blocks} />

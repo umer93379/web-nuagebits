@@ -1,17 +1,17 @@
 import clsx from 'clsx'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 import Hero from '@/blocks/Hero';
 import Carousel from 're-carousel' 
 export default function Heros({ data }) {
   
   return (
-    <div className='h-screen'>
+    <div className={clsx({'h-screen': data?.height === 'full' })}>
       {data?.heros && (
           data?.heros.length > 1 ? (
             <Carousel loop auto>
               {data?.heros?.map((block, i) => {
-                block.hero.height = 'full'
+                block.hero.height = data?.height
                 return (
                   <Hero key={i} data={block.hero} />
                 )

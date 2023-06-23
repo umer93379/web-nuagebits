@@ -7,12 +7,14 @@ import RecentArticles from '../blocks/RecentArticles';
 import ContentImage from '../blocks/ContentImage';
 import Perks from '../blocks/Perks';
 import Content from '../blocks/Content';
+import Form from '../blocks/Form';
 
 export default function PageBuilder({ blocks, preview = false }) {
   return (
     <>
       {blocks &&
         blocks.map((block, i) => {
+          
           switch (block.type) {
             case 'hero_slider':
               return <Heros key={i} data={block} />;
@@ -26,6 +28,8 @@ export default function PageBuilder({ blocks, preview = false }) {
               return <Perks key={i} data={block} preview={preview} />;
             case 'content':
               return <Content key={i} data={block} preview={preview} />;
+            case 'form':
+              return <Form key={i} block={block} preview={preview} />;
             default:
               return (
                 <div className='container mx-auto' key={i}>
@@ -79,11 +83,13 @@ export const query = graphql`
           variant
         }
       }
+      
       heros {
         hero {
           title
           content
           variant
+          height
           buttons {
             button {
               content
@@ -140,7 +146,7 @@ export const query = graphql`
           image {
               childImageSharp {
                 gatsbyImageData(
-                  width: 800
+                  width: 100
                   quality: 72
                   placeholder: DOMINANT_COLOR
                   formats: [AUTO, WEBP, AVIF]
@@ -149,6 +155,7 @@ export const query = graphql`
             }
         }
       }
+      form
     }
   }
 `;
