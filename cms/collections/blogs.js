@@ -1,6 +1,6 @@
 import { PermalinkField } from '../fields/permalink-field';
 import seo from '../fields/seo';
-import { ID } from '../fields';
+import { ID, ImageField, backgroundImageField } from '../fields';
 
 const collection = {
   name: 'blog',
@@ -35,13 +35,8 @@ const collection = {
       default: '',
     },
     PermalinkField('blog'),
-    {
-      label: 'Featured Image',
-      name: 'thumbnail',
-      widget: 'image',
-      default: '',
-      required: false,
-    },
+    ImageField(),
+    backgroundImageField(),
     {
       label: 'Date',
       name: 'date',
