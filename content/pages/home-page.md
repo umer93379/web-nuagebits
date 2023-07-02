@@ -10,15 +10,35 @@ blocks:
     height: full
     heros:
       - hero:
-          variant: default
+          variant: visual_image_with_heading
           height: full
-          title: Start Building your website
-          content: Enable Identity and Git hub gateway in you app setting at netlify, then click button below to continue..
+          title: For Your Next Generation Website
+          content: Web 3.O framework for your business
           buttons:
             - button:
                 variant: button
                 content: Get Started
-                url: /admin
+                url: /get-started
+          hero_photo:
+            hero_image: /img/edge-base-logo.png
+            alt: Hero Slider Photo
+          hero_bg_photo:
+            hero_bg_image: /img/green-tropical-leaves-border-png-3000x2400.png
+            enable_parallax: true
+          columns:
+            - title: React
+              content: open-source JavaScript framework and library
+              show_popup: false
+              permalink: /reactjs/
+              photo:
+                image: /img/pngegg.png
+            - title: Gatsby
+              content: open source framework with performance, scalability and security
+                built-in.
+              show_popup: false
+              permalink: /reactjs/
+              photo:
+                image: /img/gatsby.png
     variant: default
     title: For Your Next Generation Website
 seo:
