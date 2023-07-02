@@ -1,4 +1,4 @@
-import { Buttons, Title, Content, VariantField, ImageField, Heros, backgroundImageField, HeightField } from '../fields';
+import { Buttons, Title, Content, VariantField, ImageField, Heros, backgroundSettingsField, HeightField } from '../fields';
 
 
 const Config = {
@@ -7,40 +7,14 @@ const Config = {
   widget: 'list',
   types: [
     {
-      label: 'Hero',
-      name: 'hero',
-      widget: 'object',
-      summary: 'Hero {{fields.title}}',
-      fields: [
-        Title,
-        Buttons,
-        ImageField(),
-        backgroundImageField(),
-        VariantField('default', ['default', 'visual_image_with_heading', 'full']),
-        HeightField('full', ['auto', 'full', 'little_less', 'half']),
-        Content,
-        {
-          label: 'Columns',
-          name: 'columns',
-          widget: 'list',
-          summary: '{{fields.title}}',
-          fields: [
-            Title,
-            ImageField()
-          ],
-        },
-      ],
-    },
-    {
       label: 'Slider',
       name: 'hero_slider',
       widget: 'list',
       summary: 'Slider {{fields.title}}',
       fields: [
-        Title,
-        Heros,
         VariantField('default', ['default']),
-        HeightField('default', ['auto', 'full', 'little_less', 'half'])
+        HeightField('full', ['full', '80vh', '50vh']),
+        Heros,
       ],
     },
     {
@@ -52,7 +26,7 @@ const Config = {
         Title,
         Content, 
         VariantField('left-hand', ['left-hand','right-hand','centered']),
-        backgroundImageField()
+        backgroundSettingsField()
       ],
     },
     {
@@ -65,7 +39,7 @@ const Config = {
         Content,
         Buttons,
         ImageField(),
-        backgroundImageField(),
+        backgroundSettingsField(),
         VariantField('default', ['default', 'reversed']),
       ],
     },
@@ -78,7 +52,7 @@ const Config = {
         Title,
         VariantField('default', ['default', 'cards', 'gallery']),
         Content,
-        backgroundImageField(),
+        backgroundSettingsField(),
         {
           label: 'Columns',
           name: 'columns',
@@ -108,7 +82,7 @@ const Config = {
       label: 'Recent Articles',
       name: 'recentArticles',
       widget: 'object',
-      fields: [Title, backgroundImageField()],
+      fields: [Title, backgroundSettingsField()],
     },
     {
       label: 'Form',
@@ -117,7 +91,7 @@ const Config = {
       fields: [
         Title,
         Content,
-        backgroundImageField(),
+        backgroundSettingsField(),
         ImageField(),
         {
           label: 'Form',

@@ -21,14 +21,21 @@ export const VariantField = (initial, options = []) => ({
   options: options,
 });
 
-export const HeightField = (initial, options = []) => ({
+export const HeightField = (initial) => ({
   label: 'Height',
   name: 'height',
   widget: 'select',
   default: initial,
-  options: options,
+  options: ['full', "80vh","60vh","40vh","20vh"],
 });
 
+export const ColorTheme = (initial) => ({
+  label: 'Color Theme',
+  name: 'color_theme',
+  widget: 'select',
+  default: initial,
+  options: ['dark', "white"],
+});
 
 export const ImageField = (name = 'image', fieldName = 'photo') => ({
   label: 'Image',
@@ -40,14 +47,25 @@ export const ImageField = (name = 'image', fieldName = 'photo') => ({
   ],
 });
 
-export const backgroundImageField = (name = 'bg_image', fieldName = 'bg_photo') => ({
-  label: 'Background Image',
-  name: fieldName,
+export const ImagesField = () => ({
+  label: 'Images',
+  name: 'images',
+  widget: 'list',
+  collapsed:true,
+  minimize_collapsed: true,
+  field: ImageField(),
+});
+
+export const backgroundSettingsField = () => ({
+  label: 'Background Settings',
+  name: 'bg_settings',
   widget: 'object',
+  collapsed:true,
   fields: [
-    { label: 'BG Image', name, widget: 'image', required: false },
-    { label: 'Alt', name: 'bg_alt', widget: 'string', required: false },
-    { label: 'Enable Parallax', name: 'enable_parallax', widget: 'boolean', required: false },
+    VariantField('no-bg',['no-bg','bg-image','bg-image-parralax','bg-color']),
+    { label: 'Image', name: 'bg_photo', widget: 'image', required: false },
+    { label: 'Color', name: 'bg_color', widget: 'color', required: false },
+    { label: 'Youtube Video', name: 'bg_video', widget: 'string', required: false },
   ],
 });
 
@@ -75,6 +93,7 @@ export const Button = {
 
 export const Buttons = {
   label: 'Buttons',
+  summary: 'Buttons',
   name: 'buttons',
   widget: 'list',
   fields: [Button],
@@ -86,17 +105,36 @@ export const Hero = {
   summary: 'Slide {{fields.title}}',
   fields: [
     Title,
-    Buttons,
-    ImageField('hero_image', 'hero_photo'),
-    backgroundImageField('hero_bg_image', 'hero_bg_photo'),
     VariantField('default', ['default', 'visual_image_with_heading', 'full']),
-    HeightField('default', ['auto', 'full', 'little_less', 'half']),
+    HeightField('full'),
+    ColorTheme('dark'),
+    backgroundSettingsField(),
+    ImagesField(),
+    { label: 'Youtube Video', name: 'video', widget: 'string', required: false },
     Content,
+    Buttons,
+    {
+      label: 'Columns',
+      name: 'columns',
+      widget: 'list',
+      summary: '{{fields.title}}',
+      fields: [
+        Title,
+        {
+          label: 'Permalink',
+          name: 'permalink',
+          widget: 'string',
+          required: false,
+        },
+        ImageField()
+      ],
+    }
   ],
 };
 export const Heros = {
   label: 'Heros',
   name: 'heros',
   widget: 'list',
+  summary: 'Slide',
   fields: [Hero],
 };
