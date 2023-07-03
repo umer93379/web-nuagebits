@@ -114,12 +114,7 @@ export const query = graphql`
               }
             }
           }
-          images {
-            photo {
-              image
-              alt
-            }
-          }
+          
           columns {
             title
             content

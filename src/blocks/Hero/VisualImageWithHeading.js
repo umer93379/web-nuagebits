@@ -5,7 +5,7 @@ import Image from '../../resolvers/Image'
 import clsx from 'clsx';
 
 export default function VisualImageWithHeading({ data }) {
-    
+    console.log(data)
     return (
         <section class="text-gray-600 body-font flex h-screen w-full place-content-center items-center">
             <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -21,13 +21,14 @@ export default function VisualImageWithHeading({ data }) {
                         </div>
                     )}
                 </div>
-                { data?.photos && (
+                { (data?.images && data?.images.length > 0) && (
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        {data?.photo.map(photo => {
+                        {data?.images.map(image => {
+                            console.log(image, image.photo)
                             return (
                                 <Image
-                                    src={photo?.image}
-                                    alt={photo?.alt}
+                                    src={image?.photo?.image}
+                                    alt={image?.photo?.alt}
                                     className="object-cover object-center rounded"
                                 />
                             )
