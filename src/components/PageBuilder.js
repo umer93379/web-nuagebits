@@ -114,8 +114,8 @@ export const query = graphql`
               }
             }
           }
-          hero_photo {
-            hero_image {
+          photo {
+            image {
               childImageSharp {
                 gatsbyImageData(
                   width: 800

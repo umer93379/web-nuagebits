@@ -29,11 +29,6 @@ export default function VisualImageWithHeading({ data }) {
                                 alt={data?.photo?.alt}
                                 className="w-full max-w-xs mx-auto"
                             />)}
-                            { data?.hero_photo && (<Image
-                                src={data?.hero_photo?.hero_image}
-                                alt={data?.hero_photo?.alt}
-                                className="w-full max-w-xs mx-auto"
-                            />)} 
                         </div>                
                     </div>
                 </section>

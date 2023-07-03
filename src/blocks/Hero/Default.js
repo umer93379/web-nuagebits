@@ -35,9 +35,9 @@ export default function DefaultHero({ data }) {
                                         alt={col?.photo?.alt}
                                         className="w-24 rounded-full"
                                     />)}
-                                    { col?.hero_photo && (<Image
-                                        src={col?.hero_photo?.image}
-                                        alt={col?.hero_photo?.alt}
+                                    { col?.photo && (<Image
+                                        src={col?.photo?.image}
+                                        alt={col?.photo?.alt}
                                         className="w-24 rounded-full"
                                     />)}
                                 </a>
