@@ -36,6 +36,13 @@ export const ColorTheme = (initial) => ({
   default: initial,
   options: ['dark', "white"],
 });
+export const Overlay = (initial) => ({
+  label: 'Overlay',
+  name: 'overlay',
+  widget: 'select',
+  default: initial,
+  options: ['no-overlay','dark', "white"],
+});
 
 export const ImageField = (name = 'image', fieldName = 'photo') => ({
   label: 'Image',
@@ -63,6 +70,7 @@ export const backgroundSettingsField = () => ({
   collapsed:true,
   fields: [
     VariantField('no-bg',['no-bg','bg-image','bg-image-parralax','bg-color']),
+    Overlay('no-overlay'),
     { label: 'Image', name: 'bg_photo', widget: 'image', required: false },
     { label: 'Color', name: 'bg_color', widget: 'color', required: false },
     { label: 'Youtube Video', name: 'bg_video', widget: 'string', required: false },

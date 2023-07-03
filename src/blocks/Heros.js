@@ -23,19 +23,4 @@ export default function Heros({ data }) {
       )}
     </div>
   )
-
-  // return (
-  //   <>
-  //     <Carousel auto className=''>
-        // {data?.heros && (
-        //   data?.heros?.map((block, i) => {
-        //     block.hero.variant = 'full'
-        //       return (
-        //         <Hero key={i} data={block.hero} />
-        //       )
-        //   })
-        // )}
-  //     </Carousel>
-  //   </>
-  // )
 }

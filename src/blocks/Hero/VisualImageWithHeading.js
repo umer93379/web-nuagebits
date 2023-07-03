@@ -7,21 +7,12 @@ import clsx from 'clsx';
 
 export default function VisualImageWithHeading({ data }) {
   
-  const bgImage =  data?.bg_photo ? 
-    (typeof data?.bg_photo?.bg_image === 'string' ? data?.bg_photo?.bg_image : data?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src)
-   : (typeof data?.hero_bg_photo?.hero_bg_image === 'string' ? data?.hero_bg_photo?.hero_bg_image : data?.hero_bg_photo?.hero_bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src);
-    
     return (
-        <Parallax
-          bgImage={bgImage}
-          bgImageAlt={ data?.bg_photo ? data?.bg_photo?.alt : data?.hero_bg_photo ? data?.hero_bg_photo?.alt : ''}
-          disabled={ (data?.bg_photo && data?.bg_photo?.enable_parallax === true) || (data?.hero_bg_photo && data?.hero_bg_photo?.enable_parallax === true)}
-        >
-            <section className={clsx({'h-screen': data?.height === 'full' ,"bg-white bg-opacity-50 dark:bg-gray-900  items-center my-auto flex": true })}>
+        <section className={clsx({'h-screen': data?.height === 'full' ,"dark:bg-gray-900  items-center my-auto flex": true, 'bg-white bg-opacity-50': data.bg_settings.overlay === 'white', 'bg-black bg-opacity-50': data.bg_settings.overlay === 'black' })}>
                 <section className=" mx-auto">
                     <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                         <div className="mr-auto place-self-center lg:col-span-7">
-                            {data?.title && (<h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">{data?.title}</h1>)}
+                            {data?.title && (<h1 className={clsx({"mb-4 text-4xl font-extrabold tracking-tight leading-none" : true  ,  'text-white': data.color_theme === 'white' , 'text-gray-900': data.color_theme === 'dark' ," md:text-5xl lg:text-6xl dark:text-white" : true})}>{data?.title}</h1>)}
                             {data?.content && (<p className=" mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">{data?.content}</p>)}
                             {data?.buttons && (
                                 <div className="inline-flex items-center justify-center">
@@ -47,7 +38,6 @@ export default function VisualImageWithHeading({ data }) {
                     </div>
                 </section>
             </section>
-        </Parallax>
     )
 
 }

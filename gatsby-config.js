@@ -80,6 +80,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-background-image-es5',
+      options: {
+        specialChars: '/:',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: process.env.GATSBY_APP_URL || 'http://localhost:8000',

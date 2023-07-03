@@ -89,6 +89,7 @@ export const query = graphql`
           title
           content
           variant
+          color_theme
           height
           buttons {
             button {
@@ -97,13 +98,17 @@ export const query = graphql`
               variant
             }
           }
-          hero_bg_photo {
-            hero_bg_image {
+          bg_settings {
+            variant
+            overlay
+            bg_color
+            bg_video
+            bg_photo {
               childImageSharp {
                 gatsbyImageData(
                   width: 2480
-                  quality: 100
-                  placeholder: DOMINANT_COLOR
+                  quality: 70
+                  placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )
               }

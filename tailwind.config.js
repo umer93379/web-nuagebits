@@ -51,8 +51,7 @@ module.exports = {
         '16': '4rem',
       },
       height: {
-        'window': '100vh',
-        'screen': 'calc(100vh - 25vh)'
+        'window': '100vh'
       }
 
     },
