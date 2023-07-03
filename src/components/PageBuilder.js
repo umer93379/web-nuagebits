@@ -106,12 +106,18 @@ export const query = graphql`
             bg_photo {
               childImageSharp {
                 gatsbyImageData(
-                  width: 2480
+                  width: 1024
                   quality: 70
                   placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )
               }
+            }
+          }
+          images {
+            photo {
+              image
+              alt
             }
           }
           columns {

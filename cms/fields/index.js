@@ -54,13 +54,11 @@ export const ImageField = (name = 'image', fieldName = 'photo') => ({
   ],
 });
 
-export const ImagesField = () => ({
+export const ImagesField = (label) => ({
   label: 'Images',
   name: 'images',
-  widget: 'list',
-  collapsed:true,
-  minimize_collapsed: true,
-  field: ImageField(),
+  widget: 'image',
+  allow_multiple: true
 });
 
 export const backgroundSettingsField = () => ({
