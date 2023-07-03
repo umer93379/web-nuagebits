@@ -23,10 +23,9 @@ blocks:
           height: full
           color_theme: white
           title: For Your Next Generation Website
-          images:
-            - photo:
-                image: ""
-                alt: ""
+          photo:
+            image: /img/edge-base-logo.png
+            alt: Logo
           content: Web 3.O framework for your business
           video: lRTtMcx6rSM
           bg_settings:

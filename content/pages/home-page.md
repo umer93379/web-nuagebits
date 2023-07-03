@@ -31,6 +31,9 @@ blocks:
             bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
             bg_color: "#ffffff"
             bg_video: lRTtMcx6rSM
+          photo:
+            image: /img/edge-base-logo.png
+            alt: Logo
           columns:
             - title: Hamza Hospital
               content: open-source JavaScript framework and library
@@ -64,6 +67,9 @@ blocks:
           height: full
           color_theme: dark
           title: For Your Next Generation Website
+          photo:
+            image: /img/edge-base-logo.png
+            alt: Logo
           content: Web 3.O framework for your business
           video: apqE7GOWh5k
           bg_settings:

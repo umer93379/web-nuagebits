@@ -42,7 +42,7 @@ export default function Hero({ data }) {
             
             </div>
             <div
-              className={'relative'} style={{minHeight: '100vh'}}
+              className={'absolute'} style={{minHeight: '100vh'}}
             >
                 <HeroGenerator data={data} />
             </div>

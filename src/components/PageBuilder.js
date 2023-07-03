@@ -114,7 +114,18 @@ export const query = graphql`
               }
             }
           }
-          
+          photo{
+              image {
+                  childImageSharp {
+                    gatsbyImageData(
+                      width: 150
+                      quality: 72
+                      placeholder: DOMINANT_COLOR
+                      formats: [AUTO, WEBP, AVIF]
+                    )
+                  }
+                }
+            }
           columns {
             title
             content

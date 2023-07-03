@@ -115,7 +115,7 @@ export const Hero = {
     HeightField('full'),
     ColorTheme('dark'),
     backgroundSettingsField(),
-    ImagesField(),
+    ImageField(),
     { label: 'Youtube Video', name: 'video', widget: 'string', required: false },
     Content,
     Buttons,
