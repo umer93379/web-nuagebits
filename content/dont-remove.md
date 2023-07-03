@@ -70,8 +70,8 @@ blocks:
           title: For Your Next Generation Website
           images:
             - photo:
-                image: ""
-                alt: ""
+                image: /img/edge-base-logo.png
+                alt: Logo
           content: Web 3.O framework for your business
           video: apqE7GOWh5k
           bg_settings:
