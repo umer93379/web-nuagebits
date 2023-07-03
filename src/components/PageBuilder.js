@@ -114,15 +114,17 @@ export const query = graphql`
               }
             }
           }
-          photo {
-            image {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 800
-                  quality: 72
-                  placeholder: DOMINANT_COLOR
-                  formats: [AUTO, WEBP, AVIF]
-                )
+          images {
+            photo {
+              image {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 800
+                    quality: 72
+                    placeholder: DOMINANT_COLOR
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
               }
             }
           }
