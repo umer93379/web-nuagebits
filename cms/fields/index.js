@@ -118,6 +118,16 @@ export const Hero = {
     ImageField(),
     { label: 'Youtube Video', name: 'video', widget: 'string', required: false },
     Content,
+    {
+      label: 'Form',
+      name: 'form',
+      widget: 'relation',
+      collection: 'forms',
+      search_fields: ['title'],
+      display_fields: ['{{id}} - {{title}}'],
+      value_field: 'id',
+      required: false,
+    },
     Buttons,
     {
       label: 'Columns',

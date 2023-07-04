@@ -52,6 +52,9 @@ module.exports = {
       },
       height: {
         'window': '100vh'
+      },
+      width: {
+        'window': '100vh'
       }
 
     },
