@@ -7,7 +7,7 @@ const Config = {
   widget: 'list',
   types: [
     {
-      label: 'Slider',
+      label: 'Hero Slider',
       name: 'hero_slider',
       widget: 'list',
       summary: 'Slider {{fields.title}}',
@@ -32,6 +32,46 @@ const Config = {
           summary: '{{fields.title}}',
           fields: [
             Content,
+          ],
+        }
+      ],
+    },
+    {
+      label: 'Cards Slider',
+      name: 'cards_slider',
+      widget: 'object',
+      summary: 'Slide {{fields.title}}',
+      fields: [
+        Title,
+        VariantField('wide', ['wide', 'narrow']),
+        {
+          label: 'Cards',
+          name: 'columns',
+          widget: 'list',
+          summary: '{{fields.title}}',
+          fields: [
+            Title,
+            {
+              label: 'Type',
+              name: 'type',
+              widget: 'string',
+              required: false,
+            },
+            {
+              label: 'Permalink',
+              name: 'permalink',
+              widget: 'string',
+              required: false,
+            },
+            Content,
+            VariantField('bg_image', [{
+              name: 'bg_image',
+              label: 'Image in Background'
+            }, {
+              name: 'image_above',
+              label: 'Image above content'
+            }]),
+            ImageField(),
           ],
         }
       ],

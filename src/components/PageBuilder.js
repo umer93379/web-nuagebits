@@ -8,6 +8,7 @@ import ContentImage from '../blocks/ContentImage';
 import Perks from '../blocks/Perks';
 import Content from '../blocks/Content';
 import Form from '../blocks/Form';
+import WideSlider from '../blocks/WideSlider';
 
 export default function PageBuilder({ blocks, preview = false }) {
   return (
@@ -30,6 +31,8 @@ export default function PageBuilder({ blocks, preview = false }) {
               return <Content key={i} data={block} preview={preview} />;
             case 'form':
               return <Form key={i} block={block} preview={preview} />;
+            case 'cards_slider':
+              return <WideSlider key={i} identifier={`wide_slider`+i} data={block} preview={preview} />
             default:
               return (
                 <div className='container mx-auto' key={i}>
@@ -58,7 +61,7 @@ export const query = graphql`
             gatsbyImageData(
               width: 800
               quality: 72
-              placeholder: DOMINANT_COLOR
+              placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF]
             )
           }
@@ -109,7 +112,7 @@ export const query = graphql`
                   gatsbyImageData(
                     width: 400
                     quality: 72
-                    placeholder: DOMINANT_COLOR
+                    placeholder: BLURRED
                     formats: [AUTO, WEBP, AVIF]
                   )
                 }
@@ -125,7 +128,7 @@ export const query = graphql`
                     gatsbyImageData(
                       width: 150
                       quality: 72
-                      placeholder: DOMINANT_COLOR
+                      placeholder: BLURRED
                       formats: [AUTO, WEBP, AVIF]
                     )
                   }
@@ -137,13 +140,16 @@ export const query = graphql`
       columns {
         title
         content
+        variant
+        permalink
+        type
         photo{
           image {
               childImageSharp {
                 gatsbyImageData(
-                  width: 100
+                  width: 780
                   quality: 72
-                  placeholder: DOMINANT_COLOR
+                  placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )
               }

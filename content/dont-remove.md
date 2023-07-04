@@ -33,7 +33,7 @@ blocks:
             overlay: no-overlay
             bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
             bg_color: "#ffffff"
-            bg_video: lRTtMcx6rSM
+            bg_video: https://player.vimeo.com/video/516255210?title=0&portrait=0&byline=0&autoplay=1&muted=true&controls=0&loop=1
           columns:
             - title: Hamza Hospital
               content: open-source JavaScript framework and library
@@ -50,6 +50,26 @@ blocks:
                 image: /img/4000_2_01.jpg
     variant: default
     title: For Your Next Generation Website
+  - type: cards_slider
+    title: You might be intrested in
+    variant: narrow
+    columns:
+      - title: This is first card
+        content: This is some description for first card
+        type: First Link
+        variant: bg_image
+        permalink: https://www.hamza-hospital.com
+        photo:
+          image: /img/4000_2_01.jpg
+          alt: Logo
+      - title: This is first card
+        content: This is some description for first card
+        type: First Link
+        variant: image_above
+        permalink: https://www.hamza-hospital.com
+        photo:
+          image: /img/4000_2_01.jpg
+          alt: Logo
   - type: hero_slider
     height: full
     heros:
