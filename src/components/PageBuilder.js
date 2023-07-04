@@ -21,7 +21,7 @@ export default function PageBuilder({ blocks, preview = false }) {
             case 'hero':
               return <Hero key={i} data={block} />;
             case 'recentArticles':
-              return <RecentArticles key={i} data={block} preview={preview} />;
+              return <RecentArticles key={i} identifier={`recent_article`+i} data={block} preview={preview} />;
             case 'content_image':
               return <ContentImage key={i} data={block} preview={preview} />;
             case 'perks':

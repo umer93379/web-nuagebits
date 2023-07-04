@@ -167,6 +167,9 @@ blocks:
     photo:
       image: /img/heroes.png
       alt: Layers
+  - type: recentArticles
+    title: 'Recent Articles'
+    height: full
 seo:
   ogimage: /img/4000_2_01.jpg
 ---
