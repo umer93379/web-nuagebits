@@ -2,7 +2,7 @@
 id: JUJDCFVbWC
 type: page
 layout: page-builder
-title: Home Page
+title: Get Started
 permalink: /documentation/get-started
 thumbnail: ""
 blocks:
