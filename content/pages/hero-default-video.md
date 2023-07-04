@@ -28,13 +28,13 @@ blocks:
             image: /img/edge-base-logo.png
             alt: Logo
           content: Web 3.O framework for your business
-          video: apqE7GOWh5k
+          video: https://player.vimeo.com/video/560138399?title=0&portrait=0&byline=0&autoplay=1&muted=true&loop=1&controls=1
           bg_settings:
             variant: bg-video
             overlay: no-overlay
             bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
             bg_color: "#ffffff"
-            bg_video: lRTtMcx6rSM
+            bg_video: https://player.vimeo.com/video/574425766?title=0&portrait=0&byline=0&autoplay=1&muted=true&loop=1&controls=0
           columns:
             - title: Hamza Hospital
               content: open-source JavaScript framework and library
