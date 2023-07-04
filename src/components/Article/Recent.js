@@ -229,7 +229,7 @@ export default function Recent({ identifier, title, widerContainer, ...props }) 
   return (
     <div
       id={identifier}
-      className={clsx("paragraph ubx-wslider w-full px-0 overflow-hidden py-16 bg-gray-100", {
+      className={clsx("paragraph proc-wslider w-full px-0 overflow-hidden py-16 bg-gray-100", {
         [`${identifier}`]: true,
       })}>
       <div className={(widerContainer ? 'wider-title' : 'wide-title') + ' pb-16'}>
@@ -299,7 +299,7 @@ export default function Recent({ identifier, title, widerContainer, ...props }) 
                         <p className='text-grey text-2xl mb-2 py-3 capitalize'>{entityType.replace('_', ' ')}</p>
                         <h4 className="mb-5 text-5xl font-bold">{title}</h4>
                         <div className="mb-5 text-2xl">{(description)}</div>
-                        <Link to={(path)} className="mb-5 text-ubx-red font-bold text-2xl inline-block">{linkText}</Link>
+                        <Link to={(path)} className="mb-5 text-proc-red font-bold text-2xl inline-block">{linkText}</Link>
                       </div>
                     </span>
                   </div>

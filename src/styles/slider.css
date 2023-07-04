@@ -1,27 +1,27 @@
-.ubx-slider .slick-prev,
-.ubx-slider .slick-next {
+.proc-slider .slick-prev,
+.proc-slider .slick-next {
   width: 44px;
   height: 44px;
   background-color: rgb(230 230 230 / 100%);
 }
 
-.ubx-slider .slick-prev:hover,
-.ubx-slider .slick-next:hover {
+.proc-slider .slick-prev:hover,
+.proc-slider .slick-next:hover {
   background-color: rgba(255, 255, 255, 0.6);
   -webkit-box-shadow: 0 0 10px rgb(154 154 154 / 20%);
   box-shadow: 0 0 10px rgb(154 154 154 / 20%);
 }
 
-.ubx-slider .slick-next {
+.proc-slider .slick-next {
   right: -3%;
 }
 
-.ubx-slider .slick-prev {
+.proc-slider .slick-prev {
   left: -3%;
 }
 
-.ubx-slider .slick-prev>svg,
-.ubx-slider .slick-next>svg {
+.proc-slider .slick-prev>svg,
+.proc-slider .slick-next>svg {
   position: relative;
   z-index: 20;
   color: rgb(255, 110, 89);
@@ -32,17 +32,17 @@
   left: 20%;
 }
 
-.ubx-slider .slick-prev:before,
-.ubx-slider .slick-next:before {
+.proc-slider .slick-prev:before,
+.proc-slider .slick-next:before {
   content: '';
   display: none;
 }
 
-.ubx-slider .slick-list>.slick-track {
+.proc-slider .slick-list>.slick-track {
   display: flex !important;
 }
 
-.ubx-slider .slick-list>.slick-track>.slick-slide {
+.proc-slider .slick-list>.slick-track>.slick-slide {
   display: unset !important;
   float: unset !important;
   -webkit-flex: 1;
@@ -53,13 +53,13 @@
 }
 
 @media (min-width: 920px) {
-  .ubx-slider .sb-main-padded.sb-show-main #root .paragraph.mb-40 {
+  .proc-slider .sb-main-padded.sb-show-main #root .paragraph.mb-40 {
     padding: 0 50px;
   }
 }
 
 @media (min-width: 480px) {
-  .ubx-slider .slick-list>.slick-track>.slick-slide.slick-active.slick-current+.slick-slide.slick-active {
+  .proc-slider .slick-list>.slick-track>.slick-slide.slick-active.slick-current+.slick-slide.slick-active {
     border-left: 1rem solid white;
     border-right: 1rem solid white;
   }
@@ -67,8 +67,8 @@
 
 @media (max-width: 480px) {
 
-  .ubx-slider .slick-prev,
-  .ubx-slider .slick-next {
+  .proc-slider .slick-prev,
+  .proc-slider .slick-next {
     width: 37px;
     height: 37px;
   }
@@ -90,30 +90,30 @@
 
 
 
-.ubx-wslider .wslick-prev,
-.ubx-wslider .wslick-next {
+.proc-wslider .wslick-prev,
+.proc-wslider .wslick-next {
   width: 44px;
   height: 44px;
   background-color: rgb(230 230 230 / 100%);
 }
 
-.ubx-wslider .wslick-prev:hover,
-.ubx-wslider .wslick-next:hover {
+.proc-wslider .wslick-prev:hover,
+.proc-wslider .wslick-next:hover {
   background-color: rgba(255, 255, 255, 0.6);
   -webkit-box-shadow: 0 0 10px rgb(154 154 154 / 20%);
   box-shadow: 0 0 10px rgb(154 154 154 / 20%);
 }
 
-.ubx-wslider .wslick-next {
+.proc-wslider .wslick-next {
   right: -3%;
 }
 
-.ubx-wslider .wslick-prev {
+.proc-wslider .wslick-prev {
   left: -3%;
 }
 
-.ubx-wslider .wslick-prev>svg,
-.ubx-wslider .wslick-next>svg {
+.proc-wslider .wslick-prev>svg,
+.proc-wslider .wslick-next>svg {
   position: relative;
   z-index: 20;
   color: rgb(255, 110, 89);
@@ -124,18 +124,18 @@
   left: 20%;
 }
 
-/* .ubx-wslider .wslick-prev:before, .ubx-wslider  .wslick-next:before {
+/* .proc-wslider .wslick-prev:before, .proc-wslider  .wslick-next:before {
   content: '';
   display: none;
 } */
 
-.ubx-wslider .wslick-list>.wslick-track {
+.proc-wslider .wslick-list>.wslick-track {
   display: block !important;
   /* width: 100% !important; */
   overflow: hidden;
 }
 
-.ubx-wslider .wslick-list>.wslick-track>.wslick-slide {
+.proc-wslider .wslick-list>.wslick-track>.wslick-slide {
   display: unset !important;
   float: unset !important;
   -webkit-flex: 1;
@@ -146,18 +146,18 @@
   /* margin-right: 40px !important; */
 }
 
-.ubx-wslider .wslick-list>.wslick-track>.wslick-slide>div {
+.proc-wslider .wslick-list>.wslick-track>.wslick-slide>div {
   width: 460px !important;
 }
 
 @media (min-width: 920px) {
-  .ubx-wslider .sb-main-padded.sb-show-main #root .paragraph.mb-40 {
+  .proc-wslider .sb-main-padded.sb-show-main #root .paragraph.mb-40 {
     padding: 0 50px;
   }
 }
 
 @media (min-width: 480px) {
-  .ubx-wslider .wslick-list>.wslick-track>.wslick-slide.wslick-active.wslick-current+.wslick-slide.wslick-active {
+  .proc-wslider .wslick-list>.wslick-track>.wslick-slide.wslick-active.wslick-current+.wslick-slide.wslick-active {
     /* border-left: 1rem solid white;
     border-right: 1rem solid white; */
   }
@@ -165,8 +165,8 @@
 
 @media (max-width: 480px) {
 
-  .ubx-wslider .wslick-prev,
-  .ubx-wslider .wslick-next {
+  .proc-wslider .wslick-prev,
+  .proc-wslider .wslick-next {
     width: 37px;
     height: 37px;
   }
