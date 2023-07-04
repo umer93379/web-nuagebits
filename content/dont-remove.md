@@ -10,86 +10,92 @@ blocks:
     height: full
     heros:
       - hero:
-          variant: full
-          title: Edge Template
-          content: Web 3.O for your business.
           buttons:
             - button:
                 variant: button
                 content: Get Started
-                url: https://github.com/processton-io/edge-base
-          hero_photo:
-            hero_image: /img/goal.png
-            alt: Hero Slider Photo
-          hero_bg_photo:
-            hero_bg_image: /img/white_wood.jpg
-            enable_parallax: false
+                url: /get-started
+            - button:
+                variant: secondary
+                content: See Documentation
+                url: /documentation
+          variant: with_image_left_to_right
+          height: full
+          color_theme: white
+          title: For Your Next Generation Website
+          photo:
+            image: /img/edge-base-logo.png
+            alt: Logo
+          content: Web 3.O framework for your business
+          video: lRTtMcx6rSM
+          bg_settings:
+            variant: bg-video
+            overlay: no-overlay
+            bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
+            bg_color: "#ffffff"
+            bg_video: lRTtMcx6rSM
           columns:
-            - title: React
+            - title: Hamza Hospital
               content: open-source JavaScript framework and library
               show_popup: false
-              permalink: https://react.dev/
+              permalink: www.hamza-hospital.com
               photo:
                 image: /img/pngegg.png
-            - title: Gatsby
+            - title: Dentals.PK
               content: open source framework with performance, scalability and security
                 built-in.
               show_popup: false
-              permalink: https://www.gatsbyjs.com/
+              permalink: www.dentals.pk
               photo:
-                image: /img/gatsby.png
-          height: full
+                image: /img/4000_2_01.jpg
+    variant: default
+    title: For Your Next Generation Website
+  - type: hero_slider
+    height: full
+    heros:
       - hero:
-          variant: visual_image_with_heading
-          height: full
-          title: For Your Next Generation Website
-          content: Quick deploy, Quick Publish
           buttons:
             - button:
                 variant: button
                 content: Get Started
-                url: https://github.com/processton-io/edge-base
-          hero_photo:
-            hero_image: /img/goal.png
-            alt: Hero Slider Photo
-          hero_bg_photo:
-            hero_bg_image: /img/white_wood.jpg
-            enable_parallax: false
+                url: /get-started
+            - button:
+                variant: secondary
+                content: See Documentation
+                url: /documentation
+          variant: with_image_left_to_right
+          height: full
+          color_theme: dark
+          form: T9c8SkeW4
+          title: For Your Next Generation Website
+          images:
+            - photo:
+                image: /img/edge-base-logo.png
+                alt: Logo
+          content: Web 3.O framework for your business
+          video: apqE7GOWh5k
+          bg_settings:
+            variant: bg-image
+            overlay: white
+            bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
+            bg_color: "#ffffff"
+            bg_video: BqFSHbzSs7U
+          columns:
+            - title: Hamza Hospital
+              content: open-source JavaScript framework and library
+              show_popup: false
+              permalink: www.hamza-hospital.com
+              photo:
+                image: /img/pngegg.png
+            - title: Dentals.PK
+              content: open source framework with performance, scalability and security
+                built-in.
+              show_popup: false
+              permalink: www.dentals.pk
+              photo:
+                image: /img/4000_2_01.jpg
     variant: default
-  - buttons:
-      - button:
-          variant: button
-          content: Start Building Now
-          url: /my-repo
-    variant: default
-    height: full
-    photo:
-      image: /img/4000_2_01.jpg
-    bg_photo:
-      bg_image: /img/white_wood.jpg
-    title: Its Fast and Easy
-    content: |-
-      # website in 2 steps
-
-      1. ### Extend the repo 
-      2. ### deploy at netlify
-
-      ### N﻿ot just fast; its the **fastest website**.
-    type: hero
-    columns:
-      - title: React
-        content: open-source JavaScript framework and library
-        show_popup: false
-        permalink: /reactjs/
-        photo:
-          image: /img/4000_2_01.jpg
-      - title: Gatsby
-        content: open source framework with performance, scalability and security
-          built-in.
-        show_popup: false
-        permalink: /reactjs/
-        photo:
-          image: /img/gatsby.png
+    title: For Your Next Generation Website
   - type: content_image
     variant: default
     title: Pre configured UI Components for your use.

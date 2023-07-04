@@ -4,21 +4,20 @@ import Buttons from '../../components/UI/Buttons';
 import Image from '../../resolvers/Image'
 import clsx from 'clsx';
 
-export default function DefaultHero({ data }) {
-  
+export default function WithUserAvatar({ data }) {
     return (
-        <section  className={ 
+        <section className={ 
           clsx({
-            "body-font flex place-content-center items-center ": true, 
+            "body-font flex place-content-center items-center ": true,
             "h-screen": data.height === 'full', 
-            "h-80vh": data.height === '80vh', 
-            "h-60vh": data.height === '60vh', 
-            "h-40vh": data.height === '40vh', 
-            "h-20vh": data.height === '20vh', 
+            "h-auto h-80vh": data.height === '80vh', 
+            "h-auto h-60vh": data.height === '60vh', 
+            "h-auto md:h-40vh": data.height === '40vh', 
+            "h-auto md:h-20vh": data.height === '20vh', 
             "h-auto": data.height === 'auto'
             })}>
-            <div class="mx-auto flex px-5 py-24 flex-col items-center">
-                <div class="lg:flex-grow w-full  flex flex-col md:items-center mb-16 md:mb-0 items-center text-center">
+            <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div class="lg:flex-grow md:w-2/3 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     {data?.title && (<h1 className={clsx({"title-font sm:text-4xl text-3xl mb-4 font-medium " : true , 'text-white': data.color_theme === 'white' , 'text-gray-900': data.color_theme === 'dark'})}>{data?.title}</h1>)}
                     {data?.content && (<p className={clsx({"mb-8 leading-relaxed" : true , 'text-white': data.color_theme === 'white' , 'text-gray-500': data.color_theme === 'dark'})}>{data?.content}</p>)}
                     {data?.buttons && (
@@ -31,7 +30,7 @@ export default function DefaultHero({ data }) {
                     )}
                 </div>
                 { data?.photo && (
-                    <div className="lg:max-w-lg w-full  text-center">
+                    <div className="lg:max-w-lg w-full md:w-1/3 lg:w-1/6 text-center md:text-left">
                         { data?.photo && (<Image
                                 src={data?.photo?.image}
                                 alt={data?.photo?.alt}
@@ -42,7 +41,6 @@ export default function DefaultHero({ data }) {
                 )}
             </div>
         </section>
-        
     )
 
 }

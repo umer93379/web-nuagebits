@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link as GatsbyLink } from 'gatsby'
 
-import { Parallax } from 'react-parallax';
-import Container from '../../components/UI/Container';
 import Title from '../../components/UI/Title';
 import Text from '../../components/UI/Text';
 import Image from '../../resolvers/Image'
@@ -35,9 +33,9 @@ export default function PerkCards({ data }) {
                           </Title>
                         )}
                         <Text className={`mb-3 font-normal text-gray-700 dark:text-gray-400`}>{col?.content}</Text>
-                        <div className='text-right'>
+                        {col?.permalink && (<div className='text-right'>
                           <GatsbyLink to={col?.permalink} className='text-sm'>read more ...</GatsbyLink>
-                        </div>
+                        </div>)}
                     </div>
                 </div>
               ))}

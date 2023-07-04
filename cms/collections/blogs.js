@@ -1,6 +1,6 @@
 import { PermalinkField } from '../fields/permalink-field';
 import seo from '../fields/seo';
-import { ID, ImageField, backgroundImageField } from '../fields';
+import { ID, ImageField, backgroundSettingsField } from '../fields';
 
 const collection = {
   name: 'blog',
@@ -36,7 +36,7 @@ const collection = {
     },
     PermalinkField('blog'),
     ImageField(),
-    backgroundImageField(),
+    backgroundSettingsField(),
     {
       label: 'Date',
       name: 'date',

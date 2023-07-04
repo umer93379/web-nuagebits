@@ -52,18 +52,6 @@ export const query = graphql`
       content
       variant
       height
-      bg_photo {
-        bg_image {
-          childImageSharp {
-            gatsbyImageData(
-              width: 2480
-              quality: 72
-              placeholder: DOMINANT_COLOR
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-      }
       photo {
         image {
           childImageSharp {
@@ -89,7 +77,8 @@ export const query = graphql`
           title
           content
           variant
-          height
+          color_theme
+          ratio
           buttons {
             button {
               content
@@ -97,30 +86,36 @@ export const query = graphql`
               variant
             }
           }
-          hero_bg_photo {
-            hero_bg_image {
+          form
+          bg_settings {
+            variant
+            overlay
+            bg_color
+            bg_video
+            bg_photo {
               childImageSharp {
                 gatsbyImageData(
-                  width: 2480
-                  quality: 100
-                  placeholder: DOMINANT_COLOR
+                  width: 2048
+                  quality: 70
+                  placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )
               }
             }
           }
-          hero_photo {
-            hero_image {
-              childImageSharp {
-                gatsbyImageData(
-                  width: 800
-                  quality: 72
-                  placeholder: DOMINANT_COLOR
-                  formats: [AUTO, WEBP, AVIF]
-                )
+          photo{
+            image {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 400
+                    quality: 72
+                    placeholder: DOMINANT_COLOR
+                    formats: [AUTO, WEBP, AVIF]
+                  )
+                }
               }
-            }
           }
+          video
           columns {
             title
             content
