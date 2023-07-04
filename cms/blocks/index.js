@@ -1,4 +1,4 @@
-import { Buttons, Title, Content, VariantField, ImageField, Heros, backgroundSettingsField, HeightField } from '../fields';
+import { Buttons, Title, Content, VariantField, ImageField, Heros, backgroundSettingsField, HeightField, ColorTheme } from '../fields';
 
 
 const Config = {
@@ -21,12 +21,29 @@ const Config = {
       label: 'Content',
       name: 'content',
       widget: 'object',
-      summary: 'Content {{fields.title}}',
+      summary: 'Content {{fields.content}}',
       fields: [
-        Title,
-        Content, 
         VariantField('left-hand', ['left-hand','right-hand','centered']),
-        backgroundSettingsField()
+        HeightField('full', ['full', '80vh', '50vh']),
+        ColorTheme('dark'),
+        backgroundSettingsField(),
+        Content,
+        {
+          label: 'Columns',
+          name: 'columns',
+          widget: 'list',
+          summary: '{{fields.title}}',
+          fields: [
+            Title,
+            {
+              label: 'Permalink',
+              name: 'permalink',
+              widget: 'string',
+              required: false,
+            },
+            ImageField()
+          ],
+        }
       ],
     },
     {

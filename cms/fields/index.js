@@ -34,7 +34,7 @@ export const HeightField = (initial) => ({
   name: 'height',
   widget: 'select',
   default: initial,
-  options: ['full', "80vh","60vh","40vh","20vh"],
+  options: ['auto', 'full', "80vh","60vh","40vh","20vh"],
 });
 
 export const ColorTheme = (initial) => ({
@@ -121,7 +121,6 @@ export const Hero = {
     Title,
     VariantField('default', ['default', 'visual_image_with_heading']),
     ContentDivision('1/3', ['1/3', '1/2', '1/1']),
-    HeightField('full'),
     ColorTheme('dark'),
     backgroundSettingsField(),
     ImageField(),

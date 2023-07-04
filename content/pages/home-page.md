@@ -7,7 +7,7 @@ permalink: /
 thumbnail: ""
 blocks:
   - type: hero_slider
-    height: full
+    height: 60vh
     heros:
       - hero:
           buttons:
@@ -20,16 +20,16 @@ blocks:
                 content: See Documentation
                 url: /documentation
           variant: visual_image_with_heading
-          height: full
+          height: 80vh
           color_theme: dark
           title: This is dev instance of edge-base Template
           content: Please dont use this instance.
           video: lRTtMcx6rSM
           bg_settings:
-            variant: no-bg
+            variant: bg-color
             overlay: no-overlay
             bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
-            bg_color: "#ffffff"
+            bg_color: "#79F3CB"
             bg_video: lRTtMcx6rSM
           photo:
             image: /img/edge-base-logo.png
