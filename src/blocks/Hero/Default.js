@@ -1,6 +1,5 @@
 
 import React from 'react'
-import { Parallax } from 'react-parallax';
 import Buttons from '../../components/UI/Buttons';
 import Image from '../../resolvers/Image'
 import clsx from 'clsx';
