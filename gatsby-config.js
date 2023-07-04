@@ -5,7 +5,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: process.env.GATSBY_APP_URL,
+    siteUrl: process.env.GATSBY_APP_URL || 'http://localhost:8000',
   },
   flags: {
     DEV_SSR: true,
@@ -46,7 +46,7 @@ module.exports = {
       resolve: 'gatsby-plugin-sitemap',
       options: {
         resolveSiteUrl: () =>
-          process.env.GATSBY_APP_URL,
+          process.env.GATSBY_APP_URL || 'http://localhost:8000',
       },
     },
     {
@@ -88,8 +88,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: process.env.GATSBY_APP_URL,
-        sitemap: process.env.GATSBY_APP_URL + '/sitemap-0.xml',
+        host: process.env.GATSBY_APP_URL || 'http://localhost:8000',
+        sitemap: process.env.GATSBY_APP_URL || 'http://localhost:8000' + '/sitemap-0.xml',
         policy: [{userAgent: '*', disallow: ['/sponsered-by', '/theme/*']}]
       }
     },
