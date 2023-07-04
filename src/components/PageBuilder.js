@@ -58,7 +58,7 @@ export const query = graphql`
             gatsbyImageData(
               width: 800
               quality: 72
-              placeholder: DOMINANT_COLOR
+              placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF]
             )
           }
@@ -109,7 +109,7 @@ export const query = graphql`
                   gatsbyImageData(
                     width: 400
                     quality: 72
-                    placeholder: DOMINANT_COLOR
+                    placeholder: BLURRED
                     formats: [AUTO, WEBP, AVIF]
                   )
                 }
@@ -125,7 +125,7 @@ export const query = graphql`
                     gatsbyImageData(
                       width: 150
                       quality: 72
-                      placeholder: DOMINANT_COLOR
+                      placeholder: BLURRED
                       formats: [AUTO, WEBP, AVIF]
                     )
                   }
@@ -143,7 +143,7 @@ export const query = graphql`
                 gatsbyImageData(
                   width: 100
                   quality: 72
-                  placeholder: DOMINANT_COLOR
+                  placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
                 )
               }
