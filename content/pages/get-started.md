@@ -54,11 +54,11 @@ blocks:
 
 
       By following these steps, you will have your own instance of Edge Base deployed and ready to use. You can now begin customizing and adding content to your website using the powerful features provided by Netlify CMS.
-    columns:
-      - content: open-source JavaScript framework and library
-      - content: open source framework with performance, scalability and security
-          built-in.
+    columns: []
     title: Documentation
+  - type: content
+    variant: right-hand
+    content: "**[Documentation >>](https://edge-base.netlify.app/documentation/)**"
 seo:
   ogimage: /img/edge-base-logo.png
 ---
