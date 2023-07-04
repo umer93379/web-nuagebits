@@ -52,18 +52,6 @@ export const query = graphql`
       content
       variant
       height
-      bg_photo {
-        bg_image {
-          childImageSharp {
-            gatsbyImageData(
-              width: 2480
-              quality: 72
-              placeholder: DOMINANT_COLOR
-              formats: [AUTO, WEBP, AVIF]
-            )
-          }
-        }
-      }
       photo {
         image {
           childImageSharp {

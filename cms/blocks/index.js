@@ -13,7 +13,7 @@ const Config = {
       summary: 'Slider {{fields.title}}',
       fields: [
         VariantField('default', ['default']),
-        HeightField('full', ['full', '80vh', '50vh']),
+        HeightField('full'),
         Heros,
       ],
     },
@@ -24,9 +24,6 @@ const Config = {
       summary: 'Content {{fields.content}}',
       fields: [
         VariantField('left-hand', ['left-hand','right-hand','centered']),
-        HeightField('full', ['full', '80vh', '50vh']),
-        ColorTheme('dark'),
-        backgroundSettingsField(),
         Content,
         {
           label: 'Columns',
@@ -34,14 +31,7 @@ const Config = {
           widget: 'list',
           summary: '{{fields.title}}',
           fields: [
-            Title,
-            {
-              label: 'Permalink',
-              name: 'permalink',
-              widget: 'string',
-              required: false,
-            },
-            ImageField()
+            Content,
           ],
         }
       ],
