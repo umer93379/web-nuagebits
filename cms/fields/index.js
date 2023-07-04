@@ -119,7 +119,22 @@ export const Hero = {
   summary: 'Slide {{fields.title}}',
   fields: [
     Title,
-    VariantField('default', ['default', 'visual_image_with_heading']),
+    VariantField('default', [
+      'default', 'visual_image_with_heading',
+      {
+        label: 'Default',
+        value: 'default'
+      },
+      {
+        label: 'With Image Left to right',
+        value: 'with_image_left_to_right'
+      },
+      {
+        label: 'With User Avatar',
+        value: 'with_user_avatar'
+      },
+      
+    ]),
     ContentDivision('1/3', ['1/3', '1/2', '1/1']),
     ColorTheme('dark'),
     backgroundSettingsField(),

@@ -4,17 +4,16 @@ import Buttons from '../../components/UI/Buttons';
 import Image from '../../resolvers/Image'
 import clsx from 'clsx';
 
-export default function VisualImageWithHeading({ data }) {
-    console.log(data)
+export default function WithUserAvatar({ data }) {
     return (
         <section className={ 
           clsx({
-            "body-font flex place-content-center items-center ": true, 
+            "body-font flex place-content-center items-center ": true,
             "h-screen": data.height === 'full', 
-            "h-80vh": data.height === '80vh', 
-            "h-60vh": data.height === '60vh', 
-            "h-40vh": data.height === '40vh', 
-            "h-20vh": data.height === '20vh', 
+            "h-auto h-80vh": data.height === '80vh', 
+            "h-auto h-60vh": data.height === '60vh', 
+            "h-auto md:h-40vh": data.height === '40vh', 
+            "h-auto md:h-20vh": data.height === '20vh', 
             "h-auto": data.height === 'auto'
             })}>
             <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center">

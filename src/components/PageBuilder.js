@@ -90,7 +90,7 @@ export const query = graphql`
           content
           variant
           color_theme
-          height
+          ratio
           buttons {
             button {
               content
@@ -98,6 +98,7 @@ export const query = graphql`
               variant
             }
           }
+          form
           bg_settings {
             variant
             overlay
@@ -106,7 +107,7 @@ export const query = graphql`
             bg_photo {
               childImageSharp {
                 gatsbyImageData(
-                  width: 1024
+                  width: 2048
                   quality: 70
                   placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
@@ -118,7 +119,7 @@ export const query = graphql`
               image {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 150
+                      width: 400
                       quality: 72
                       placeholder: DOMINANT_COLOR
                       formats: [AUTO, WEBP, AVIF]

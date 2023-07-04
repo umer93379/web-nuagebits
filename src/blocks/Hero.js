@@ -13,21 +13,24 @@ export default function Hero({ data,  height }) {
   data.height = height;
   switch (data.bg_settings.variant){
     case 'bg-video':
+      data.height = 'full'
       return (
         <div className={ 
           clsx({
-            "flex relative w-full": true, 
-            "h-screen": data.height === 'full', 
-            "h-80vh": data.height === '80vh', 
-            "h-60vh": data.height === '60vh', 
-            "h-40vh": data.height === '40vh', 
-            "h-20vh": data.height === '20vh', 
-            "h-auto": data.height === 'auto'
+            "flex relative w-full h-screen": true
             })}>
-          <div  className="video-background">
-            <iframe title={data.title} src={"https://www.youtube.com/embed/"+ data.bg_settings.bg_video +"?autoplay=1&mute=1&playsinline=1&loop=1&controls=0&disablekb=1" } frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+          <div className={ 
+            clsx({
+              "video-background": true,
+              })} >
+            <iframe title={data.title} src={data.bg_settings.bg_video} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
           </div>
-          <div className='absolute w-full h-full '>
+          <div className={ 
+          clsx({
+            "absolute w-full h-full bg-opacity-20":true, 
+            'bg-white' : data.bg_settings.overlay === 'white', 
+            'bg-black' : data.bg_settings.overlay === 'dark'
+            })} >
             <HeroGenerator data={data} />
           </div>
         </div>
@@ -35,7 +38,9 @@ export default function Hero({ data,  height }) {
     case 'bg-image':
       return (
         <div className='bg-cover bg-no-repeat bg-center' style={ {backgroundImage: `url(`+bgImage?.fluid?.src+`)`}}>
-          <HeroGenerator data={data} />
+          <div className={ clsx({ 'bg-opacity-20':true, 'bg-white' : data.bg_settings.overlay === 'white', 'bg-black' : data.bg_settings.overlay === 'dark' })}>
+            <HeroGenerator data={data} />
+          </div>
         </div>
         
       )

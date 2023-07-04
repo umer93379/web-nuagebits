@@ -12,7 +12,6 @@ export default function Galley({ data }) {
       images[index].push(data.columns[i]);
     }
   }
-  console.log(images)
   return (
           <>
             <div
