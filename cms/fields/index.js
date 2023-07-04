@@ -21,6 +21,14 @@ export const VariantField = (initial, options = []) => ({
   options: options,
 });
 
+export const ContentDivision = (initial, options = []) => ({
+  label: 'Ratio',
+  name: 'ratio',
+  widget: 'select',
+  default: initial,
+  options: options,
+});
+
 export const HeightField = (initial) => ({
   label: 'Height',
   name: 'height',
@@ -111,7 +119,8 @@ export const Hero = {
   summary: 'Slide {{fields.title}}',
   fields: [
     Title,
-    VariantField('default', ['default', 'visual_image_with_heading', 'full']),
+    VariantField('default', ['default', 'visual_image_with_heading']),
+    ContentDivision('1/3', ['1/3', '1/2', '1/1']),
     HeightField('full'),
     ColorTheme('dark'),
     backgroundSettingsField(),

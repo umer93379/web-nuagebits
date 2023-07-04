@@ -3,7 +3,7 @@ id: JUJDCFVbWC
 type: page
 layout: page-builder
 title: Home Page
-permalink: /
+permalink: /documentation/component/hero-default-video
 thumbnail: ""
 blocks:
   - type: hero_slider
@@ -20,28 +20,29 @@ blocks:
                 content: See Documentation
                 url: /documentation
           variant: visual_image_with_heading
+          ratio: 1/3
           height: full
-          color_theme: dark
-          title: This is dev instance of edge-base Template
-          content: Please dont use this instance.
-          video: lRTtMcx6rSM
+          color_theme: white
+          title: For Your Next Generation Website
+          photo:
+            image: /img/edge-base-logo.png
+            alt: Logo
+          content: Web 3.O framework for your business
+          video: apqE7GOWh5k
           bg_settings:
-            variant: no-bg
+            variant: bg-video
             overlay: no-overlay
             bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
             bg_color: "#ffffff"
             bg_video: lRTtMcx6rSM
-          photo:
-            image: /img/edge-base-logo.png
-            alt: Logo
           columns:
-            - title: React
+            - title: Hamza Hospital
               content: open-source JavaScript framework and library
               show_popup: false
               permalink: www.hamza-hospital.com
               photo:
                 image: /img/pngegg.png
-            - title: Decap CMS
+            - title: Dentals.PK
               content: open source framework with performance, scalability and security
                 built-in.
               show_popup: false

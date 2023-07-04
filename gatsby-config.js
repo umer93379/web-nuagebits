@@ -90,13 +90,13 @@ module.exports = {
       options: {
         host: process.env.GATSBY_APP_URL || 'http://localhost:8000',
         sitemap: (process.env.GATSBY_APP_URL || 'http://localhost:8000') + '/sitemap-0.xml',
-        policy: [{userAgent: '*', disallow: ['/sponsered-by']}]
+        policy: [{userAgent: '*', disallow: ['/sponsered-by', '/theme/*']}]
       }
     },
     'gatsby-plugin-sitemap',
     {
       resolve: "gatsby-plugin-sitemap",
-      excludes: ['/sponsered-by']
+      excludes: ['/sponsered-by', '/theme/*']
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
