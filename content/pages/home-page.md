@@ -73,7 +73,7 @@ blocks:
           bg_settings:
             variant: bg-image
             overlay: no-overlay
-            bg_photo: /img/banner.png
+            bg_photo: /img/pngegg.png
             bg_color: "#FFF"
             bg_video: https://player.vimeo.com/video/543344269?title=0&portrait=0&byline=0&autoplay=1&muted=true&loop=1
           photo:
