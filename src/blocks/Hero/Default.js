@@ -3,7 +3,6 @@ import React from 'react'
 import Buttons from '../../components/UI/Buttons';
 import Image from '../../resolvers/Image'
 import clsx from 'clsx';
-import HeroForm from './HeroForm';
 
 export default function DefaultHero({ data }) {
   

@@ -19,7 +19,7 @@ blocks:
                 variant: secondary
                 content: See Documentation
                 url: /documentation
-          variant: visual_image_with_heading
+          variant: with_image_left_to_right
           height: full
           color_theme: white
           title: For Your Next Generation Website
@@ -63,7 +63,7 @@ blocks:
                 variant: secondary
                 content: See Documentation
                 url: /documentation
-          variant: visual_image_with_heading
+          variant: with_image_left_to_right
           height: full
           color_theme: dark
           form: T9c8SkeW4

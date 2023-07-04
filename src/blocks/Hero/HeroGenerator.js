@@ -1,8 +1,9 @@
 import React from 'react'
 import DefaultHero from './Default';
 import WithImageLeftToRight from './WithImageLeftToRight';
-import clsx from 'clsx';
+
 import WithUserAvatar from './WithUserAvatar';
+import WithVideoLeftToRight from './WithVideoLeftToRight';
 
 export default function HeroGenerator({ data }) {
   switch (data.variant) {
@@ -10,6 +11,8 @@ export default function HeroGenerator({ data }) {
       return (<WithImageLeftToRight data={data} />);
     case 'with_user_avatar':
       return (<WithUserAvatar data={data} />);
+    case 'with_video_left_to_right':
+      return (<WithVideoLeftToRight data={data} />);
     default:
       return (<DefaultHero data={data} />);
   }

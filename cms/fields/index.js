@@ -26,7 +26,7 @@ export const ContentDivision = (initial, options = []) => ({
   name: 'ratio',
   widget: 'select',
   default: initial,
-  options: options,
+  options: ['1/11', '2/10', '3/9', '4/8', '5/7', '6/6', '7/5', '8/4', '9/3', '10/2', '11/1'],
 });
 
 export const HeightField = (initial) => ({
@@ -79,7 +79,7 @@ export const backgroundSettingsField = () => ({
     Overlay('no-overlay'),
     { label: 'Image', name: 'bg_photo', widget: 'image', required: false },
     { label: 'Color', name: 'bg_color', widget: 'color', required: false },
-    { label: 'Youtube Video', name: 'bg_video', widget: 'string', required: false },
+    { label: 'Video', name: 'bg_video', widget: 'string', required: false },
   ],
 });
 
@@ -130,16 +130,20 @@ export const Hero = {
         value: 'with_image_left_to_right'
       },
       {
+        label: 'With Video Left to right',
+        value: 'with_video_left_to_right'
+      },
+      {
         label: 'With User Avatar',
         value: 'with_user_avatar'
       },
       
     ]),
-    ContentDivision('1/3', ['1/3', '1/2', '1/1']),
+    ContentDivision('8/4'),
     ColorTheme('dark'),
     backgroundSettingsField(),
     ImageField(),
-    { label: 'Youtube Video', name: 'video', widget: 'string', required: false },
+    { label: 'Video URL', name: 'video', widget: 'string', required: false },
     Content,
     {
       label: 'Form',

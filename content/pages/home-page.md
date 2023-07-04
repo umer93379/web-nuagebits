@@ -19,18 +19,18 @@ blocks:
                 variant: secondary
                 content: See Documentation
                 url: /documentation
-          variant: with_image_left_to_right
+          variant: with_video_left_to_right
           color_theme: dark
-          ratio: 8/4
+          ratio: 6/6
           title: This is dev instance of edge-base Template
           content: Please dont use this instance.
-          video: lRTtMcx6rSM
+          video: https://www.youtube.com/embed/Ssvu2yncgWU?&autoplay=1
           bg_settings:
             variant: bg-video
             overlay: no-overlay
             bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
             bg_color: "#0e0e1b"
-            bg_video: https://player.vimeo.com/video/543344269?title=0&portrait=0&byline=0&autoplay=1&muted=true&loop=1&quality=4k
+            bg_video: https://player.vimeo.com/video/543344269?title=0&portrait=0&byline=0&autoplay=1&muted=true&loop=1&quality=4k&controls=0
           photo:
             image: /img/4000_2_01.jpg
             alt: Logo
@@ -63,18 +63,18 @@ blocks:
                 variant: secondary
                 content: See Documentation
                 url: /documentation
-          variant: with_image_left_to_right
-          color_theme: white
-          ratio: 8/4
+          variant: with_video_left_to_right
+          color_theme: dark
+          ratio: 6/6
           title: This is dev instance of edge-base Template
           content: Please dont use this instance.
-          video: lRTtMcx6rSM
+          video: https://player.vimeo.com/video/543344269?title=0&portrait=0&byline=0&autoplay=1&muted=true&loop=1
           form: T9c8SkeW4
           bg_settings:
             variant: bg-image
             overlay: no-overlay
-            bg_photo: /img/pngegg.png
-            bg_color: "#FFF"
+            bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
+            bg_color: "#FFFFFF"
             bg_video: https://player.vimeo.com/video/543344269?title=0&portrait=0&byline=0&autoplay=1&muted=true&loop=1
           photo:
             image: /img/4000_2_01.jpg

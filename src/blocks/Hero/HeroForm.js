@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Parallax } from 'react-parallax';
+
 import  { useForms }  from '@/hooks/use-forms';
 
 export default function HeroForm({ block }) {
@@ -55,9 +55,6 @@ export default function HeroForm({ block }) {
     
   };
 
-
-  const bgImage =  block?.bg_photo ? 
-    block?.bg_photo?.bg_image : block?.bg_photo?.bg_image?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
   return (
     <div className='flex w-full'>
 
