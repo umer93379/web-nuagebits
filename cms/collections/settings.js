@@ -24,7 +24,21 @@ const collection = {
       name: 'social_links',
       file: 'src/settings/social_links.json',
       editor: {
-        preview: true,
+        preview: false,
+      },
+      fields: [{
+        label: 'Enable Header',
+        name: 'show_above_header',
+        widget: 'boolean',
+        required: false,
+      },socialField()],
+    },
+    {
+      label: 'Contact Links',
+      name: 'contact_links',
+      file: 'src/settings/contact_links.json',
+      editor: {
+        preview: false,
       },
       fields: [{
         label: 'Enable Header',

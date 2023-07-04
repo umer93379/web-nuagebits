@@ -30,7 +30,6 @@ blocks:
           photo:
             image: /img/4000_2_01.jpg
             alt: Logo
-          
     variant: default
     title: Start building your website
 seo:

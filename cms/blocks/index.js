@@ -64,13 +64,7 @@ const Config = {
               required: false,
             },
             Content,
-            VariantField('bg_image', [{
-              name: 'bg_image',
-              label: 'Image in Background'
-            }, {
-              name: 'image_above',
-              label: 'Image above content'
-            }]),
+            VariantField('bg_image', ['bg_image', 'image_above']),
             ImageField(),
           ],
         }
