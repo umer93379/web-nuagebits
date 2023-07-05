@@ -54,7 +54,7 @@ function PrevArrow(props) {
  * Component
  */
 export default function WideSlider({ identifier, data, ...props }) {
-  console.log(data)
+  
   let temporaryWidth = 550;
   const widerContainer = data.variant === "wide" ? true : false;
   
@@ -100,7 +100,7 @@ export default function WideSlider({ identifier, data, ...props }) {
       }
     }
     function resizeEnd() {
-      if (windowIsResizing == true) {
+      if (windowIsResizing === true) {
         setWindowIsResizing(false);
         if (new Date() - rtime < delta) {
           setTimeout(resizeEnd, delta);
@@ -188,7 +188,7 @@ export default function WideSlider({ identifier, data, ...props }) {
       } else {
         newAxis = (xAxis - ((slideWidth + (20)) * difference))
       }
-      console.log(newAxis, newAxis > 0 ? newAxis : 0)
+      
       setXAxis(newAxis)
     }else if(index > currentSlide){
       let difference = index - currentSlide;
@@ -245,8 +245,8 @@ export default function WideSlider({ identifier, data, ...props }) {
             transform: `translate3d(${xAxis}px, 0px, 0px)`,
           }} >
             {slides.map((slide, index) => {
-              console.log(slide)
-              if (slide == undefined) return ('')
+              
+              if (slide === undefined) return ('')
               let thumbnail = [];
               let thumbnailUrl = '';
               let description = '';
@@ -277,8 +277,8 @@ export default function WideSlider({ identifier, data, ...props }) {
                 title = slide.title;
               }
               linkText = `Read the ` + entityType.replace('_', ' ');
-              SlideTheme = slide.variant == "bg_image" ? "bg_image" : "image_above"
-              if(SlideTheme == "bg_image"){
+              SlideTheme = slide.variant === "bg_image" ? "bg_image" : "image_above"
+              if(SlideTheme === "bg_image"){
                 return (
                   <div className='wslick-slide wslick-active wslick-current bg-white mr-0 md:mr-8 lg:mr-16 ml-6 md:ml-6 lg:ml-6 xl:ml-0 bg-cover bg-no-repeat' key={index} ref={ref} style={{ width: slideWidth, height: 'auto', minHeight: containerHeight, backgroundImage: `url(`+thumbnailUrl+`)` }}>
                     <span className={"flex flex-col p-0 w-full "}>
@@ -321,7 +321,7 @@ export default function WideSlider({ identifier, data, ...props }) {
           {slides.map((slide, index) => {
           
               return (
-                <li key={`li-`+index} onClick={() => dotClick(index)} className={index + ' inline-block w-4 h-4 rounded-full p-0 mr-4 ' + (currentSlide == index ? ' bg-gray-400' : ' bg-gray-300')} ></li>
+                <li key={`li-`+index} onClick={() => dotClick(index)} className={index + ' inline-block w-4 h-4 rounded-full p-0 mr-4 ' + (currentSlide === index ? ' bg-gray-400' : ' bg-gray-300')} ></li>
               )
           
           })}
