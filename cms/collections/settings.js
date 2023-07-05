@@ -8,16 +8,15 @@ const collection = {
   description: 'Settings for theme',
   files: [
     {
-      label: 'Main Navigation',
-      name: 'nav',
+      label: 'General',
+      name: 'general',
       file: 'src/settings/main.json',
       editor: {
         preview: false,
       },
       fields: [
         Title,
-        ImageField(), 
-        navigationField()],
+        ImageField()],
     },
     {
       label: 'Social Links',
@@ -48,17 +47,26 @@ const collection = {
       },socialField()],
     },
     {
-      label: 'Footer Navigation',
+      label: 'Footer Settings',
       name: 'footer',
       file: 'src/settings/footer.json',
       editor: {
         preview: false,
       },
       fields: [
-        Title,
-        Content,
-        ImageField(), 
-        navigationField()],
+        Title
+      ],
+    },
+    {
+      label: 'Header Settings',
+      name: 'header',
+      file: 'src/settings/header.json',
+      editor: {
+        preview: false,
+      },
+      fields: [
+        Title
+      ],
     },
     {
       label: 'Colors',

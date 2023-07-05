@@ -4,6 +4,7 @@ import { Widget as PermalinkWidget } from 'netlify-cms-widget-permalink';
 
 import forms from './collections/forms';
 import pages from './collections/pages';
+import menues from './collections/menues';
 import blogs from './collections/blogs';
 import authors from './collections/authors';
 import settings from './collections/settings';
@@ -27,7 +28,7 @@ const config = {
     },
     media_folder: '/static/img',
     public_folder: '/img',
-    collections: [pages, blogs, authors, forms, settings],
+    collections: [pages, blogs, menues, forms,authors, settings],
   },
 };
 

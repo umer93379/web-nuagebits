@@ -7,7 +7,7 @@ const collection = {
   name: 'pages',
   label: 'Page',
   description: 'Pages for your website',
-  folder: 'content/pages',
+  folder: 'content/pages/web',
   create: true,
   fields: [
     ID,
