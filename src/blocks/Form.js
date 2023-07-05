@@ -68,7 +68,7 @@ export default function Form({ block }) {
       >
         <div className='container mx-auto lg:max-w-2xl py-16 px-6'>
           <h1 className='dark:text-white font-semibold text-3xl md:text-4xl mb-6'>{block.title}</h1>
-          <form name={convertToSafeInputFieldName(block.title)} method="POST" data-netlify="true" onSubmit={handleSubmit}>
+          <form name={convertToSafeInputFieldName(block.title)} method="POST" data-netlify="true" data-netlify-recaptcha="true"  onSubmit={handleSubmit}>
             <>
               {blocks && blocks.map(((blockElement, i) => {
                 return blockElement.fields.map((field, x) => {
@@ -141,6 +141,7 @@ export default function Form({ block }) {
                 <span class="font-medium">{errorMessage}</span>
               </div>
             ):(<></>) }
+              <div data-netlify-recaptcha="true"></div>
               <div className='text-right'>
                 <button type="submit" className='inline-block bg-primaryButtonDefaultBG hover:bg-primaryButtonHoverBG text-primaryButtonDefaultColor hover:text-primaryButtonHoverColor focus:ring-4 ring-primaryButtonHoverRing  hover:ring-primaryButtonDefaultRing focus:ring-primaryButtonDefaultRing font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:bg-white dark:text-black dark:hover:bg-gray-500 focus:outline-none dark:focus:ring-white'>
                   Submit
