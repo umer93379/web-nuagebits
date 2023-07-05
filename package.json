@@ -55,6 +55,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "backend": "npx netlify-cms-proxy-server",
     "start": "gatsby serve",
     "dev": "npm run develop",
     "develop": "npm run clean && gatsby develop",

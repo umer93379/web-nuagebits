@@ -8,6 +8,7 @@ import ContentImage from '../blocks/ContentImage';
 import Perks from '../blocks/Perks';
 import Content from '../blocks/Content';
 import Form from '../blocks/Form';
+import WideSlider from '../blocks/WideSlider';
 
 export default function PageBuilder({ blocks, preview = false }) {
   return (
@@ -21,7 +22,7 @@ export default function PageBuilder({ blocks, preview = false }) {
             case 'hero':
               return <Hero key={i} data={block} />;
             case 'recentArticles':
-              return <RecentArticles key={i} data={block} preview={preview} />;
+              return <RecentArticles key={i} identifier={`recent_article`+i} data={block} preview={preview} />;
             case 'content_image':
               return <ContentImage key={i} data={block} preview={preview} />;
             case 'perks':
@@ -30,6 +31,8 @@ export default function PageBuilder({ blocks, preview = false }) {
               return <Content key={i} data={block} preview={preview} />;
             case 'form':
               return <Form key={i} block={block} preview={preview} />;
+            case 'cards_slider':
+              return <WideSlider key={i} identifier={`wide_slider`+i} data={block} preview={preview} />
             default:
               return (
                 <div className='container mx-auto' key={i}>
@@ -137,11 +140,14 @@ export const query = graphql`
       columns {
         title
         content
+        variant
+        permalink
+        type
         photo{
           image {
               childImageSharp {
                 gatsbyImageData(
-                  width: 100
+                  width: 780
                   quality: 72
                   placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]

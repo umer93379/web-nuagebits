@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from "gatsby";
-import { } from '../../styles/slider.css';
+import { } from '../styles/slider.css';
 import clsx from 'clsx';
-import Image from '../../resolvers/Image'
-import { useRecentArticles } from '../../hooks/useRecentArticles';
+import Image from '../resolvers/Image'
 import { getImage } from 'gatsby-plugin-image';
 import { convertToBgImage } from 'gbimage-bridge';
 
@@ -54,19 +53,18 @@ function PrevArrow(props) {
 /**
  * Component
  */
-export default function Recent({ identifier, title, widerContainer, ...props }) {
-  
-  const posts = useRecentArticles();
-
+export default function WideSlider({ identifier, data, ...props }) {
+  console.log(data)
   let temporaryWidth = 550;
-
+  const widerContainer = data.variant === "wide" ? true : false;
+  
   if (typeof window !== `undefined`) {
     if (window.innerWidth <= 460) {
       temporaryWidth = window.innerWidth - 80;
     }
   }
   let slides = [];
-  slides = slides.concat(posts);
+  slides = slides.concat(data.columns);
 
   let SlideTheme = 'bg_image'
   
@@ -224,10 +222,8 @@ export default function Recent({ identifier, title, widerContainer, ...props }) 
     }
   }
 
-  let sliderTitle = "You may also be interested in";
-  if(title){
-    sliderTitle = title
-  }
+  let sliderTitle = data.title;
+  
   return (
     <div
       id={identifier}
@@ -250,7 +246,7 @@ export default function Recent({ identifier, title, widerContainer, ...props }) 
           }} >
             {slides.map((slide, index) => {
               console.log(slide)
-              if (slide == undefined || !slide.node) return ('')
+              if (slide == undefined) return ('')
               let thumbnail = [];
               let thumbnailUrl = '';
               let description = '';
@@ -259,29 +255,29 @@ export default function Recent({ identifier, title, widerContainer, ...props }) 
               let title = '';
               let linkText = '';
               
-              if (slide.node && slide.node.fields && slide.node.fields.slug) {
-                path = slide.node.fields.slug;
+              if (slide.permalink) {
+                path = slide.permalink;
               }
-              if (slide.node.frontmatter && slide.node.frontmatter.photo) {
-                let image = getImage(slide.node.frontmatter.photo.image);
+              if (slide.photo && slide.photo.image) {
+                let image = getImage(slide.photo.image);
                 let bgImage = convertToBgImage(image)
                 if(bgImage && bgImage.fluid && bgImage.fluid.src){
                   thumbnailUrl = bgImage.fluid.src
                 }
 
               }
-              if (slide.node.excerpt && slide.node.excerpt) {
-                description = slide.node.excerpt;
+              if (slide.content) {
+                description = slide.content;
               }
 
-              if (slide.node && slide.node.entityBundle) {
-                entityType = slide.node.entityBundle;
+              if (slide.type) {
+                entityType = slide.type;
               }
-              if (slide.node.frontmatter && slide.node.frontmatter.title) {
-                title = slide.node.frontmatter.title;
+              if (slide.title) {
+                title = slide.title;
               }
               linkText = `Read the ` + entityType.replace('_', ' ');
-              SlideTheme = index % 2 ==0 ? "bg_image" : "card"
+              SlideTheme = slide.variant == "bg_image" ? "bg_image" : "image_above"
               if(SlideTheme == "bg_image"){
                 return (
                   <div className='wslick-slide wslick-active wslick-current bg-white mr-0 md:mr-8 lg:mr-16 ml-6 md:ml-6 lg:ml-6 xl:ml-0 bg-cover bg-no-repeat' key={index} ref={ref} style={{ width: slideWidth, height: 'auto', minHeight: containerHeight, backgroundImage: `url(`+thumbnailUrl+`)` }}>

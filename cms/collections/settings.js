@@ -8,23 +8,22 @@ const collection = {
   description: 'Settings for theme',
   files: [
     {
-      label: 'Main Navigation',
-      name: 'nav',
+      label: 'General',
+      name: 'general',
       file: 'src/settings/main.json',
       editor: {
         preview: false,
       },
       fields: [
         Title,
-        ImageField(), 
-        navigationField()],
+        ImageField()],
     },
     {
       label: 'Social Links',
       name: 'social_links',
       file: 'src/settings/social_links.json',
       editor: {
-        preview: true,
+        preview: false,
       },
       fields: [{
         label: 'Enable Header',
@@ -34,17 +33,40 @@ const collection = {
       },socialField()],
     },
     {
-      label: 'Footer Navigation',
+      label: 'Contact Links',
+      name: 'contact_links',
+      file: 'src/settings/contact_links.json',
+      editor: {
+        preview: false,
+      },
+      fields: [{
+        label: 'Enable Header',
+        name: 'show_above_header',
+        widget: 'boolean',
+        required: false,
+      },socialField()],
+    },
+    {
+      label: 'Footer Settings',
       name: 'footer',
       file: 'src/settings/footer.json',
       editor: {
         preview: false,
       },
       fields: [
-        Title,
-        Content,
-        ImageField(), 
-        navigationField()],
+        Title
+      ],
+    },
+    {
+      label: 'Header Settings',
+      name: 'header',
+      file: 'src/settings/header.json',
+      editor: {
+        preview: false,
+      },
+      fields: [
+        Title
+      ],
     },
     {
       label: 'Colors',
