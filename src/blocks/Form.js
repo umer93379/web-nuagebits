@@ -68,7 +68,7 @@ export default function Form({ block }) {
       >
         <div className='container mx-auto lg:max-w-2xl py-16 px-6'>
           <h1 className='dark:text-white font-semibold text-3xl md:text-4xl mb-6'>{block.title}</h1>
-          <form name={convertToSafeInputFieldName(block.title)} method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true"  onSubmit={handleSubmit}>
+          <form name={convertToSafeInputFieldName(block.title)} method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" >
             <>
             <p class="hidden">
               <label>
