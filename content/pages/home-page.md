@@ -97,18 +97,14 @@ blocks:
             outcomes.
     title: Home
     variant: default
-  - buttons:
-      - button:
-          variant: button
-          content: Start Building Now
-          url: /my-repo
+  - buttons: []
     variant: default
     height: full
     photo:
       image: /img/4000_2_01.jpg
     bg_photo:
       bg_image: /img/white_wood.jpg
-    title: Break Into The House Of Salesforce Consultancy To
+    title: Empowering Businesses with Salesforce Solutions
     content: |-
       1. ### Redeem your business
       2. ### Protract your data integrity
@@ -165,6 +161,7 @@ blocks:
         permalink: /reactjs/
         photo:
           image: /img/gatsby.png
+    variant: default
 seo:
   ogimage: /img/4000_2_01.jpg
 ---
