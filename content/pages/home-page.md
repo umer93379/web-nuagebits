@@ -139,8 +139,8 @@ blocks:
       * #### Salesforce Community portal
     buttons: []
     photo:
-      image: /img/background.jpg
-      alt: Layers
+      image: /img/track-bg.jpg
+      alt: ""
     bg_photo:
       bg_image: /img/white_wood.jpg
       enable_parallax: true
