@@ -1,11 +1,6 @@
 {
   "nav": [
     {
-      "name": "Github",
-      "permalink": "https://github.com/processton-io/edge-base",
-      "type": "default"
-    },
-    {
       "type": "default",
       "name": "The about",
       "permalink": "/about"
@@ -14,6 +9,11 @@
       "type": "button",
       "name": "Contact us",
       "permalink": "/contact-us"
+    },
+    {
+      "name": "Github",
+      "permalink": "https://github.com/processton-io/edge-base",
+      "type": "default"
     }
   ],
   "title": "Nuagebits, a Salesforce consultancy",
