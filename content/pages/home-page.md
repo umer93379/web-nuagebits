@@ -131,24 +131,6 @@ blocks:
     bg_photo:
       bg_image: /img/white_wood.jpg
       enable_parallax: true
-  - type: perks
-    title: Technology Stack
-    content: ""
-    columns:
-      - title: React
-        content: open-source JavaScript framework and library
-        show_popup: false
-        permalink: /reactjs/
-        photo:
-          image: /img/pngegg.png
-      - title: Gatsby
-        content: open source framework with performance, scalability and security
-          built-in.
-        show_popup: false
-        permalink: /reactjs/
-        photo:
-          image: /img/gatsby.png
-    variant: default
 seo:
   ogimage: /img/4000_2_01.jpg
 ---
