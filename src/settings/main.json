@@ -1,11 +1,6 @@
 {
   "nav": [
     {
-      "name": "Github",
-      "permalink": "https://github.com/processton-io/edge-base",
-      "type": "default"
-    },
-    {
       "name": "The about",
       "permalink": "/about",
       "type": "button"
