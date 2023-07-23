@@ -111,20 +111,7 @@ blocks:
       3. ### Integrate business applications
       4. ### Automate your business processes in CRM
     type: hero
-    columns:
-      - title: React
-        content: open-source JavaScript framework and library
-        show_popup: false
-        permalink: /reactjs/
-        photo:
-          image: /img/4000_2_01.jpg
-      - title: Gatsby
-        content: open source framework with performance, scalability and security
-          built-in.
-        show_popup: false
-        permalink: /reactjs/
-        photo:
-          image: /img/gatsby.png
+    columns: []
   - type: content_image
     variant: default
     title: Our tech stack includes consultancy for
@@ -139,7 +126,7 @@ blocks:
       * #### Salesforce Community portal
     buttons: []
     photo:
-      image: /img/track-bg.jpg
+      image: /img/nuage-light.png
       alt: ""
     bg_photo:
       bg_image: /img/white_wood.jpg
