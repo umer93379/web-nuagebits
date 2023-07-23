@@ -101,7 +101,7 @@ blocks:
     variant: default
     height: full
     photo:
-      image: /img/4000_2_01.jpg
+      image: /img/nuage-dark.png
     bg_photo:
       bg_image: /img/white_wood.jpg
     title: Empowering Businesses with Salesforce Solutions
