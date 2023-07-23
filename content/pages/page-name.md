@@ -48,7 +48,9 @@ blocks:
       **Get in Touch**
 
 
-      I'm excited to learn more about your business and explore how I can be a part of your success story. Feel free to reach out to me via email at [[your@email.com](mailto:your@email.com)] or connect with me on LinkedIn \[LinkedIn Profile URL]. Let's collaborate and unlock the full potential of Salesforce for your business.
+      I'm excited to learn more about your business and explore how I can be a part of your success story. Feel free to reach out to me via email at ***umer93379@gmail.com***.\
+
+      Let's collaborate and unlock the full potential of Salesforce for your business.
     variant: default
     height: auto
 thumbnail: ""
