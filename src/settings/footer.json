@@ -9,6 +9,11 @@
       "type": "default",
       "name": "The about",
       "permalink": "/about"
+    },
+    {
+      "type": "button",
+      "name": "Contact us",
+      "permalink": "/contact-us"
     }
   ],
   "title": "Nuagebits, a Salesforce consultancy",
