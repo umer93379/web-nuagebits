@@ -7,13 +7,13 @@
     },
     {
       "name": "Contact Us",
-      "permalink": "/contact-us",
+      "permalink": "/about-us",
       "type": "button"
     }
   ],
   "title": "Nuagebits, a Salesforce consultancy",
   "photo": {
     "image": "/img/4000_2_01.jpg",
-    "alt": "MY Logo"
+    "alt": "My Logo"
   }
 }
