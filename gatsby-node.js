@@ -3,9 +3,6 @@ const path = require('path');
 const fs = require('fs');
 const { createFilePath } = require('gatsby-source-filesystem');
 
-const SOCIAL_LINKS = require('./src/settings/social_links.json');
-const CONTACT_LINKS = require('./src/settings/contact_links.json');
-
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
@@ -107,25 +104,3 @@ exports.createSchemaCustomization = ({ actions }) => {
   createTypes(defs);
 };
 
-exports.sourceNodes = ({ actions: { createNode }, createContentDigest }) => {
-  SOCIAL_LINKS.social_links.forEach((data, index) => {
-    createNode({
-      ...data,
-      id: `social-${data.platform}`,
-      internal: {
-        type: `social`,
-        contentDigest: createContentDigest(data)
-      }
-    });
-  });
-  CONTACT_LINKS.contact_links.forEach((data, index) => {
-    createNode({
-      ...data,
-      id: `contact-${data.platform}`,
-      internal: {
-        type: `contact`,
-        contentDigest: createContentDigest(data)
-      }
-    });
-  });
-};
