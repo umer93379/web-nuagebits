@@ -1,8 +1,8 @@
 ---
 id: JUJDCFVbWC
 type: page
-layout: page-builder
-title: Home Page
+layout: null
+title: Hero Video
 permalink: /documentation/components/hero/video
 breadcrumbs:
   - breadcrumb_item:
@@ -20,7 +20,6 @@ breadcrumbs:
   - breadcrumb_item:
       title: Video
       link: /documentation/components/hero/video
-thumbnail: ""
 blocks:
   - type: hero_slider
     height: full
@@ -36,13 +35,13 @@ blocks:
                 content: See Documentation
                 url: /documentation
           variant: visual_image_with_heading
-          ratio: 1/3
           height: full
+          ratio: 1/3
           color_theme: white
-          title: For Your Next Generation Website
           photo:
             image: /img/edge-base-logo.png
             alt: Logo
+          title: For Your Next Generation Website
           content: Web 3.O framework for your business
           video: https://player.vimeo.com/video/560138399?title=0&portrait=0&byline=0&autoplay=1&muted=true&loop=1&controls=1
           bg_settings:
@@ -67,6 +66,7 @@ blocks:
                 image: /img/4000_2_01.jpg
     variant: default
     title: For Your Next Generation Website
+thumbnail: ""
 seo:
   ogimage: /img/edge-base-logo.png
 ---

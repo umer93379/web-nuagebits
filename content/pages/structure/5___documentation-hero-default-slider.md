@@ -1,8 +1,8 @@
 ---
 id: JUJDCFVbWC
 type: page
-layout: page-builder
-title: Home Page
+layout: null
+title: Hero - Slider Example
 permalink: /documentation/components/hero/slider
 breadcrumbs:
   - breadcrumb_item:
@@ -15,9 +15,8 @@ breadcrumbs:
       title: Hero
       link: /documentation/components/hero
   - breadcrumb_item:
-      title: Slider
+      title: Slider Example
       link: /documentation/components/hero/slider
-thumbnail: ""
 blocks:
   - type: hero_slider
     height: full
@@ -33,9 +32,12 @@ blocks:
                 content: See Documentation
                 url: /documentation
           variant: visual_image_with_heading
-          ratio: 1/3
           height: full
+          ratio: 1/3
           color_theme: dark
+          photo:
+            image: /img/edge-base-logo.png
+            alt: Logo
           title: For Your Next Generation Website
           content: Web 3.O framework for your business
           video: lRTtMcx6rSM
@@ -45,9 +47,6 @@ blocks:
             bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
             bg_color: "#ffffff"
             bg_video: lRTtMcx6rSM
-          photo:
-            image: /img/edge-base-logo.png
-            alt: Logo
           columns:
             - title: Hamza Hospital
               content: open-source JavaScript framework and library
@@ -73,13 +72,13 @@ blocks:
                 content: See Documentation
                 url: /documentation
           variant: visual_image_with_heading
-          ratio: 1/3
           height: full
+          ratio: 1/3
           color_theme: dark
-          title: For Your Next Generation Website
           photo:
             image: /img/edge-base-logo.png
             alt: Logo
+          title: For Your Next Generation Website
           content: Web 3.O framework for your business
           video: apqE7GOWh5k
           bg_settings:
@@ -113,13 +112,13 @@ blocks:
                 content: See Documentation
                 url: /documentation
           variant: visual_image_with_heading
-          ratio: 1/3
           height: full
+          ratio: 1/3
           color_theme: dark
-          title: For Your Next Generation Website
           photo:
             image: /img/edge-base-logo.png
             alt: Logo
+          title: For Your Next Generation Website
           content: Web 3.O framework for your business
           video: apqE7GOWh5k
           bg_settings:
@@ -153,13 +152,13 @@ blocks:
                 content: See Documentation
                 url: /documentation
           variant: visual_image_with_heading
-          ratio: 1/3
           height: full
+          ratio: 1/3
           color_theme: dark
-          title: For Your Next Generation Website
           photo:
             image: /img/edge-base-logo.png
             alt: Logo
+          title: For Your Next Generation Website
           content: Web 3.O framework for your business
           video: apqE7GOWh5k
           bg_settings:
@@ -184,6 +183,7 @@ blocks:
                 image: /img/4000_2_01.jpg
     variant: default
     title: For Your Next Generation Website
+thumbnail: ""
 seo:
   ogimage: /img/edge-base-logo.png
 ---

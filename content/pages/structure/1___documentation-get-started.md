@@ -1,7 +1,7 @@
 ---
 id: JUJDCFVbWC
 type: page
-layout: page-builder
+layout: null
 title: Get Started
 permalink: /documentation/get-started
 breadcrumbs:
@@ -14,11 +14,13 @@ breadcrumbs:
   - breadcrumb_item:
       title: Getting Started
       link: /documentation/get-started
-thumbnail: ""
 blocks:
   - type: content
     variant: left-hand
     content: >-
+      # G﻿ET STARTED
+
+
       To get started with Edge Base, please follow the steps outlined below:
 
 
@@ -69,6 +71,7 @@ blocks:
   - type: content
     variant: right-hand
     content: "**[Documentation >>](https://edge-base.netlify.app/documentation/)**"
+thumbnail: ""
 seo:
   ogimage: /img/edge-base-logo.png
 ---

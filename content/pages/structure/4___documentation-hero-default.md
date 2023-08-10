@@ -1,8 +1,8 @@
 ---
 id: JUJDCFVbWC
 type: page
-layout: page-builder
-title: Home Page
+layout: null
+title: Hero - Default Example
 permalink: /documentation/components/hero/default
 breadcrumbs:
   - breadcrumb_item:
@@ -15,9 +15,8 @@ breadcrumbs:
       title: Hero
       link: /documentation/components/hero
   - breadcrumb_item:
-      title: Default
+      title: Default Example
       link: /documentation/components/hero/default
-thumbnail: ""
 blocks:
   - type: hero_slider
     height: full
@@ -32,9 +31,13 @@ blocks:
                 variant: secondary
                 content: See Documentation
                 url: /documentation
-          variant: visual_image_with_heading
+          variant: with_image_left_to_right
           height: full
+          ratio: 6/6
           color_theme: dark
+          photo:
+            image: /img/edge-base-logo.png
+            alt: Logo
           title: For Your Next Generation Website
           content: Web 3.O framework for your business
           video: lRTtMcx6rSM
@@ -44,9 +47,6 @@ blocks:
             bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
             bg_color: "#ffffff"
             bg_video: lRTtMcx6rSM
-          photo:
-            image: /img/edge-base-logo.png
-            alt: Logo
           columns:
             - title: Hamza Hospital
               content: open-source JavaScript framework and library
@@ -63,6 +63,7 @@ blocks:
                 image: /img/4000_2_01.jpg
     variant: default
     title: For Your Next Generation Website
+thumbnail: ""
 seo:
   ogimage: /img/4000_2_01.jpg
 ---

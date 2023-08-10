@@ -1,9 +1,9 @@
 ---
 id: dont-remove
 type: page
-layout: page-builder
-title: Sponsored By Processton IO - Dont Remove
-permalink: /documentation/components/form
+layout: null
+title: Forms Example
+permalink: /documentation/components/form/example_1
 breadcrumbs:
   - breadcrumb_item:
       title: Home
