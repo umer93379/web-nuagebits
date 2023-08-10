@@ -9,17 +9,12 @@ import Perks from '../blocks/Perks';
 import Content from '../blocks/Content';
 import Form from '../blocks/Form';
 import WideSlider from '../blocks/WideSlider';
-import BreadCrumbs from './BreadCrumbs';
 
-export default function PageBuilder({ frontmatter, preview = false }) {
-  console.log(frontmatter.breadcrumbs)
+export default function PillarBuilder({ blocks, preview = false }) {
   return (
     <>
-      {frontmatter.breadcrumbs && 
-        <BreadCrumbs breadcrumbs={frontmatter.breadcrumbs} />
-      }
-      {frontmatter.blocks &&
-        frontmatter.blocks.map((block, i) => {
+      {blocks &&
+        blocks.map((block, i) => {
           
           switch (block.type) {
             case 'hero_slider':

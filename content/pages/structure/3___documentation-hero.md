@@ -2,24 +2,27 @@
 id: t4DdUaK4o
 type: page
 layout: page-builder
-title: Documentatio
-permalink: /documentation
+title: Hero
+permalink: /documentation/components/hero
+breadcrumbs:
+  - breadcrumb_item:
+      title: Home
+      link: /
+  - breadcrumb_item:
+      title: Documentation
+      link: /documentation
+  - breadcrumb_item:
+      title: Components
+      link: /documentation/components
+  - breadcrumb_item:
+      title: Hero
+      link: /documentation/components/hero
 thumbnail: ""
 blocks:
   - type: content
     variant: left-hand
     content: >-
       # Documentation
-
-
-      Edge Base is a new template built using Decap CMS, formerly known as Netlify CMS. It is a starter template designed to provide a solid foundation for creating websites. This documentation will guide you through the process of using Edge Base and its various components.
-
-
-      ## Getting Started:
-
-
-      To start using Edge Base for your next website, please follow the steps outlined in the ["Get Started"](https://edge-base.netlify.app/documentation/get-started/) guide. This guide will help you set up the template and get it running on your local development environment.
-
 
       ## Components:
 
@@ -33,11 +36,11 @@ blocks:
       The Hero component has multiple variants that you can choose; based on your design requirements. The available variants are
 
 
-      * ﻿[Default](/documentation/component/hero-default/)
+      * ﻿[Default](/documentation/hero/example/hero-default/)
 
-      * [With image (Left to right)](/documentation/component/hero-default-slider/)
+      * [With image (Left to right)](/documentation/hero/example/hero-default-slider/)
 
-      * [With video (Left to right)](/documentation/component/hero-default-video/)
+      * [With video (Left to right)](/documentation/hero/example/hero-default-video/)
 
 
       Each variant provides options for displaying forms, allowing you to gather user input seamlessly.

@@ -17,7 +17,7 @@ export default function WithImageLeftToRight({ data }) {
             "h-auto md:h-20vh": data.height === '20vh', 
             "h-auto": data.height === 'auto'
             })}>
-            <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center space-y-5">
+            <div className="mx-auto flex px-5 py-24 md:flex-row flex-col items-center space-y-5">
                 <div className={ 
                     clsx({
                         "flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ": true, 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Parallax } from 'react-parallax';
 import  { useForms }  from '@/hooks/use-forms';
-import NetlifyForm from 'react-netlify-form'
 
 export default function Form({ block }) {
   
@@ -13,6 +12,8 @@ export default function Form({ block }) {
 
   };
   const blocks = form.rows;
+
+  console.log(blocks)
 
   const convertToSafeInputFieldName = (str) => {
     // Replace any non-alphanumeric characters with underscores
@@ -69,22 +70,13 @@ export default function Form({ block }) {
       >
         <div className='container mx-auto lg:max-w-2xl py-16 px-6'>
           <h1 className='dark:text-white font-semibold text-3xl md:text-4xl mb-6'>{block.title}</h1>
-          <NetlifyForm name={block.title} method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" >
-            {({ loading, error, success }) => (
+          <form name={block.title} method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" >
+            
               <div>
-                {loading &&
-                  <div>Loading...</div>
-                }
-                {error &&
-                  <div>Your information was not sent. Please try again later.</div>
-                }
-                {success &&
-                  <div>Thank you for contacting us!</div>
-                }
-                {!loading && !success &&
+                
                   <div>
                     <>
-                      <p class="hidden">
+                      <p className="hidden">
                         <label>
                           <input name="bot-field" />
                         </label>
@@ -151,18 +143,17 @@ export default function Form({ block }) {
                       }))}
                       </>
                   </div>
-                }
+                
               </div>
-            )}
             
             { successMessage !== "" ? (
-              <div class="p-4 mb-6 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
-                <span class="font-medium">{successMessage}</span>
+              <div className="p-4 mb-6 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                <span className="font-medium">{successMessage}</span>
               </div>
             ):(<></>) }
             { errorMessage !== "" ? (
-              <div class="p-4 mb-6 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
-                <span class="font-medium">{errorMessage}</span>
+              <div className="p-4 mb-6 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                <span className="font-medium">{errorMessage}</span>
               </div>
             ):(<></>) }
               <div data-netlify-recaptcha="true"></div>
@@ -171,7 +162,7 @@ export default function Form({ block }) {
                   Submit
                 </button>
               </div>
-          </NetlifyForm>
+          </form>
         </div>
       </Parallax>
     </div>

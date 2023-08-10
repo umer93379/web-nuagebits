@@ -13,7 +13,7 @@ export default function PerkCards({ data }) {
             {data?.columns &&
               data?.columns.map((col, i) => (
                 
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"  key={i}>
+                <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"  key={i}>
                     <a href="#">
                         
                         {col?.photo?.image && (
@@ -26,7 +26,7 @@ export default function PerkCards({ data }) {
                           </div>
                         )}
                     </a>
-                    <div class="p-5">
+                    <div className="p-5">
                         {col?.title && (
                           <Title Tag='h3' variant='xs' className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
                             {col.title}

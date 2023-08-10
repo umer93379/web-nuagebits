@@ -4,6 +4,16 @@ type: page
 layout: page-builder
 title: Get Started
 permalink: /documentation/get-started
+breadcrumbs:
+  - breadcrumb_item:
+      title: Home
+      link: /
+  - breadcrumb_item:
+      title: Documentation
+      link: /documentation
+  - breadcrumb_item:
+      title: Getting Started
+      link: /documentation/get-started
 thumbnail: ""
 blocks:
   - type: content

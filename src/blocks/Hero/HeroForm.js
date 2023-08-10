@@ -123,13 +123,13 @@ export default function HeroForm({ block }) {
             }))}
             </>
             { successMessage !== "" ? (
-              <div class="p-4 mb-6 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
-                <span class="font-medium">{successMessage}</span>
+              <div className="p-4 mb-6 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
+                <span className="font-medium">{successMessage}</span>
               </div>
             ):(<></>) }
             { errorMessage !== "" ? (
-              <div class="p-4 mb-6 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
-                <span class="font-medium">{errorMessage}</span>
+              <div className="p-4 mb-6 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                <span className="font-medium">{errorMessage}</span>
               </div>
             ):(<></>) }
               <div className='text-right'>

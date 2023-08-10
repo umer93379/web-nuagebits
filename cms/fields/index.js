@@ -6,6 +6,13 @@ export const Title = {
   required: false,
 };
 
+export const Link = {
+  label: 'Link',
+  name: 'link',
+  widget: 'string',
+  required: false,
+}
+
 export const Content = {
   label: 'Content',
   name: 'content',
@@ -180,4 +187,14 @@ export const Heros = {
   widget: 'list',
   summary: 'Slide',
   fields: [Hero],
+};
+
+export const BreadcrumbItem = {
+  label: 'Breadcrumb Item',
+  name: 'breadcrumb_item',
+  widget: 'object',
+  fields: [
+    Title,
+    Link
+  ],
 };

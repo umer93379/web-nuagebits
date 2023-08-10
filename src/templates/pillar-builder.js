@@ -3,14 +3,14 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 
 import Layout from '@/components/Layout'
-import PageBuilder from '../components/PageBuilder'
+import PillarBuilder from '../components/PillarBuilder'
 import DefaultHead from '../components/Head/DefaultHead'
 
 const Pillar = ({ data }) => {
   
   return (
     <Layout nav={true}>
-      <PageBuilder blocks={data.page.frontmatter.blocks} />
+      <PillarBuilder blocks={data.page.frontmatter.blocks} />
     </Layout>
   )
 }

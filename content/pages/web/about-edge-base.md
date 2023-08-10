@@ -4,6 +4,13 @@ type: page
 layout: page-builder
 title: About Edge Base
 permalink: /about-edge-base/
+breadcrumbs:
+  - breadcrumb_item:
+      title: Home
+      link: /
+  - breadcrumb_item:
+      title: About Edge
+      link: /about-edge-base
 blocks:
   - type: content
     variant: left-hand

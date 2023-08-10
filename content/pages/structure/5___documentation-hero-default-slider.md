@@ -3,7 +3,20 @@ id: JUJDCFVbWC
 type: page
 layout: page-builder
 title: Home Page
-permalink: /documentation/component/hero-default-slider
+permalink: /documentation/components/hero/slider
+breadcrumbs:
+  - breadcrumb_item:
+      title: Home
+      link: /
+  - breadcrumb_item:
+      title: Documentation
+      link: /documentation
+  - breadcrumb_item:
+      title: Hero
+      link: /documentation/components/hero
+  - breadcrumb_item:
+      title: Slider
+      link: /documentation/components/hero/slider
 thumbnail: ""
 blocks:
   - type: hero_slider

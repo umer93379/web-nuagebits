@@ -1,5 +1,5 @@
 import seo from '../fields/seo';
-import { ID } from '../fields';
+import { BreadcrumbItem, Content, ID } from '../fields';
 import Blocks from '../blocks';
 import { PermalinkField } from '../fields/permalink-field';
 
@@ -29,6 +29,14 @@ const collection = {
       widget: 'string',
     },
     PermalinkField(),
+    {
+      label: 'Breadcrumbs',
+      name: 'breadcrumbs',
+      widget: 'list',
+      fields: [
+        BreadcrumbItem
+      ]
+    },
     Blocks,
     seo,
   ],
