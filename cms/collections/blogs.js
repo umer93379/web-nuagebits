@@ -9,7 +9,7 @@ const collection = {
     preview: true,
   },
   description: 'Blog posts collection',
-  folder: 'content/pages/web/blog',
+  folder: 'content/blog/web',
   slug: '{{slug}}',
   summary:
     "{{title}} \r\n {{date | date('YYYY-MM-DD')}} \r\n {{body | truncate(70, '...')}}",

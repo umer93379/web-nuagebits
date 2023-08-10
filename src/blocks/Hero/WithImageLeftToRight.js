@@ -20,7 +20,7 @@ export default function WithImageLeftToRight({ data }) {
             <div class="mx-auto flex px-5 py-24 md:flex-row flex-col items-center space-y-5">
                 <div className={ 
                     clsx({
-                        "lg:flex-grow flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ": true, 
+                        "flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ": true, 
                         "w-full md:w-1/12": data.ratio === '1/11',
                         "w-full md:w-2/12": data.ratio === '2/10',
                         "w-full md:w-3/12": data.ratio === '3/9',
