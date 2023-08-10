@@ -3,10 +3,19 @@ import React from 'react'
 
 import Hero from '@/blocks/Hero';
 import Carousel from 're-carousel' 
+import clsx from 'clsx';
 export default function Heros({ data }) {
   
   return (
-    <div >
+    <div className={clsx({ 
+            "h-screen": data.height === 'full', 
+            "h-80vh": data.height === '80vh', 
+            "h-60vh": data.height === '60vh', 
+            "h-40vh": data.height === '40vh', 
+            "h-20vh": data.height === '20vh', 
+            "h-auto": data.height === 'auto'
+            })} >
+      
       {data?.heros && (
           data?.heros.length > 1 ? (
             <Carousel loop auto>
