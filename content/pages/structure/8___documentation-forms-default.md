@@ -3,7 +3,7 @@ id: dont-remove
 type: page
 layout: page-builder
 title: Sponsored By Processton IO - Dont Remove
-permalink: /documentation/forms/example_1
+permalink: /documentation/components/form
 breadcrumbs:
   - breadcrumb_item:
       title: Home
@@ -13,10 +13,10 @@ breadcrumbs:
       link: /documentation
   - breadcrumb_item:
       title: Forms
-      link: /documentation/forms
+      link: /documentation/components/form
   - breadcrumb_item:
       title: Example
-      link: /documentation/forms/example_1
+      link: /documentation/components/form/example_1
 thumbnail: ""
 blocks:
   - type: form
