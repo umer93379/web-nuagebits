@@ -17,6 +17,7 @@ module.exports = {
     'gatsby-plugin-image',
     'gatsby-plugin-dark-mode',
     'gatsby-plugin-postcss',
+    'gatsby-plugin-recaptcha',
     {
       resolve: 'gatsby-plugin-brotli',
     },

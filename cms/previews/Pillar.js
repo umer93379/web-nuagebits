@@ -13,7 +13,9 @@ export default class Pillar extends React.Component {
     return (
       <div>
         {hasBlocks ? (
-          <PageBuilder blocks={blocksUpdated} preview={true} />
+          <PageBuilder  frontmatter={{
+            blocks: blocksUpdated
+          }} preview={true} />
         ) : (
           <div className='py-24 text-center flex items-center justify-center'>
             <h1>Add first block to start creating your website</h1>

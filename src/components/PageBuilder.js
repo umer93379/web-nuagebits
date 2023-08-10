@@ -12,13 +12,12 @@ import WideSlider from '../blocks/WideSlider';
 import BreadCrumbs from './BreadCrumbs';
 
 export default function PageBuilder({ frontmatter, preview = false }) {
-  console.log(frontmatter.breadcrumbs)
   return (
     <>
-      {frontmatter.breadcrumbs && 
+      {frontmatter?.breadcrumbs && 
         <BreadCrumbs breadcrumbs={frontmatter.breadcrumbs} />
       }
-      {frontmatter.blocks &&
+      {frontmatter?.blocks &&
         frontmatter.blocks.map((block, i) => {
           
           switch (block.type) {

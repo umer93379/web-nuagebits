@@ -126,6 +126,25 @@ const Config = {
       fields: [Title, backgroundSettingsField()],
     },
     {
+      label: 'Empty Space',
+      name: 'empty_space',
+      widget: 'object',
+      summary: 'Content {{fields.variant}}',
+      fields: [
+        VariantField('50px', ['50px','75px','100px','125px','150px','175px','200px','225px','250px']),
+      ],
+    },
+    {
+      label: 'Heading',
+      name: 'heading',
+      widget: 'object',
+      summary: 'Content {{fields.variant}}: {{fields.title}}',
+      fields: [
+        Title,
+        VariantField('h1', ['h1','h2','h3','h4','h5','h6']),
+      ],
+    },
+    {
       label: 'Form',
       name: 'form',
       widget: 'object',

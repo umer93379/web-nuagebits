@@ -1,7 +1,7 @@
 ---
 id: dont-remove
 type: page
-layout: page-builder
+layout: null
 title: Sponsored By Processton IO - Dont Remove
 permalink: /sponsored-by
 thumbnail: ""

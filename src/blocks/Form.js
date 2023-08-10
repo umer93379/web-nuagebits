@@ -156,7 +156,7 @@ export default function Form({ block }) {
                 <span className="font-medium">{errorMessage}</span>
               </div>
             ):(<></>) }
-              <div data-netlify-recaptcha="true"></div>
+              <div class="g-recaptcha" data-sitekey="6LcZkZcnAAAAAB6lfo62ra7hEEYMx53BcwloTxvv" />
               <div className='text-right'>
                 <button type="submit" className='inline-block bg-primaryButtonDefaultBG hover:bg-primaryButtonHoverBG text-primaryButtonDefaultColor hover:text-primaryButtonHoverColor focus:ring-4 ring-primaryButtonHoverRing  hover:ring-primaryButtonDefaultRing focus:ring-primaryButtonDefaultRing font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 dark:bg-white dark:text-black dark:hover:bg-gray-500 focus:outline-none dark:focus:ring-white'>
                   Submit
