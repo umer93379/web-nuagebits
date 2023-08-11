@@ -7,130 +7,70 @@ permalink: /
 thumbnail: ""
 blocks:
   - type: hero_slider
-    height: auto
+    height: full
     heros:
       - hero:
-          variant: full
+          buttons:
+            - button:
+                variant: button
+                content: Get Started
+                url: /get-started
+            - button:
+                variant: secondary
+                content: See Documentation
+                url: /documentation
+          variant: with_image_left_to_right
+          height: full
+          color_theme: white
           title: What Is Salesforce?
+          photo:
+            image: /img/edge-base-logo.png
+            alt: Logo
           content: Salesforce is a leading cloud-based customer relationship management
             (CRM) platform that empowers businesses to optimize their sales,
             marketing, and customer service operations. With its robust suite of
             tools and capabilities, Salesforce enables organizations to
             streamline processes, improve efficiency, and drive growth.
+          video: lRTtMcx6rSM
+          bg_settings:
+            variant: bg-image
+            overlay: no-overlay
+            bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
+            bg_color: "#ffffff"
+            bg_video: https://player.vimeo.com/video/516255210?title=0&portrait=0&byline=0&autoplay=1&muted=true&controls=0&loop=1
+          columns:
+      - hero:
           buttons:
             - button:
                 variant: button
-                content: Get Started With Salesforce
+                content: Get Started
                 url: /get-started
-          hero_photo:
-            hero_image: /img/goal.png
-            alt: Hero Slider Photo
-          hero_bg_photo:
-            hero_bg_image: /img/white_wood.jpg
-            enable_parallax: false
-          columns:
-            - title: React
-              content: open-source JavaScript framework and library
-              show_popup: false
-              permalink: /reactjs/
-              photo:
-                image: /img/pngegg.png
-            - title: Gatsby
-              content: open source framework with performance, scalability and security
-                built-in.
-              show_popup: false
-              permalink: /reactjs/
-              photo:
-                image: /img/gatsby.png
-          height: auto
-      - hero:
-          variant: full
-          height: auto
+            - button:
+                variant: secondary
+                content: See Documentation
+                url: /documentation
+          variant: with_image_left_to_right
+          height: full
+          color_theme: white
           title: Why Salesforce?
+          photo:
+            image: /img/edge-base-logo.png
+            alt: Logo
           content: The platform known for its robust features, scalability, and top-notch
             security. With its multitenant architecture, Salesforce enables
             businesses to leverage the power of a shared infrastructure while
             maintaining data privacy and security.
-          buttons:
-            - button:
-                variant: button
-                content: Get Started With Salesforce
-                url: /get-started
-          hero_photo:
-            hero_image: /img/goal.png
-            alt: Hero Slider Photo
-          hero_bg_photo:
-            hero_bg_image: /img/white_wood.jpg
-            enable_parallax: false
-            bg_alt: ""
+          video: lRTtMcx6rSM
+          bg_settings:
+            variant: bg-image
+            overlay: no-overlay
+            bg_photo: /img/green-tropical-leaves-border-png-3000x2400.png
+            bg_color: "#ffffff"
+            bg_video: https://player.vimeo.com/video/516255210?title=0&portrait=0&byline=0&autoplay=1&muted=true&controls=0&loop=1
           columns:
-            - title: React
-              content: open-source JavaScript framework and library
-              show_popup: false
-              permalink: /reactjs/
-              photo:
-                image: /img/pngegg.png
-            - title: Gatsby
-              content: open source framework with performance, scalability and security
-                built-in.
-              show_popup: false
-              permalink: /reactjs/
-              photo:
-                image: /img/gatsby.png
-      - hero:
-          variant: full
-          height: auto
-          title: Let's Move Together
-          buttons:
-            - button:
-                variant: button
-                content: Find Your Salesforce Consultant
-                url: /get-started
-          hero_photo:
-            hero_image: /img/goal.png
-            alt: Hero Slider Photo
-          hero_bg_photo:
-            hero_bg_image: /img/white_wood.jpg
-          content: Let's explore how Salesforce can be tailored to meet your specific
-            needs and drive your business forward. Together, we can unlock the
-            full potential of this robust CRM platform and achieve your desired
-            outcomes.
-    title: Home
     variant: default
-  - buttons: []
-    variant: default
-    height: full
-    photo:
-      image: /img/nuage-dark.png
-    bg_photo:
-      bg_image: /img/white_wood.jpg
-    title: Empowering Businesses with Salesforce Solutions
-    content: |-
-      1. ### Redeem your business
-      2. ### Protract your data integrity
-      3. ### Integrate business applications
-      4. ### Automate your business processes in CRM
-    type: hero
-    columns: []
-  - type: content_image
-    variant: default
-    title: Our tech stack includes consultancy for
-    content: |-
-      * #### Sales & Service Clouds
-      * #### Data modeling
-      * #### Platform custom development
-      * #### Lightning components
-      * #### Process automation
-      * #### Integrations
-      * #### Deployments and version controlling
-      * #### Salesforce Community portal
-    buttons: []
-    photo:
-      image: /img/nuage-light.png
-      alt: ""
-    bg_photo:
-      bg_image: /img/white_wood.jpg
-      enable_parallax: true
+    title: Slider
+
 seo:
   ogimage: /img/4000_2_01.jpg
 ---
