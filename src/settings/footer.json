@@ -22,5 +22,9 @@
     "image": "/img/4000_2_01.jpg",
     "alt": "My Logo"
   },
-  "copyright": "2021-2022"
+  "copyright": "2021-2022",
+  "social_links": [],
+  "show_social_links": true,
+  "show_contact_links": true,
+  "contact_links": []
 }
